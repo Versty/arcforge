@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faStar, faArrowUpAZ, faArrowDownAZ, faFilter } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faStar, faArrowUpAZ, faArrowDownAZ, faFilter, faExternalLinkAlt, faDiagramProject } from '@fortawesome/free-solid-svg-icons';
 import itemsData from '../data/items_database.json';
 
 interface Item {
@@ -154,174 +154,174 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#07020b] text-gray-100 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-[#07020b] via-[#0a0514] to-[#07020b] text-gray-100 flex flex-col relative overflow-hidden">
+      {/* Ambient Background Effects */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }} />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }} />
+      </div>
+
       {/* Header - Logo and Navigation */}
-      <header className="bg-[#07020b] border-b border-purple-500/20 sticky top-0 z-40">
-        <div className="flex items-center justify-between pr-8">
+      <header className="bg-black/20 backdrop-blur-xl border-b border-purple-500/30 sticky top-0 z-40 shadow-lg shadow-purple-500/5">
+        <div className="flex items-center justify-between pr-8 relative">
           {/* Logo */}
-          <a href="/" className="flex-shrink-0 h-24 flex items-center cursor-pointer">
+          <a href="/" className="flex-shrink-0 h-24 flex items-center cursor-pointer hover:scale-105 transition-transform duration-300">
         <Image
               src="/logo.webp"
               alt="ARC Forge"
               width={320}
               height={96}
-              className="h-full w-auto"
+              className="h-full w-auto drop-shadow-2xl"
           priority
         />
           </a>
           
             {/* Navigation */}
-            <nav className="flex gap-2">
+            <nav className="flex gap-3">
               <a
                 href="/"
-                className="px-6 py-3 bg-purple-500/20 border border-purple-500/50 rounded-lg text-purple-300 font-medium hover:bg-purple-500/30 transition-all"
+                className="group relative px-6 py-3 bg-gradient-to-br from-purple-500/30 to-purple-600/30 border border-purple-400/50 rounded-xl text-purple-200 font-semibold hover:from-purple-500/40 hover:to-purple-600/40 hover:border-purple-400/70 transition-all duration-300 shadow-lg shadow-purple-500/20 hover:shadow-purple-500/30 hover:scale-105"
               >
-                Item Database
+                <span className="relative z-10">Item Database</span>
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-400/0 to-purple-600/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a
                 href="/crafting-tree?item=Heavy%20Gun%20Parts"
-                className="px-6 py-3 bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 font-medium hover:bg-purple-500/10 hover:text-gray-300 transition-all"
+                className="group relative px-6 py-3 bg-black/40 backdrop-blur-sm border border-purple-500/30 rounded-xl text-gray-300 font-semibold hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/50 transition-all duration-300 hover:scale-105"
               >
-                Crafting Tree
+                <span className="relative z-10">Crafting Tree</span>
               </a>
             </nav>
         </div>
       </header>
 
       {/* Main Content Area */}
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 overflow-hidden relative">
         {/* Left Sidebar - Search, Filters and Sort */}
-        <aside className="w-80 bg-[#07020b] border-r border-purple-500/20 overflow-y-auto">
+        <aside className="w-80 bg-black/30 backdrop-blur-xl border-r border-purple-500/30 overflow-y-auto shadow-2xl relative z-10">
           <div className="p-6 space-y-6">
             {/* Search Bar */}
             <div>
-              <h3 className="text-sm font-semibold text-gray-300 mb-3 uppercase tracking-wide">
+              <h3 className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 mb-3 uppercase tracking-wider">
                 Search
               </h3>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <FontAwesomeIcon icon={faSearch} className="text-gray-400 text-sm" />
+              <div className="relative group">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <FontAwesomeIcon icon={faSearch} className="text-purple-400/70 text-sm group-focus-within:text-purple-400 transition-colors" />
                 </div>
                 <input
                   type="text"
                   placeholder="Search items..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-3 py-2.5 bg-black/40 border border-purple-500/30 rounded-lg text-gray-100 text-sm placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all"
+                  className="w-full pl-11 pr-4 py-3 bg-black/50 backdrop-blur-sm border border-purple-500/30 rounded-xl text-gray-100 text-sm placeholder-gray-500 focus:outline-none focus:border-purple-400/60 focus:ring-2 focus:ring-purple-500/30 focus:bg-black/60 transition-all duration-300 shadow-lg shadow-purple-500/10 focus:shadow-purple-500/20"
                 />
               </div>
             </div>
 
             {/* Divider */}
-            <div className="border-t border-purple-500/20"></div>
+            <div className="border-t border-purple-500/20 shadow-sm shadow-purple-500/10"></div>
             {/* Sort Section */}
             <div>
-              <h3 className="text-sm font-semibold text-gray-300 mb-4 flex items-center gap-2 uppercase tracking-wide">
+              <h3 className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 mb-4 flex items-center gap-2 uppercase tracking-wider">
                 <FontAwesomeIcon icon={faArrowUpAZ} className="text-purple-400" />
                 Sort By
               </h3>
-              <div className="flex flex-wrap gap-2 mb-3">
+              <div className="flex flex-wrap gap-2 mb-4">
                 <button
                   onClick={() => setSortField('name')}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
                     sortField === 'name'
-                      ? 'bg-purple-500/30 text-purple-200 border border-purple-500/50 shadow-lg shadow-purple-500/20'
-                      : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                      ? 'bg-gradient-to-br from-purple-500/40 to-purple-600/40 text-purple-100 border border-purple-400/60 shadow-lg shadow-purple-500/30 scale-105'
+                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300 hover:border-purple-400/40 hover:scale-105'
                   }`}
                 >
-                  Name
+                  <span className="relative z-10">Name</span>
+                  {sortField === 'name' && <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent rounded-lg" />}
                 </button>
                 <button
                   onClick={() => setSortField('rarity')}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
                     sortField === 'rarity'
-                      ? 'bg-purple-500/30 text-purple-200 border border-purple-500/50 shadow-lg shadow-purple-500/20'
-                      : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                      ? 'bg-gradient-to-br from-purple-500/40 to-purple-600/40 text-purple-100 border border-purple-400/60 shadow-lg shadow-purple-500/30 scale-105'
+                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300 hover:border-purple-400/40 hover:scale-105'
                   }`}
                 >
-                  Rarity
+                  <span className="relative z-10">Rarity</span>
+                  {sortField === 'rarity' && <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent rounded-lg" />}
                 </button>
                 <button
                   onClick={() => setSortField('sellprice')}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
                     sortField === 'sellprice'
-                      ? 'bg-purple-500/30 text-purple-200 border border-purple-500/50 shadow-lg shadow-purple-500/20'
-                      : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                      ? 'bg-gradient-to-br from-purple-500/40 to-purple-600/40 text-purple-100 border border-purple-400/60 shadow-lg shadow-purple-500/30 scale-105'
+                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300 hover:border-purple-400/40 hover:scale-105'
                   }`}
                 >
-                  Sell Price
+                  <span className="relative z-10">Sell Price</span>
+                  {sortField === 'sellprice' && <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent rounded-lg" />}
                 </button>
                 <button
                   onClick={() => setSortField('weight')}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
                     sortField === 'weight'
-                      ? 'bg-purple-500/30 text-purple-200 border border-purple-500/50 shadow-lg shadow-purple-500/20'
-                      : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                      ? 'bg-gradient-to-br from-purple-500/40 to-purple-600/40 text-purple-100 border border-purple-400/60 shadow-lg shadow-purple-500/30 scale-105'
+                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300 hover:border-purple-400/40 hover:scale-105'
                   }`}
                 >
-                  Weight
+                  <span className="relative z-10">Weight</span>
+                  {sortField === 'weight' && <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent rounded-lg" />}
                 </button>
               </div>
               
               <button
                 onClick={() => setSortAscending(!sortAscending)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                  sortAscending
-                    ? 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10'
-                    : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10'
-                } flex items-center gap-2`}
+                className="w-full group relative px-3 py-1.5 rounded-lg text-xs font-semibold bg-black/40 backdrop-blur-sm text-gray-300 border border-purple-500/30 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-purple-500/10 hover:shadow-purple-500/20"
               >
-                <FontAwesomeIcon icon={sortAscending ? faArrowUpAZ : faArrowDownAZ} />
-                {sortAscending ? 'Ascending' : 'Descending'}
+                <FontAwesomeIcon icon={sortAscending ? faArrowUpAZ : faArrowDownAZ} className="text-purple-400 text-xs" />
+                <span>{sortAscending ? 'Ascending' : 'Descending'}</span>
               </button>
             </div>
 
             {/* Divider */}
-            <div className="border-t border-purple-500/20"></div>
-
-            {/* Results Count */}
-            <div className="text-sm text-gray-400 text-center py-3 bg-purple-500/10 border border-purple-500/20 rounded-lg">
-              <div className="font-semibold text-lg text-gray-200">{filteredAndSortedItems.length}</div>
-              <div className="text-xs">{filteredAndSortedItems.length === 1 ? 'item' : 'items'} found</div>
-            </div>
-
-            {/* Divider */}
-            <div className="border-t border-purple-500/20"></div>
+            <div className="border-t border-purple-500/20 shadow-sm shadow-purple-500/10"></div>
 
             {/* Type Filters */}
             <div>
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-sm font-semibold text-gray-300 flex items-center gap-2 uppercase tracking-wide">
+                <h3 className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 flex items-center gap-2 uppercase tracking-wider">
                   <FontAwesomeIcon icon={faFilter} className="text-purple-400" />
                   Filter by Type
                 </h3>
                 <div className="flex gap-2">
                   <button
                     onClick={() => setSelectedTypes(new Set(allTypes))}
-                    className="text-xs text-green-400 hover:text-green-300 transition-colors underline"
+                    className="text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-all hover:scale-110"
                   >
-                    Select All
+                    All
                   </button>
+                  <span className="text-purple-500/50">|</span>
                   <button
                     onClick={() => setSelectedTypes(new Set())}
-                    className="text-xs text-purple-400 hover:text-purple-300 transition-colors underline"
+                    className="text-xs text-gray-400 hover:text-gray-300 font-semibold transition-all hover:scale-110"
                   >
-                    Clear All
+                    None
                   </button>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-2 max-h-96 overflow-y-auto pr-2">
+              <div className="flex flex-wrap gap-2">
                 {allTypes.map((type) => (
                   <button
                     key={type}
                     onClick={() => toggleType(type)}
-                    className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+                    className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
                       selectedTypes.has(type)
-                        ? 'bg-blue-500/30 text-blue-200 border border-blue-500/50 shadow-lg shadow-blue-500/20'
-                        : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                        ? 'bg-gradient-to-br from-blue-500/40 to-cyan-500/40 text-blue-100 border border-blue-400/60 shadow-lg shadow-blue-500/30 scale-105'
+                        : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-blue-500/20 hover:text-blue-300 hover:border-blue-400/40 hover:scale-105'
                     }`}
                   >
-                    {type}
+                    <span className="relative z-10">{type}</span>
+                    {selectedTypes.has(type) && <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-transparent rounded-lg" />}
                   </button>
                 ))}
               </div>
@@ -330,7 +330,7 @@ export default function Home() {
         </aside>
 
         {/* Items Grid */}
-        <main className="flex-1 overflow-y-auto p-8">
+        <main className="flex-1 overflow-y-auto p-8 relative z-10">
           <div className="max-w-[1600px] mx-auto">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-6">
               {filteredAndSortedItems.map((item, index) => {
@@ -342,38 +342,52 @@ export default function Home() {
                   <div
                     key={`${item.name}-${index}`}
                     onClick={() => setSelectedItem(item)}
-                    className="group relative bg-gradient-to-br from-purple-950/30 to-blue-950/30 rounded-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                    className="group relative bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-sm rounded-2xl overflow-hidden hover:scale-105 hover:-translate-y-1 transition-all duration-300 cursor-pointer"
                     style={{
                       borderWidth: '2px',
                       borderStyle: 'solid',
                       borderColor: borderColor,
-                      boxShadow: `0 0 15px ${borderColor}20`
+                      boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`
                     }}
                   >
+                    {/* Animated border glow on hover */}
+                    <div 
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"
+                      style={{
+                        boxShadow: `0 0 30px ${borderColor}60, inset 0 0 20px ${borderColor}20`
+                      }}
+                    />
+
                     {/* Image Section */}
                     <div 
-                      className="aspect-square flex items-center justify-center p-2 relative overflow-hidden"
+                      className="aspect-square flex items-center justify-center p-4 relative overflow-hidden"
                       style={{ background: gradient }}
                     >
+                      {/* Subtle shine effect */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      
                       {item.image_urls?.thumb ? (
                         <img
                           src={item.image_urls.thumb}
                           alt={item.name}
-                          className="w-full h-full object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain relative z-10 group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl"
                           onError={(e) => {
                             e.currentTarget.style.display = 'none';
                           }}
                         />
                       ) : (
-                        <div className="text-2xl text-gray-700">?</div>
+                        <div className="text-2xl text-gray-700/50">?</div>
                       )}
                     </div>
 
                     {/* Name Section */}
-                    <div className="p-1.5 bg-black/30">
+                    <div className="p-2.5 bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-sm border-t" style={{ borderColor: `${borderColor}20` }}>
                       <h3 
-                        className="font-medium text-xs group-hover:brightness-125 transition-all line-clamp-2 text-center leading-tight"
-                        style={{ color: borderColor }}
+                        className="font-semibold text-xs group-hover:brightness-125 transition-all line-clamp-2 text-center leading-tight drop-shadow-lg"
+                        style={{ 
+                          color: borderColor,
+                          textShadow: `0 2px 8px ${borderColor}40`
+                        }}
                       >
                         {item.name}
                       </h3>
@@ -381,9 +395,9 @@ export default function Home() {
 
                     {/* Hover Effect Overlay */}
                     <div 
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-2xl"
                       style={{ 
-                        background: `radial-gradient(circle at center, ${borderColor}15 0%, transparent 70%)`
+                        background: `radial-gradient(circle at center, ${borderColor}20 0%, transparent 70%)`
                       }}
                     />
                   </div>
@@ -393,10 +407,17 @@ export default function Home() {
 
             {/* No Results */}
             {filteredAndSortedItems.length === 0 && (
-              <div className="text-center py-20">
-                <div className="text-6xl mb-4">🔍</div>
-                <h3 className="text-2xl font-bold text-gray-400 mb-2">No items found</h3>
-                <p className="text-gray-500">Try adjusting your search query</p>
+              <div className="relative text-center py-32">
+                <div className="absolute inset-0 flex items-center justify-center opacity-5">
+                  <FontAwesomeIcon icon={faSearch} className="text-[20rem] text-purple-500" />
+                </div>
+                <div className="relative z-10">
+                  <div className="text-8xl mb-6 animate-pulse">🔍</div>
+                  <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-purple-300 to-gray-300 mb-3">
+                    No items found
+                  </h3>
+                  <p className="text-gray-400 text-lg">Try adjusting your search or filters</p>
+                </div>
               </div>
             )}
           </div>
@@ -408,76 +429,93 @@ export default function Home() {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/50 z-40 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/70 z-40 backdrop-blur-md"
             onClick={() => setSelectedItem(null)}
           />
           
           {/* Detail Panel */}
-          <div className="fixed top-0 right-0 h-full w-full md:w-[550px] bg-[#07020b]/98 backdrop-blur-lg border-l border-purple-500/30 z-50 overflow-y-auto animate-slide-in shadow-2xl">
-            <div className="p-8">
+          <div className="fixed top-0 right-0 h-full w-full md:w-[600px] bg-gradient-to-br from-black/95 via-purple-950/30 to-black/95 backdrop-blur-2xl border-l border-purple-500/40 z-50 overflow-y-auto animate-slide-in shadow-2xl">
+            {/* Decorative gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-blue-500/5 pointer-events-none" />
+            
+            <div className="relative z-10 p-8">
               {/* Close Button */}
               <button
                 onClick={() => setSelectedItem(null)}
-                className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-black/40 hover:bg-black/60 rounded-lg transition-all text-gray-400 hover:text-white"
+                className="absolute top-6 right-6 w-12 h-12 flex items-center justify-center bg-black/60 hover:bg-red-500/30 backdrop-blur-sm rounded-xl transition-all duration-300 text-gray-400 hover:text-red-300 border border-purple-500/20 hover:border-red-500/50 shadow-lg hover:scale-110 group"
               >
-                ✕
+                <span className="text-xl group-hover:rotate-90 transition-transform duration-300">✕</span>
               </button>
 
               {/* Item Header */}
               <div className="mb-8">
                 <div 
-                  className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold mb-4 uppercase tracking-wider"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold mb-5 uppercase tracking-widest backdrop-blur-sm border shadow-lg"
                   style={{ 
-                    backgroundColor: `${rarityColors[selectedItem.infobox?.rarity] || '#717471'}40`,
-                    color: rarityColors[selectedItem.infobox?.rarity] || '#717471'
+                    backgroundColor: `${rarityColors[selectedItem.infobox?.rarity] || '#717471'}30`,
+                    borderColor: `${rarityColors[selectedItem.infobox?.rarity] || '#717471'}60`,
+                    color: rarityColors[selectedItem.infobox?.rarity] || '#717471',
+                    boxShadow: `0 4px 20px ${rarityColors[selectedItem.infobox?.rarity] || '#717471'}30`
                   }}
                 >
+                  <FontAwesomeIcon icon={faStar} className="text-xs" />
                   {selectedItem.infobox?.rarity || 'Common'}
                 </div>
-                <h2 className="text-3xl font-bold text-gray-100 mb-3">{selectedItem.name}</h2>
+                <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-purple-200 to-gray-100 mb-3 drop-shadow-lg">
+                  {selectedItem.name}
+                </h2>
                 {selectedItem.infobox?.type && (
-                  <p className="text-purple-400 text-sm uppercase tracking-wide">{selectedItem.infobox.type}</p>
+                  <p className="text-purple-400 text-sm font-semibold uppercase tracking-wider inline-flex items-center gap-2 px-3 py-1 bg-purple-500/20 rounded-lg border border-purple-500/30">
+                    {selectedItem.infobox.type}
+                  </p>
                 )}
               </div>
 
               {/* Item Image */}
               {selectedItem.image_urls?.thumb && (
                 <div 
-                  className="w-full aspect-square rounded-xl mb-8 flex items-center justify-center p-12 border border-purple-500/20"
-                  style={{ background: rarityGradients[selectedItem.infobox?.rarity] || rarityGradients.Common }}
+                  className="relative w-full aspect-square rounded-2xl mb-8 flex items-center justify-center p-12 border-2 overflow-hidden group shadow-2xl"
+                  style={{ 
+                    background: rarityGradients[selectedItem.infobox?.rarity] || rarityGradients.Common,
+                    borderColor: `${rarityColors[selectedItem.infobox?.rarity] || '#717471'}40`,
+                    boxShadow: `0 8px 32px ${rarityColors[selectedItem.infobox?.rarity] || '#717471'}40, inset 0 1px 0 rgba(255,255,255,0.1)`
+                  }}
                 >
+                  {/* Animated shine effect */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                  
                   <img
                     src={selectedItem.image_urls.thumb}
                     alt={selectedItem.name}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
                   />
                 </div>
               )}
 
-              {/* Stats Row */}
-              <div className="flex gap-3 mb-8 flex-wrap">
+              {/* Stats */}
+              <div className="space-y-3 mb-8">
                 {selectedItem.infobox?.weight != null && (
-                  <div className="bg-black/30 px-4 py-3 rounded-lg flex-1 min-w-[100px]">
-                    <div className="text-xs text-gray-500 mb-1">Weight</div>
-                    <div className="text-lg font-bold text-gray-100">{selectedItem.infobox.weight}</div>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-sm text-gray-400 font-medium">Weight:</span>
+                    <span className="text-lg text-gray-100 font-semibold">{selectedItem.infobox.weight}</span>
                   </div>
                 )}
                 {selectedItem.infobox?.sellprice != null && (
-                  <div className="bg-black/30 px-4 py-3 rounded-lg flex-1 min-w-[100px]">
-                    <div className="text-xs text-gray-500 mb-1">Sell Price</div>
-                    <div className="text-lg font-bold text-green-400">{getSellPrice(selectedItem.infobox.sellprice)}</div>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-sm text-gray-400 font-medium">Sell Price:</span>
+                    <span className="text-lg text-emerald-400 font-semibold">{getSellPrice(selectedItem.infobox.sellprice)}</span>
                   </div>
                 )}
                 {selectedItem.infobox?.stacksize != null && (
-                  <div className="bg-black/30 px-4 py-3 rounded-lg flex-1 min-w-[100px]">
-                    <div className="text-xs text-gray-500 mb-1">Stack Size</div>
-                    <div className="text-lg font-bold text-gray-100">{selectedItem.infobox.stacksize}</div>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-sm text-gray-400 font-medium">Stack Size:</span>
+                    <span className="text-lg text-gray-100 font-semibold">{selectedItem.infobox.stacksize}</span>
                   </div>
                 )}
                 {selectedItem.infobox?.damage != null && (
-                  <div className="bg-black/30 px-4 py-3 rounded-lg flex-1 min-w-[100px]">
-                    <div className="text-xs text-gray-500 mb-1">Damage</div>
-                    <div className="text-lg font-bold text-red-400">{selectedItem.infobox.damage}</div>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-sm text-gray-400 font-medium">Damage:</span>
+                    <span className="text-lg text-red-400 font-semibold">{selectedItem.infobox.damage}</span>
                   </div>
                 )}
               </div>
@@ -485,14 +523,17 @@ export default function Home() {
               {/* Sources */}
               {selectedItem.sources && selectedItem.sources.length > 0 && (
                 <div className="mb-8">
-                  <h3 className="text-sm font-semibold text-gray-300 mb-4 uppercase tracking-wide">Sources</h3>
+                  <h3 className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 mb-4 uppercase tracking-wider">
+                    Sources
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {selectedItem.sources.map((source: string, idx: number) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs border border-blue-500/30"
+                        className="group relative px-4 py-2 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 backdrop-blur-sm text-blue-200 rounded-xl text-xs font-semibold border border-blue-400/40 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30"
                       >
-                        {source}
+                        <span className="relative z-10">{source}</span>
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                       </span>
                     ))}
                   </div>
@@ -500,20 +541,28 @@ export default function Home() {
               )}
 
               {/* Action Buttons */}
-              <div className="flex gap-3">
+              <div className="flex flex-col gap-3">
                 <a
                   href={selectedItem.wiki_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block flex-1 py-3 bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 rounded-lg text-center text-purple-300 hover:text-purple-200 transition-all"
+                  className="group relative block py-4 bg-gradient-to-br from-purple-500/30 to-purple-600/30 hover:from-purple-500/40 hover:to-purple-600/40 backdrop-blur-sm border border-purple-400/50 hover:border-purple-400/70 rounded-xl text-center text-purple-200 hover:text-purple-100 font-semibold transition-all duration-300 shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 hover:scale-105 overflow-hidden"
                 >
-                  View on Wiki →
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-400/0 via-purple-400/20 to-purple-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                  <span className="relative z-10 flex items-center justify-center gap-3">
+                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    View on Wiki
+                  </span>
                 </a>
                 <a
                   href={`/crafting-tree?item=${encodeURIComponent(selectedItem.name)}`}
-                  className="block flex-1 py-3 bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/30 rounded-lg text-center text-blue-300 hover:text-blue-200 transition-all"
+                  className="group relative block py-4 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 hover:from-blue-500/40 hover:to-cyan-500/40 backdrop-blur-sm border border-blue-400/50 hover:border-blue-400/70 rounded-xl text-center text-blue-200 hover:text-blue-100 font-semibold transition-all duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 hover:scale-105 overflow-hidden"
                 >
-                  View in Craft Tree →
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-blue-400/20 to-blue-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                  <span className="relative z-10 flex items-center justify-center gap-3">
+                    <FontAwesomeIcon icon={faDiagramProject} />
+                    View Crafting Tree
+                  </span>
                 </a>
               </div>
         </div>
