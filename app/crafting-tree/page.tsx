@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, useMemo } from 'react';
+import { useEffect, useRef, useState, useMemo, Suspense } from 'react';
 import Image from 'next/image';
 import cytoscape from 'cytoscape';
 import { useSearchParams } from 'next/navigation';
@@ -56,7 +56,7 @@ const rarityGradients: { [key: string]: string } = {
   Legendary: 'linear-gradient(to right, rgb(251 199 0 / 25%) 0%, rgb(5 13 36) 100%)',
 };
 
-export default function CraftingTree() {
+function CraftingTreeContent() {
   const cyRef = useRef<cytoscape.Core | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [selectedNode, setSelectedNode] = useState<NodeInfo | null>(null);
@@ -638,3 +638,16 @@ export default function CraftingTree() {
   );
 }
 
+export default function CraftingTree() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#07020b] text-gray-100 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-2xl mb-2">Loading...</div>
+        </div>
+      </div>
+    }>
+      <CraftingTreeContent />
+    </Suspense>
+  );
+}
