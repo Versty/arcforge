@@ -504,7 +504,7 @@ def parse_item_from_wiki(item_name: str, delay: float = 0.5, include_raw: bool =
 
 def main():
     """Main function to process items from names file."""
-    script_dir = Path(__file__).parent
+    data_dir = Path(__file__).parent.parent / "data"
     
     # Parse command line arguments
     import sys
@@ -512,11 +512,11 @@ def main():
     args = [arg for arg in sys.argv[1:] if not arg.startswith('--')]
     
     if args:
-        names_file = script_dir / args[0]
-        output_file = script_dir / args[0].replace('.txt', '_database.json')
+        names_file = data_dir / args[0]
+        output_file = data_dir / args[0].replace('.txt', '_database.json')
     else:
-        names_file = script_dir / "names.txt"
-        output_file = script_dir / "items_database.json"
+        names_file = data_dir / "names.txt"
+        output_file = data_dir / "items_database.json"
     
     # Check if names file exists
     if not names_file.exists():

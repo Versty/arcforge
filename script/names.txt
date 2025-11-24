@@ -247,30 +247,18 @@ Tactical Mk. 3 (Healing)
 Light Shield
 Medium Shield
 Heavy Shield
-Agave
 Bandage
 Defibrillator
-Expired Pasta
-Fabric
 Fruit Mix
 Herbal Bandage
-Moss
-Mushroom
-Resin
 Sterilized Bandage
 Vita Shot
 Vita Spray
-ARC Powercell
 Integrated Shield Recharger
 Shield Recharger
 Surge Shield Recharger
 Adrenaline Shot
 Agave Juice
-Apricot
-Bloated Tuna Can
-Lemon
-Olives
-Prickly Pear
 Barricade Kit
 Door Blocker
 Remote Raider Flare
@@ -298,14 +286,6 @@ Li'l Smoke Grenade
 Smoke Grenade
 Tagging Grenade
 Light Stick
-Wasp Driver
-Hornet Driver
-Snitch Scanner
-Leaper Pulse Unit
-Fireball Burner
-Crude Explosives
-Rubber Duck
-Synthesized Fuel
 Blaze Grenade Trap
 Gas Grenade Trap
 Lure Grenade Trap
