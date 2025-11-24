@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faStar, faArrowUpAZ, faArrowDownAZ, faFilter, faExternalLinkAlt, faDiagramProject } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faStar, faArrowUpAZ, faArrowDownAZ, faFilter, faExternalLinkAlt, faDiagramProject, faBars } from '@fortawesome/free-solid-svg-icons';
 import itemsData from '../data/items_database.json';
 
 interface Item {
@@ -57,6 +57,7 @@ export default function Home() {
   const [sortField, setSortField] = useState<SortField>('name');
   const [sortAscending, setSortAscending] = useState(true);
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   // Get all unique types
   const allTypes = useMemo(() => {
@@ -155,12 +156,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#07020b] via-[#0a0514] to-[#07020b] text-gray-100 flex flex-col relative overflow-hidden">
-      {/* Ambient Background Effects */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }} />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }} />
-      </div>
-
       {/* Header - Logo and Navigation */}
       <header className="bg-black/20 backdrop-blur-xl border-b border-purple-500/30 sticky top-0 z-40 shadow-lg shadow-purple-500/5">
         <div className="flex items-center justify-between pr-8 relative">
@@ -195,11 +190,40 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Mobile Sidebar Toggle Button */}
+      <button
+        onClick={() => setIsSidebarOpen(true)}
+        className="lg:hidden fixed bottom-6 left-6 z-30 w-14 h-14 flex items-center justify-center bg-purple-500/90 backdrop-blur-sm rounded-full shadow-xl hover:bg-purple-600/90 transition-colors border-2 border-purple-400/50"
+        aria-label="Open filters"
+      >
+        <FontAwesomeIcon icon={faBars} className="text-white text-xl" />
+      </button>
+
       {/* Main Content Area */}
       <div className="flex flex-1 overflow-hidden relative">
+        {/* Sidebar Backdrop (Mobile Only) */}
+        {isSidebarOpen && (
+          <div
+            className="lg:hidden fixed inset-0 bg-black/70 z-40 backdrop-blur-sm"
+            onClick={() => setIsSidebarOpen(false)}
+          />
+        )}
+
         {/* Left Sidebar - Search, Filters and Sort */}
-        <aside className="w-80 bg-black/30 backdrop-blur-xl border-r border-purple-500/30 overflow-y-auto shadow-2xl relative z-10">
+        <aside className={`
+          w-80 bg-black/30 backdrop-blur-xl border-r border-purple-500/30 overflow-y-auto shadow-2xl z-50
+          fixed lg:relative inset-y-0 left-0 transition-transform duration-300 ease-in-out
+          lg:translate-x-0
+          ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+        `}>
           <div className="p-6 space-y-6">
+            {/* Close Button (Mobile Only) */}
+            <button
+              onClick={() => setIsSidebarOpen(false)}
+              className="lg:hidden absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-black/60 hover:bg-red-500/30 backdrop-blur-sm rounded-lg transition-colors text-gray-400 hover:text-red-300 border border-purple-500/20 hover:border-red-500/50 z-10"
+            >
+              <span className="text-lg">✕</span>
+            </button>
             {/* Search Bar */}
             <div>
               <h3 className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 mb-3 uppercase tracking-wider">
@@ -230,53 +254,49 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 mb-4">
                 <button
                   onClick={() => setSortField('name')}
-                  className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
                     sortField === 'name'
-                      ? 'bg-gradient-to-br from-purple-500/40 to-purple-600/40 text-purple-100 border border-purple-400/60 shadow-lg shadow-purple-500/30 scale-105'
-                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300 hover:border-purple-400/40 hover:scale-105'
+                      ? 'bg-purple-500/40 text-purple-100 border border-purple-400/60'
+                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300'
                   }`}
                 >
-                  <span className="relative z-10">Name</span>
-                  {sortField === 'name' && <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent rounded-lg" />}
+                  Name
                 </button>
                 <button
                   onClick={() => setSortField('rarity')}
-                  className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
                     sortField === 'rarity'
-                      ? 'bg-gradient-to-br from-purple-500/40 to-purple-600/40 text-purple-100 border border-purple-400/60 shadow-lg shadow-purple-500/30 scale-105'
-                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300 hover:border-purple-400/40 hover:scale-105'
+                      ? 'bg-purple-500/40 text-purple-100 border border-purple-400/60'
+                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300'
                   }`}
                 >
-                  <span className="relative z-10">Rarity</span>
-                  {sortField === 'rarity' && <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent rounded-lg" />}
+                  Rarity
                 </button>
                 <button
                   onClick={() => setSortField('sellprice')}
-                  className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
                     sortField === 'sellprice'
-                      ? 'bg-gradient-to-br from-purple-500/40 to-purple-600/40 text-purple-100 border border-purple-400/60 shadow-lg shadow-purple-500/30 scale-105'
-                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300 hover:border-purple-400/40 hover:scale-105'
+                      ? 'bg-purple-500/40 text-purple-100 border border-purple-400/60'
+                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300'
                   }`}
                 >
-                  <span className="relative z-10">Sell Price</span>
-                  {sortField === 'sellprice' && <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent rounded-lg" />}
+                  Sell Price
                 </button>
                 <button
                   onClick={() => setSortField('weight')}
-                  className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
                     sortField === 'weight'
-                      ? 'bg-gradient-to-br from-purple-500/40 to-purple-600/40 text-purple-100 border border-purple-400/60 shadow-lg shadow-purple-500/30 scale-105'
-                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300 hover:border-purple-400/40 hover:scale-105'
+                      ? 'bg-purple-500/40 text-purple-100 border border-purple-400/60'
+                      : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-purple-500/20 hover:text-purple-300'
                   }`}
                 >
-                  <span className="relative z-10">Weight</span>
-                  {sortField === 'weight' && <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent rounded-lg" />}
+                  Weight
                 </button>
               </div>
               
               <button
                 onClick={() => setSortAscending(!sortAscending)}
-                className="w-full group relative px-3 py-1.5 rounded-lg text-xs font-semibold bg-black/40 backdrop-blur-sm text-gray-300 border border-purple-500/30 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-purple-500/10 hover:shadow-purple-500/20"
+                className="w-full px-3 py-1.5 rounded-lg text-xs font-semibold bg-black/40 text-gray-300 border border-purple-500/30 hover:bg-purple-500/20 hover:text-purple-200 transition-colors flex items-center justify-center gap-2"
               >
                 <FontAwesomeIcon icon={sortAscending ? faArrowUpAZ : faArrowDownAZ} className="text-purple-400 text-xs" />
                 <span>{sortAscending ? 'Ascending' : 'Descending'}</span>
@@ -296,14 +316,14 @@ export default function Home() {
                 <div className="flex gap-2">
                   <button
                     onClick={() => setSelectedTypes(new Set(allTypes))}
-                    className="text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-all hover:scale-110"
+                    className="text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
                   >
                     All
                   </button>
                   <span className="text-purple-500/50">|</span>
                   <button
                     onClick={() => setSelectedTypes(new Set())}
-                    className="text-xs text-gray-400 hover:text-gray-300 font-semibold transition-all hover:scale-110"
+                    className="text-xs text-gray-400 hover:text-gray-300 font-semibold transition-colors"
                   >
                     None
                   </button>
@@ -314,14 +334,13 @@ export default function Home() {
                   <button
                     key={type}
                     onClick={() => toggleType(type)}
-                    className={`group relative px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 ${
+                    className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
                       selectedTypes.has(type)
-                        ? 'bg-gradient-to-br from-blue-500/40 to-cyan-500/40 text-blue-100 border border-blue-400/60 shadow-lg shadow-blue-500/30 scale-105'
-                        : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-blue-500/20 hover:text-blue-300 hover:border-blue-400/40 hover:scale-105'
+                        ? 'bg-blue-500/40 text-blue-100 border border-blue-400/60'
+                        : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-blue-500/20 hover:text-blue-300'
                     }`}
                   >
-                    <span className="relative z-10">{type}</span>
-                    {selectedTypes.has(type) && <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-transparent rounded-lg" />}
+                    {type}
                   </button>
                 ))}
               </div>
@@ -330,9 +349,9 @@ export default function Home() {
         </aside>
 
         {/* Items Grid */}
-        <main className="flex-1 overflow-y-auto p-8 relative z-10">
+        <main className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 relative z-10">
           <div className="max-w-[1600px] mx-auto">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3 sm:gap-4 lg:gap-6">
               {filteredAndSortedItems.map((item, index) => {
                 const rarity = item.infobox?.rarity || 'Common';
                 const borderColor = rarityColors[rarity] || '#717471';
