@@ -4,7 +4,7 @@
   </a>
 
   [![Website](https://img.shields.io/badge/Website-arcforge.org-blueviolet?style=flat-square&logo=vercel)](https://arcforge.org/)
-  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/user123/myproject)](https://hits.seeyoufarm.com)
+  ![Visitor Count](https://visitor-badge.laobi.icu/badge?page=wangyz1999.arcforge)
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
   [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
