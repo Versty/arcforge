@@ -4,6 +4,8 @@ import { useEffect, useRef, useState, useMemo, Suspense } from 'react';
 import Image from 'next/image';
 import cytoscape from 'cytoscape';
 import { useSearchParams } from 'next/navigation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import itemsRelationData from '../../data/items_relation.json';
 
 // Metadata is handled in layout.tsx for client components
@@ -560,7 +562,7 @@ function CraftingTreeContent() {
                 priority
               />
             </a>
-            <nav className="flex gap-2">
+            <nav className="flex gap-2 items-center">
               <a
                 href="/"
                 className="px-6 py-3 bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 font-medium hover:bg-purple-500/10 hover:text-gray-300 transition-all"
@@ -572,6 +574,15 @@ function CraftingTreeContent() {
                 className="px-6 py-3 bg-purple-500/20 border border-purple-500/50 rounded-lg text-purple-300 font-medium hover:bg-purple-500/30 transition-all"
               >
                 Crafting Graph
+              </a>
+              <a
+                href="https://github.com/wangyz1999/arcforge"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex items-center justify-center bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 hover:bg-purple-500/10 hover:text-gray-300 transition-all"
+                aria-label="View on GitHub"
+              >
+                <FontAwesomeIcon icon={faGithub} className="text-xl" />
               </a>
             </nav>
           </div>
@@ -610,7 +621,7 @@ function CraftingTreeContent() {
             />
           </a>
           
-          <nav className="flex gap-2">
+          <nav className="flex gap-2 items-center">
             <a
               href="/"
               className="px-6 py-3 bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 font-medium hover:bg-purple-500/10 hover:text-gray-300 transition-all"
@@ -622,6 +633,15 @@ function CraftingTreeContent() {
               className="px-6 py-3 bg-purple-500/20 border border-purple-500/50 rounded-lg text-purple-300 font-medium hover:bg-purple-500/30 transition-all"
             >
               Crafting Graph
+            </a>
+            <a
+              href="https://github.com/wangyz1999/arcforge"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 flex items-center justify-center bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 hover:bg-purple-500/10 hover:text-gray-300 transition-all"
+              aria-label="View on GitHub"
+            >
+              <FontAwesomeIcon icon={faGithub} className="text-xl" />
             </a>
           </nav>
         </div>

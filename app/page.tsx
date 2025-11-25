@@ -6,6 +6,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faStar, faArrowUpAZ, faArrowDownAZ, faFilter, faExternalLinkAlt, faDiagramProject, faBars, faCog } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import itemsData from '../data/items_database.json';
 import StructuredData from './components/StructuredData';
 
@@ -290,7 +291,7 @@ export default function Home() {
           </a>
           
             {/* Navigation */}
-            <nav className="flex gap-3">
+            <nav className="flex gap-3 items-center">
               <a
                 href="/"
                 className="group relative px-6 py-3 bg-gradient-to-br from-purple-500/30 to-purple-600/30 border border-purple-400/50 rounded-xl text-purple-200 font-semibold hover:from-purple-500/40 hover:to-purple-600/40 hover:border-purple-400/70 transition-all duration-300 shadow-lg shadow-purple-500/20 hover:shadow-purple-500/30 hover:scale-105"
@@ -303,6 +304,15 @@ export default function Home() {
                 className="group relative px-6 py-3 bg-black/40 backdrop-blur-sm border border-purple-500/30 rounded-xl text-gray-300 font-semibold hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/50 transition-all duration-300 hover:scale-105"
               >
                 <span className="relative z-10">Crafting Graph</span>
+              </a>
+              <a
+                href="https://github.com/wangyz1999/arcforge"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex items-center justify-center bg-black/40 backdrop-blur-sm border border-purple-500/30 rounded-xl text-gray-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/50 transition-all duration-300 hover:scale-105"
+                aria-label="View on GitHub"
+              >
+                <FontAwesomeIcon icon={faGithub} className="text-xl" />
               </a>
             </nav>
         </div>
