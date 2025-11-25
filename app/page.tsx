@@ -85,9 +85,11 @@ const typeToCategory: { [key: string]: string } = {
   'Special': 'Loots',
   'Topside Material': 'Loots',
   'Trinket': 'Loots',
+  'Augment': 'Equipment',
+  'Shield': 'Equipment',
 };
 
-const allCategories = ['Weapon', 'Modification', 'Quick Use', 'Loots'];
+const allCategories = ['Weapon', 'Modification', 'Quick Use', 'Equipment', 'Loots'];
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -102,6 +104,7 @@ export default function Home() {
       Weapon: [],
       Modification: [],
       'Quick Use': [],
+      Equipment: [],
       Loots: [],
     };
     
@@ -246,7 +249,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-400/0 to-purple-600/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a
-                href="/crafting-tree?item=Heavy%20Gun%20Parts"
+                href="/crafting-tree?item=Power%20Rod"
                 className="group relative px-6 py-3 bg-black/40 backdrop-blur-sm border border-purple-500/30 rounded-xl text-gray-300 font-semibold hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/50 transition-all duration-300 hover:scale-105"
               >
                 <span className="relative z-10">Crafting Tree</span>
