@@ -51,7 +51,7 @@ npm start
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Graph Visualization**: [Cytoscape.js](https://js.cytoscape.org/)
 - **Icons**: [Font Awesome](https://fontawesome.com/)
-- **Data Source**: [ARC Raiders Wiki](https://arcraiders.wiki.gg/)
+- **Data Source**: [ARC Raiders Wiki](https://arcraiders.wiki/)
 
 ## Project Structure
 
