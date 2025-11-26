@@ -44,6 +44,15 @@ npm run build
 npm start
 ```
 
+## Data Pipeline
+
+The project includes Python scripts to scrape and process item data from the ARC Raiders wiki:
+
+```bash
+cd script
+python run_pipeline.py
+```
+
 ## Tech Stack
 
 - **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
@@ -77,15 +86,6 @@ arcforge/
     ├── build_relation_graph.py
     ├── adjust_item_data.py
     └── run_pipeline.py
-```
-
-## Data Pipeline
-
-The project includes Python scripts to scrape and process item data from the ARC Raiders wiki:
-
-```bash
-cd script
-python run_pipeline.py
 ```
 
 
