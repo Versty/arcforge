@@ -30,7 +30,7 @@ export const formatEdgeLabel = (edge: Edge): string => {
     relation = 'trade';
   }
   
-  const quantity = edge.quantity && edge.quantity > 1 ? `${edge.quantity}x` : '';
+  const quantity = edge.quantity ? `${edge.quantity}x` : '';
   const levelInfo = edge.input_level || edge.output_level || '';
   
   // Extract price info from dependency for trader edges
