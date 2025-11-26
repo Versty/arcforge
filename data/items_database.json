@@ -14,7 +14,10 @@
       "sellprice": 640,
       "stacksize": 5,
       "shield": null,
-      "usetime": null
+      "usetime": null,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/31/Advanced_ARC_Powercell.png/348px-Advanced_ARC_Powercell.png.webp",
@@ -66,7 +69,12 @@
       "location": "Electrical",
       "weight": 1.0,
       "sellprice": 1750,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "workshop_upgrade",
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/9b/Advanced_Electrical_Components.png/348px-Advanced_Electrical_Components.png.webp",
@@ -134,7 +142,11 @@
       "location": "Mechanical",
       "weight": 1.0,
       "sellprice": 1750,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/25/Advanced_Mechanical_Components.png/348px-Advanced_Mechanical_Components.png.webp",
@@ -206,7 +218,10 @@
       "healing": "1/s",
       "usetime": "1s",
       "duration": "10s",
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/4/47/Agave.png/348px-Agave.png.webp",
@@ -250,7 +265,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/03/Air_Freshener.png/348px-Air_Freshener.png.webp",
@@ -284,7 +302,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/95/Alarm_Clock.png/348px-Alarm_Clock.png.webp",
@@ -339,7 +360,11 @@
       "shield": null,
       "damage": null,
       "persecond": null,
-      "usetime": null
+      "usetime": null,
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/f/f5/Antiseptic.png/348px-Antiseptic.png.webp",
@@ -404,7 +429,11 @@
       "sellprice": 640,
       "stacksize": 10,
       "stamina": "20",
-      "usetime": "1s"
+      "usetime": "1s",
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/f/fc/Apricot.png/348px-Apricot.png.webp",
@@ -450,7 +479,12 @@
       "location": "ARC",
       "weight": 0.25,
       "sellprice": 200,
-      "stacksize": 15
+      "stacksize": 15,
+      "special_types": [
+        "workshop_upgrade",
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/a6/ARC_Alloy.png/348px-ARC_Alloy.png.webp",
@@ -507,7 +541,11 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/d/dc/ARC_Circuitry.png/348px-ARC_Circuitry.png.webp",
@@ -566,7 +604,10 @@
       "location": null,
       "weight": 1.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/e9/ARC_Coolant.png/348px-ARC_Coolant.png.webp",
@@ -614,7 +655,10 @@
       "location": null,
       "weight": 1.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/29/ARC_Flex_Rubber.png/348px-ARC_Flex_Rubber.png.webp",
@@ -662,7 +706,11 @@
       "location": null,
       "weight": 0.3,
       "sellprice": 1000,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/ad/ARC_Motion_Core.png/348px-ARC_Motion_Core.png.webp",
@@ -721,7 +769,10 @@
       "location": null,
       "weight": 1.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/02/ARC_Performance_Steel.png/348px-ARC_Performance_Steel.png.webp",
@@ -774,7 +825,11 @@
       "shield": "20",
       "recharge": "2/s",
       "usetime": "3s",
-      "duration": "10s"
+      "duration": "10s",
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/d/df/ARC_Powercell.png/348px-ARC_Powercell.png.webp",
@@ -798,7 +853,10 @@
       "location": null,
       "weight": 1.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/7/72/ARC_Synthetic_Resin.png/348px-ARC_Synthetic_Resin.png.webp",
@@ -856,7 +914,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/0f/ARC_Thermo_Lining.png/348px-ARC_Thermo_Lining.png.webp",
@@ -950,7 +1011,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/06/Bastion_Cell.png/348px-Bastion_Cell.png.webp",
@@ -1002,7 +1066,11 @@
       "location": "Technological<br>Electrical",
       "weight": 0.25,
       "sellprice": 250,
-      "stacksize": 15
+      "stacksize": 15,
+      "special_types": [
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/6/6d/Battery.png/348px-Battery.png.webp",
@@ -1060,7 +1128,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/f/fa/Bicycle_Pump.png/348px-Bicycle_Pump.png.webp",
@@ -1114,7 +1185,10 @@
       "sellprice": 1000,
       "stacksize": 15,
       "usetime": "1s",
-      "stamina": "25"
+      "stamina": "25",
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/01/Bloated_Tuna_Can.png/348px-Bloated_Tuna_Can.png.webp",
@@ -1232,7 +1306,10 @@
       "location": "ARC",
       "weight": 1.0,
       "sellprice": 5000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/4/46/Bombardier_Cell.png/348px-Bombardier_Cell.png.webp",
@@ -1274,7 +1351,10 @@
       "location": "Residential<br>Old World<br>Commercial",
       "weight": 0.2,
       "sellprice": 7000,
-      "stacksize": 1
+      "stacksize": 1,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/6/63/Breathtaking_Snow_Globe.png/348px-Breathtaking_Snow_Globe.png.webp",
@@ -1305,7 +1385,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/17/Broken_Flashlight.png/348px-Broken_Flashlight.png.webp",
@@ -1367,7 +1450,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/93/Broken_Guidance_System.png/348px-Broken_Guidance_System.png.webp",
@@ -1415,7 +1501,10 @@
       "location": null,
       "weight": 3.0,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/3b/Broken_Handheld_Radio.png/348px-Broken_Handheld_Radio.png.webp",
@@ -1457,7 +1546,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/18/Broken_Taser.png/348px-Broken_Taser.png.webp",
@@ -1651,7 +1743,10 @@
       "location": "Security",
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/a6/Camera_Lens.png/348px-Camera_Lens.png.webp",
@@ -1699,7 +1794,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/58/Candle_Holder.png/348px-Candle_Holder.png.webp",
@@ -1747,7 +1845,10 @@
       "location": "Commercial",
       "weight": 0.25,
       "sellprice": 300,
-      "stacksize": 15
+      "stacksize": 15,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/5f/Canister.png/348px-Canister.png.webp",
@@ -1795,7 +1896,10 @@
       "location": null,
       "weight": 0.5,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/82/Cat_Bed.png/348px-Cat_Bed.png.webp",
@@ -1819,7 +1923,10 @@
       "location": "Mechanical<br>Residential<br>Medical",
       "weight": 0.1,
       "sellprice": 50,
-      "stacksize": 50
+      "stacksize": 50,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/92/Chemicals.png/348px-Chemicals.png.webp",
@@ -1846,7 +1953,10 @@
       "location": null,
       "weight": 0.3,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/33/Coffee_Pot.png/348px-Coffee_Pot.png.webp",
@@ -1870,7 +1980,10 @@
       "location": "Security",
       "weight": 1.0,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/3d/Complex_Gun_Parts.png/348px-Complex_Gun_Parts.png.webp",
@@ -1938,7 +2051,10 @@
       "location": "Mechanical",
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/4/40/Coolant.png/348px-Coolant.png.webp",
@@ -2000,7 +2116,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/7/7f/Cooling_Coil.png/348px-Cooling_Coil.png.webp",
@@ -2052,7 +2171,10 @@
       "location": "Technological",
       "weight": 3.0,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "project"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/13/Cooling_Fan.png/348px-Cooling_Fan.png.webp",
@@ -2104,7 +2226,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/9a/Cracked_Bioscanner.png/348px-Cracked_Bioscanner.png.webp",
@@ -2167,7 +2292,11 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": "1.5m"
+      "radius": "1.5m",
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/f/fc/Crude_Explosives.png/348px-Crude_Explosives.png.webp",
@@ -2224,7 +2353,10 @@
       "location": null,
       "weight": 0.8,
       "sellprice": 270,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/8e/Crumpled_Plastic_Bottle.png/348px-Crumpled_Plastic_Bottle.png.webp",
@@ -2396,7 +2528,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/9e/Damaged_ARC_Motion_Core.png/348px-Damaged_ARC_Motion_Core.png.webp",
@@ -2451,7 +2586,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/58/Damaged_ARC_Powercell.png/348px-Damaged_ARC_Powercell.png.webp",
@@ -2499,7 +2637,10 @@
       "location": "ARC",
       "weight": 1.0,
       "sellprice": 270,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/d/d8/Damaged_Fireball_Burner.png/348px-Damaged_Fireball_Burner.png.webp",
@@ -2537,7 +2678,10 @@
       "location": "Technological",
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/1f/Damaged_Heat_Sink.png/348px-Damaged_Heat_Sink.png.webp",
@@ -2600,7 +2744,10 @@
       "usetime": null,
       "duration": null,
       "radius": null,
-      "recharge": null
+      "recharge": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/96/Damaged_Hornet_Driver.png/348px-Damaged_Hornet_Driver.png.webp",
@@ -2631,7 +2778,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/3a/Damaged_Rocketeer_Driver.png/348px-Damaged_Rocketeer_Driver.png.webp",
@@ -2722,7 +2872,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/d/d6/Damaged_Tick_Pod.png/348px-Damaged_Tick_Pod.png.webp",
@@ -2779,7 +2932,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/e6/Damaged_Wasp_Driver.png/348px-Damaged_Wasp_Driver.png.webp",
@@ -2827,7 +2983,10 @@
       "location": null,
       "weight": 1.0,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/4/4d/Dart_Board.png/348px-Dart_Board.png.webp",
@@ -2861,7 +3020,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/7/7c/Deflated_Football.png/348px-Deflated_Football.png.webp",
@@ -2923,7 +3085,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/37/Degraded_ARC_Rubber.png/348px-Degraded_ARC_Rubber.png.webp",
@@ -2971,7 +3136,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/1a/Diving_Goggles.png/348px-Diving_Goggles.png.webp",
@@ -3019,7 +3187,10 @@
       "location": "Residential",
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/c5/Dog_Collar.png/348px-Dog_Collar.png.webp",
@@ -3081,7 +3252,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/0/0b/Dried-Out_ARC_Resin.png",
@@ -3118,7 +3292,10 @@
       "location": "Commercial<br>Residential",
       "weight": 0.25,
       "sellprice": 300,
-      "stacksize": 15
+      "stacksize": 15,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/4/4e/Duct_Tape.png/348px-Duct_Tape.png.webp",
@@ -3177,7 +3354,12 @@
       "usetime": null,
       "duration": null,
       "radius": null,
-      "recharge": null
+      "recharge": null,
+      "special_types": [
+        "workshop_upgrade",
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/25/Durable_Cloth.png/348px-Durable_Cloth.png.webp",
@@ -3236,7 +3418,12 @@
       "location": "Electrical",
       "weight": 0.5,
       "sellprice": 640,
-      "stacksize": 10
+      "stacksize": 10,
+      "special_types": [
+        "workshop_upgrade",
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/06/Electrical_Components.png/348px-Electrical_Components.png.webp",
@@ -3303,7 +3490,10 @@
       "location": null,
       "weight": 0.2,
       "sellprice": 1000,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/e1/Empty_Wine_Bottle.png/348px-Empty_Wine_Bottle.png.webp",
@@ -3338,7 +3528,11 @@
       "usetime": null,
       "duration": null,
       "radius": null,
-      "recharge": null
+      "recharge": null,
+      "special_types": [
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/1b/Exodus_Modules.png/348px-Exodus_Modules.png.webp",
@@ -3399,7 +3593,10 @@
       "persecond": null,
       "usetime": "1s",
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/91/Expired_Pasta.png/348px-Expired_Pasta.png.webp",
@@ -3423,7 +3620,10 @@
       "location": "Medical",
       "weight": 2.0,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/b/ba/Expired_Respirator.png/348px-Expired_Respirator.png.webp",
@@ -3486,7 +3686,11 @@
       "usetime": null,
       "duration": null,
       "radius": null,
-      "recharge": null
+      "recharge": null,
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/11/Explosive_Compound.png/348px-Explosive_Compound.png.webp",
@@ -3552,7 +3756,11 @@
       "stacksize": 50,
       "usetime": "1s",
       "healing": "0.4/s",
-      "duration": "25s"
+      "duration": "25s",
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/2b/Fabric.png/348px-Fabric.png.webp",
@@ -3579,7 +3787,10 @@
       "location": "Residential",
       "weight": 0.3,
       "sellprice": 640,
-      "stacksize": 15
+      "stacksize": 15,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/0/0c/Faded_Photograph.png",
@@ -3639,7 +3850,10 @@
       "location": "Residential<br>Old World",
       "weight": 0.2,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/4/44/Film_Reel.png/348px-Film_Reel.png.webp",
@@ -3663,7 +3877,10 @@
       "location": null,
       "weight": 0.2,
       "sellprice": 3000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/9/94/Fine_Wristwatch.png",
@@ -3690,7 +3907,10 @@
       "stacksize": 3,
       "damage": "5/s",
       "duration": "10s",
-      "radius": "2m"
+      "radius": "2m",
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/8b/Fireball_Burner.png/348px-Fireball_Burner.png.webp",
@@ -3739,7 +3959,10 @@
       "location": "Exodus",
       "weight": 1.5,
       "sellprice": 3000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/36/Frequency_Modulation_Box.png/348px-Frequency_Modulation_Box.png.webp",
@@ -3791,7 +4014,10 @@
       "location": "Technological",
       "weight": 3.0,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/29/Fried_Motherboard.png/348px-Fried_Motherboard.png.webp",
@@ -3843,7 +4069,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/7/74/Frying_Pan.png/348px-Frying_Pan.png.webp",
@@ -3891,7 +4120,10 @@
       "location": null,
       "weight": 0.8,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/88/Garlic_Press.png/348px-Garlic_Press.png.webp",
@@ -3944,7 +4176,10 @@
       "shield": null,
       "damage": null,
       "persecond": null,
-      "usetime": null
+      "usetime": null,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/0d/Great_Mullein.png/348px-Great_Mullein.png.webp",
@@ -3993,7 +4228,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/0f/Headphones.png/348px-Headphones.png.webp",
@@ -4052,7 +4290,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/33/Heavy_Gun_Parts.png/348px-Heavy_Gun_Parts.png.webp",
@@ -4124,7 +4365,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": "6m"
+      "radius": "6m",
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/b/bb/Hornet_Driver.png/348px-Hornet_Driver.png.webp",
@@ -4176,7 +4420,10 @@
       "location": null,
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/36/Household_Cleaner.png/348px-Household_Cleaner.png.webp",
@@ -4224,7 +4471,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "project"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/4/4b/Humidifier.png/348px-Humidifier.png.webp",
@@ -4276,7 +4526,10 @@
       "location": null,
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/c9/Ice_Cream_Scooper.png/348px-Ice_Cream_Scooper.png.webp",
@@ -4334,7 +4587,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/a0/Impure_ARC_Coolant.png/348px-Impure_ARC_Coolant.png.webp",
@@ -4382,7 +4638,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/c9/Industrial_Battery.png/348px-Industrial_Battery.png.webp",
@@ -4434,7 +4693,10 @@
       "location": "Industrial",
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/6/66/Industrial_Charger.png/348px-Industrial_Charger.png.webp",
@@ -4486,7 +4748,10 @@
       "location": "Industrial",
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/38/Industrial_Magnet.png/348px-Industrial_Magnet.png.webp",
@@ -4538,7 +4803,10 @@
       "location": "Exodus",
       "weight": 1.5,
       "stacksize": 3,
-      "sellprice": 6000
+      "sellprice": 6000,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/e7/Ion_Sputter.png/348px-Ion_Sputter.png.webp",
@@ -4595,7 +4863,10 @@
       "shield": null,
       "damage": null,
       "persecond": null,
-      "usetime": null
+      "usetime": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/e5/Laboratory_Reagents.png/348px-Laboratory_Reagents.png.webp",
@@ -4647,7 +4918,10 @@
       "location": "Residential<br>Commercial",
       "weight": 0.2,
       "sellprice": 10000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/15/Lance%27s_Mixtape_%285th_Edition%29.png/348px-Lance%27s_Mixtape_%285th_Edition%29.png.webp",
@@ -4681,7 +4955,11 @@
       "persecond": null,
       "usetime": "1s",
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/35/Lemon.png/348px-Lemon.png.webp",
@@ -4730,7 +5008,11 @@
       "sellprice": 5000,
       "stacksize": 3,
       "damage": 100.0,
-      "radius": "10m"
+      "radius": "10m",
+      "special_types": [
+        "workshop_upgrade",
+        "project"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/a0/Leaper_Pulse_Unit.png/348px-Leaper_Pulse_Unit.png.webp",
@@ -4782,7 +5064,10 @@
       "location": "Electrical",
       "weight": 0.2,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "project"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/2c/Light_Bulb.png/348px-Light_Bulb.png.webp",
@@ -4814,7 +5099,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/c9/Light_Gun_Parts.png/348px-Light_Gun_Parts.png.webp",
@@ -4875,7 +5163,10 @@
       "location": "Exodus",
       "weight": 0.25,
       "sellprice": 300,
-      "stacksize": 15
+      "stacksize": 15,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/8c/Magnet.png/348px-Magnet.png.webp",
@@ -4933,7 +5224,11 @@
       "usetime": null,
       "duration": null,
       "radius": null,
-      "recharge": null
+      "recharge": null,
+      "special_types": [
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/5e/Magnetic_Accelerator.png/348px-Magnetic_Accelerator.png.webp",
@@ -5107,7 +5402,11 @@
       "location": "Mechanical",
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 10
+      "stacksize": 10,
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/94/Mechanical_Components.png/348px-Mechanical_Components.png.webp",
@@ -5181,7 +5480,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/9a/Medium_Gun_Parts.png/348px-Medium_Gun_Parts.png.webp",
@@ -5243,7 +5545,10 @@
       "location": "Mechanical<br>Electrical",
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/6/62/Metal_Brackets.png/348px-Metal_Brackets.png.webp",
@@ -5291,7 +5596,12 @@
       "location": "Mechanical<br>Industrial<br>Electrical<br>Technological",
       "weight": 0.1,
       "sellprice": 75,
-      "stacksize": 50
+      "stacksize": 50,
+      "special_types": [
+        "workshop_upgrade",
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/89/Metal_Parts.png/348px-Metal_Parts.png.webp",
@@ -5318,7 +5628,10 @@
       "weight": 1.5,
       "location": "Exodus",
       "stacksize": 3,
-      "sellprice": 3000
+      "sellprice": 3000,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/2c/Microscope.png/348px-Microscope.png.webp",
@@ -5370,7 +5683,10 @@
       "location": "Exodus",
       "weight": 3.0,
       "stacksize": 3,
-      "sellprice": 3000
+      "sellprice": 3000,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/9f/Mini_Centrifuge.png/348px-Mini_Centrifuge.png.webp",
@@ -5427,7 +5743,10 @@
       "shield": null,
       "damage": null,
       "persecond": null,
-      "usetime": null
+      "usetime": null,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/0f/Mod_Components.png/348px-Mod_Components.png.webp",
@@ -5497,7 +5816,10 @@
       "stacksize": 10,
       "healing": "1/s",
       "usetime": "1s",
-      "duration": "10s"
+      "duration": "10s",
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/6/64/Moss.png/348px-Moss.png.webp",
@@ -5554,7 +5876,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/0f/Motor.png/348px-Motor.png.webp",
@@ -5614,7 +5939,10 @@
       "persecond": null,
       "usetime": "1s",
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/8c/Mushroom.png/348px-Mushroom.png.webp",
@@ -5648,7 +5976,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/90/Music_Album.png/348px-Music_Album.png.webp",
@@ -5682,7 +6013,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/7/74/Music_Box.png/348px-Music_Box.png.webp",
@@ -5711,7 +6045,10 @@
       "shield": null,
       "damage": null,
       "persecond": null,
-      "usetime": null
+      "usetime": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/51/Number_Plate.png/348px-Number_Plate.png.webp",
@@ -5759,7 +6096,10 @@
       "location": "Mechanical",
       "weight": 0.25,
       "sellprice": 300,
-      "stacksize": 15
+      "stacksize": 15,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/06/Oil.png/348px-Oil.png.webp",
@@ -5817,7 +6157,10 @@
       "persecond": null,
       "usetime": "1s",
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/f/f3/Olives.png/348px-Olives.png.webp",
@@ -5866,7 +6209,10 @@
       "location": "Old World",
       "weight": 0.3,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/53/Painted_Box.png/348px-Painted_Box.png.webp",
@@ -5919,7 +6265,11 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/c9/Plastic_Parts.png/348px-Plastic_Parts.png.webp",
@@ -5956,7 +6306,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/e2/Playing_Cards.png/348px-Playing_Cards.png.webp",
@@ -5989,7 +6342,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/6/6e/Polluted_Air_Filter.png/348px-Polluted_Air_Filter.png.webp",
@@ -6041,7 +6397,10 @@
       "location": "ARC",
       "weight": 0.5,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/c6/Pop_Trigger.png/348px-Pop_Trigger.png.webp",
@@ -6103,7 +6462,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/5f/Portable_TV.png/348px-Portable_TV.png.webp",
@@ -6165,7 +6527,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/c0/Pottery.png/348px-Pottery.png.webp",
@@ -6199,7 +6564,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/7/77/Power_Bank.png/348px-Power_Bank.png.webp",
@@ -6256,7 +6624,10 @@
       "shield": null,
       "damage": null,
       "persecond": null,
-      "usetime": null
+      "usetime": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/f/f8/Power_Cable.png/348px-Power_Cable.png.webp",
@@ -6304,7 +6675,10 @@
       "location": "Exodus",
       "weight": 1.0,
       "sellprice": 5500,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/31/Power_Rod.png/348px-Power_Rod.png.webp",
@@ -6381,7 +6755,11 @@
       "persecond": null,
       "usetime": "1s",
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/80/Prickly_Pear.png/348px-Prickly_Pear.png.webp",
@@ -6429,7 +6807,10 @@
       "location": "Technological",
       "weight": 0.2,
       "sellprice": 500,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/4/4e/Processor.png/348px-Processor.png.webp",
@@ -6481,7 +6862,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/04/Projector.png/348px-Projector.png.webp",
@@ -6543,7 +6927,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/6/6b/Queen_Reactor.png/348px-Queen_Reactor.png.webp",
@@ -6595,7 +6982,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/31/Radio.png/348px-Radio.png.webp",
@@ -6647,7 +7037,10 @@
       "location": "Exodus",
       "weight": 1.5,
       "stacksize": 3,
-      "sellprice": 3000
+      "sellprice": 3000,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/b/b6/Radio_Relay.png/348px-Radio_Relay.png.webp",
@@ -6746,7 +7139,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/1a/Red_Coral_Jewelry.png/348px-Red_Coral_Jewelry.png.webp",
@@ -6770,7 +7166,10 @@
       "location": null,
       "weight": 0.8,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/f/f4/Remote_Control.png/348px-Remote_Control.png.webp",
@@ -6832,7 +7231,10 @@
       "persecond": null,
       "usetime": "1s",
       "duration": "10s",
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/2c/Resin.png/348px-Resin.png.webp",
@@ -6908,7 +7310,10 @@
       "location": "Exodus",
       "weight": 3.0,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/8a/Rocket_Thruster.png/348px-Rocket_Thruster.png.webp",
@@ -6960,7 +7365,10 @@
       "location": null,
       "weight": 1.0,
       "sellprice": 5000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/ef/Rocketeer_Driver.png/348px-Rocketeer_Driver.png.webp",
@@ -7023,7 +7431,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/57/Roots.png/348px-Roots.png.webp",
@@ -7060,7 +7471,10 @@
       "location": "Commercial<br>Residential",
       "weight": 0.3,
       "sellprice": 500,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/b/b4/Rope.png/348px-Rope.png.webp",
@@ -7108,7 +7522,10 @@
       "location": "Old World<br>Residential",
       "weight": 0.3,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/7/77/Rosary.png/348px-Rosary.png.webp",
@@ -7135,7 +7552,10 @@
       "sellprice": 3000,
       "input1": "Rotary Encoder",
       "recycling1": "2 Electrical Components + 2 Processor",
-      "salvaging1": "2 Processor"
+      "salvaging1": "2 Processor",
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/e/e4/Rotary_Encoder.png",
@@ -7166,7 +7586,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/d/df/Rubber_Duck.png/348px-Rubber_Duck.png.webp",
@@ -7190,7 +7613,10 @@
       "location": "Electrical",
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/1a/Rubber_Pad.png/348px-Rubber_Pad.png.webp",
@@ -7238,7 +7664,12 @@
       "location": "Mechanical<br>Industrial<br>Electrical",
       "weight": 0.1,
       "sellprice": 50,
-      "stacksize": 50
+      "stacksize": 50,
+      "special_types": [
+        "workshop_upgrade",
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/93/Rubber_Parts.png/348px-Rubber_Parts.png.webp",
@@ -7265,7 +7696,10 @@
       "location": null,
       "weight": 3.0,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/a6/Ruined_Accordion.png/348px-Ruined_Accordion.png.webp",
@@ -7370,7 +7804,10 @@
       "location": "Security",
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/ee/Ruined_Baton.png/348px-Ruined_Baton.png.webp",
@@ -7422,7 +7859,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/7/7c/Ruined_Handcuffs.png/348px-Ruined_Handcuffs.png.webp",
@@ -7470,7 +7910,10 @@
       "location": "Exodus",
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/5c/Ruined_Parachute.png/348px-Ruined_Parachute.png.webp",
@@ -7508,7 +7951,10 @@
       "location": "Security",
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/c2/Ruined_Tactical_Vest.png/348px-Ruined_Tactical_Vest.png.webp",
@@ -7560,7 +8006,10 @@
       "location": "Security",
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/cb/Ruined_Riot_Shield.png/348px-Ruined_Riot_Shield.png.webp",
@@ -7612,7 +8061,10 @@
       "location": "Mechanical<br>Industrial",
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/b/bf/Rusted_Bolts.png/348px-Rusted_Bolts.png.webp",
@@ -7670,7 +8122,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/c/cf/Rusted_Gear.png",
@@ -7731,7 +8186,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/1/1a/Rusted_Shut_Medical_Kit.png/348px-Rusted_Shut_Medical_Kit.png.webp",
@@ -7783,7 +8241,10 @@
       "location": "Mechanical<br>Industrial",
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/30/Rusted_Tools.png/348px-Rusted_Tools.png.webp",
@@ -7835,7 +8296,10 @@
       "location": "ARC",
       "weight": 1.0,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/3/33/Rusty_ARC_Steel.png",
@@ -7882,7 +8346,10 @@
       "location": "Exodus",
       "weight": 1.5,
       "stacksize": 3,
-      "sellprice": 3000
+      "sellprice": 3000,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/d/d8/Sample_Cleaner.png/348px-Sample_Cleaner.png.webp",
@@ -7934,7 +8401,11 @@
       "location": "Technological<br>Security",
       "weight": 0.3,
       "sellprice": 500,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/9c/Sensors.png/348px-Sensors.png.webp",
@@ -7997,7 +8468,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/91/Sentinel_Firing_Core.png/348px-Sentinel_Firing_Core.png.webp",
@@ -8050,7 +8524,10 @@
       "location": "Exodus",
       "weight": 1.5,
       "stacksize": 3,
-      "sellprice": 3000
+      "sellprice": 3000,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/d/de/Signal_Amplifier.png/348px-Signal_Amplifier.png.webp",
@@ -8102,7 +8579,10 @@
       "location": "Old World<br>Commercial<br>Residential",
       "weight": 0.3,
       "sellprice": 3000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/90/Silver_Teaspoon_Set.png/348px-Silver_Teaspoon_Set.png.webp",
@@ -8126,7 +8606,10 @@
       "location": "Raider<br>Security",
       "weight": 0.3,
       "sellprice": 330,
-      "stacksize": 10
+      "stacksize": 10,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/7/77/Simple-gun-parts.png/348px-Simple-gun-parts.png.webp",
@@ -8186,7 +8669,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/e5/Snitch_Scanner.png/348px-Snitch_Scanner.png.webp",
@@ -8332,7 +8818,10 @@
       "location": "Commercial",
       "weight": 0.3,
       "sellprice": 500,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/e/ee/Speaker_Component.png/348px-Speaker_Component.png.webp",
@@ -8384,7 +8873,10 @@
       "location": "Exodus",
       "weight": 1.5,
       "sellprice": 3000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/0e/Spectrometer.png/348px-Spectrometer.png.webp",
@@ -8436,7 +8928,10 @@
       "location": "Exodus",
       "weight": 1.5,
       "sellprice": 3500,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/0/0a/Spectrum_Analyzer.png/348px-Spectrum_Analyzer.png.webp",
@@ -8488,7 +8983,10 @@
       "location": "Commercial<br>Residential",
       "weight": 2.0,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/26/Spring_Cushion.png/348px-Spring_Cushion.png.webp",
@@ -8551,7 +9049,10 @@
       "usetime": null,
       "duration": null,
       "radius": null,
-      "recharge": null
+      "recharge": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/58/Spotter_Relay.png/348px-Spotter_Relay.png.webp",
@@ -8594,7 +9095,10 @@
       "location": "Old World<br>Residential",
       "weight": 0.3,
       "sellprice": 3000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/8a/Statuette.png/348px-Statuette.png.webp",
@@ -8623,7 +9127,11 @@
       "shield": null,
       "damage": null,
       "persecond": null,
-      "usetime": null
+      "usetime": null,
+      "special_types": [
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/d/db/Steel_Spring.png/348px-Steel_Spring.png.webp",
@@ -8784,7 +9292,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/a9/Surveyor_Vault.png/348px-Surveyor_Vault.png.webp",
@@ -8840,7 +9351,10 @@
       "sellprice": 700,
       "stacksize": 5,
       "damage": 80.0,
-      "radius": "7.5m"
+      "radius": "7.5m",
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/8/8e/Synthesized_Fuel.png/348px-Synthesized_Fuel.png.webp",
@@ -9005,7 +9519,10 @@
       "location": "Residential",
       "weight": 0.8,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/c4/Tattered_Clothes.png/348px-Tattered_Clothes.png.webp",
@@ -9053,7 +9570,10 @@
       "location": "Exodus",
       "weight": 1.5,
       "stacksize": 3,
-      "sellprice": 3000
+      "sellprice": 3000,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/a8/Telemetry_Transceiver.png/348px-Telemetry_Transceiver.png.webp",
@@ -9105,7 +9625,10 @@
       "location": "Residential",
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/9/9a/Thermostat.png",
@@ -9156,7 +9679,10 @@
       "location": "ARC",
       "weight": 0.25,
       "sellprice": 640,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/95/Tick_Pod.png/348px-Tick_Pod.png.webp",
@@ -9208,7 +9734,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/5/50/Toaster.png/348px-Toaster.png.webp",
@@ -9271,7 +9800,10 @@
       "usetime": null,
       "duration": null,
       "radius": null,
-      "recharge": null
+      "recharge": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/c/cc/Torn_Book.png/348px-Torn_Book.png.webp",
@@ -9295,7 +9827,10 @@
       "location": "Residential<br>Medical",
       "weight": 2.0,
       "sellprice": 640,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/af/Torn_Blanket.png/348px-Torn_Blanket.png.webp",
@@ -9343,7 +9878,10 @@
       "location": "Exodus",
       "weight": 3.0,
       "sellprice": 2000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/f/f1/Turbo_Pump.png/348px-Turbo_Pump.png.webp",
@@ -9406,7 +9944,10 @@
       "usetime": null,
       "duration": null,
       "radius": null,
-      "recharge": null
+      "recharge": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/37/Unusable_Weapon.png/348px-Unusable_Weapon.png.webp",
@@ -9468,7 +10009,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/6/6e/Vase.png/348px-Vase.png.webp",
@@ -9502,7 +10046,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": null
+      "radius": null,
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/a/a4/Very_Comfortable_Pillow.png/348px-Very_Comfortable_Pillow.png.webp",
@@ -9537,7 +10084,10 @@
       "usetime": null,
       "duration": null,
       "radius": null,
-      "recharge": null
+      "recharge": null,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/2/26/Volcanic_Rock.png/348px-Volcanic_Rock.png.webp",
@@ -9561,7 +10111,10 @@
       "location": "Technological",
       "weight": 0.3,
       "sellprice": 500,
-      "stacksize": 5
+      "stacksize": 5,
+      "special_types": [
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/9/9a/Voltage-converter.png/348px-Voltage-converter.png.webp",
@@ -9624,7 +10177,10 @@
       "persecond": null,
       "usetime": null,
       "duration": null,
-      "radius": "5m"
+      "radius": "5m",
+      "special_types": [
+        "workshop_upgrade"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/30/Wasp_Driver.png/348px-Wasp_Driver.png.webp",
@@ -9676,7 +10232,10 @@
       "location": null,
       "weight": 2.0,
       "sellprice": 1000,
-      "stacksize": 3
+      "stacksize": 3,
+      "special_types": [
+        "safe_to_recycle"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/4/48/Water_Filter.png/348px-Water_Filter.png.webp",
@@ -9780,7 +10339,11 @@
       "location": "Electrical<br>Technological",
       "weight": 0.25,
       "sellprice": 200,
-      "stacksize": 15
+      "stacksize": 15,
+      "special_types": [
+        "project",
+        "crafting_material"
+      ]
     },
     "image_urls": {
       "thumb": "https://arcraiders.wiki/w/images/thumb/3/39/Wires.png/348px-Wires.png.webp",

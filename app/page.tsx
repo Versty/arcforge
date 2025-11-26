@@ -21,6 +21,7 @@ interface Item {
     rarity: string;
     quote?: string;
     type?: string;
+    special_types?: string[];
     weight?: number;
     sellprice?: number | number[];
     [key: string]: any;
@@ -89,7 +90,7 @@ const typeToCategory: { [key: string]: string } = {
   'Nature': 'Loots',
   'Recyclable': 'Loots',
   'Refined Material': 'Loots',
-  'Special': 'Loots',
+  'Special': 'Weapon',
   'Topside Material': 'Loots',
   'Trinket': 'Loots',
   'Augment': 'Equipment',
@@ -97,7 +98,14 @@ const typeToCategory: { [key: string]: string } = {
   'Ammo': 'Equipment',
 };
 
-const allCategories = ['Weapon', 'Modification', 'Quick Use', 'Equipment', 'Loots'];
+const allCategories = ['Special', 'Weapon', 'Modification', 'Quick Use', 'Equipment', 'Loots'];
+
+const specialTypeLabels: { [key: string]: string } = {
+  'workshop_upgrade': 'Workshop Upgrade',
+  'project': 'Project',
+  'safe_to_recycle': 'Safe to Recycle',
+  'crafting_material': 'Crafting Material',
+};
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -113,6 +121,7 @@ export default function Home() {
   // Get all unique types grouped by category
   const typesByCategory = useMemo(() => {
     const grouped: { [category: string]: string[] } = {
+      Special: [],
       Weapon: [],
       Modification: [],
       'Quick Use': [],
@@ -120,6 +129,7 @@ export default function Home() {
       Loots: [],
     };
     
+    // Add regular types
     const typesSet = new Set<string>();
     (itemsData as Item[]).forEach((item) => {
       if (item.infobox?.type) {
@@ -134,9 +144,20 @@ export default function Home() {
       }
     });
     
+    // Add special types
+    const specialTypesSet = new Set<string>();
+    (itemsData as Item[]).forEach((item) => {
+      if (item.infobox?.special_types) {
+        item.infobox.special_types.forEach((st) => specialTypesSet.add(st));
+      }
+    });
+    grouped['Special'] = Array.from(specialTypesSet).sort();
+    
     // Sort types within each category
     Object.keys(grouped).forEach((category) => {
-      grouped[category].sort();
+      if (category !== 'Special') {
+        grouped[category].sort();
+      }
     });
     
     return grouped;
@@ -186,10 +207,44 @@ export default function Home() {
       });
     }
 
-    // Filter by selected types
+    // Filter by selected types (includes both regular types and special types)
     if (selectedTypes.size > 0) {
+      // Separate regular types from special types
+      const specialTypes = typesByCategory['Special'] || [];
+      const regularTypes = new Set<string>();
+      const selectedSpecialTypes = new Set<string>();
+      
+      selectedTypes.forEach(type => {
+        if (specialTypes.includes(type)) {
+          selectedSpecialTypes.add(type);
+        } else {
+          regularTypes.add(type);
+        }
+      });
+      
       items = items.filter((item) => {
-        return item.infobox?.type && selectedTypes.has(item.infobox.type);
+        let matchesRegularType = false;
+        let matchesSpecialType = false;
+        
+        // Check regular type
+        if (regularTypes.size > 0) {
+          matchesRegularType = !!(item.infobox?.type && regularTypes.has(item.infobox.type));
+        }
+        
+        // Check special types
+        if (selectedSpecialTypes.size > 0) {
+          matchesSpecialType = !!(item.infobox?.special_types?.some(st => selectedSpecialTypes.has(st)));
+        }
+        
+        // If both regular and special types are selected, item must match both
+        // If only one type of filter is active, item must match that one
+        if (regularTypes.size > 0 && selectedSpecialTypes.size > 0) {
+          return matchesRegularType && matchesSpecialType;
+        } else if (regularTypes.size > 0) {
+          return matchesRegularType;
+        } else {
+          return matchesSpecialType;
+        }
       });
     }
 
@@ -238,7 +293,7 @@ export default function Home() {
     });
 
     return items;
-  }, [searchQuery, sortField, sortAscending, selectedTypes]);
+  }, [searchQuery, sortField, sortAscending, selectedTypes, typesByCategory]);
 
   const getSellPrice = (price: number | number[] | null | undefined): string => {
     if (!price) return 'N/A';
@@ -492,7 +547,13 @@ export default function Home() {
                         <button
                           onClick={() => toggleCategory(category)}
                           className={`text-sm font-bold transition-colors hover:text-purple-300 cursor-pointer ${
-                            allSelected 
+                            category === 'Special'
+                              ? allSelected 
+                                ? 'text-emerald-300' 
+                                : someSelected 
+                                ? 'text-emerald-400/70' 
+                                : 'text-gray-400'
+                              : allSelected 
                               ? 'text-blue-300' 
                               : someSelected 
                               ? 'text-blue-400/70' 
@@ -505,19 +566,31 @@ export default function Home() {
                       
                       {/* Types List */}
                       <div className="flex flex-wrap gap-1.5 mb-1">
-                        {types.map((type) => (
-                          <button
-                            key={type}
-                            onClick={() => toggleType(type)}
-                            className={`px-2.5 py-1 rounded-md text-xs font-semibold transition-colors ${
-                              selectedTypes.has(type)
-                                ? 'bg-blue-500/40 text-blue-100 border border-blue-400/60'
-                                : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-blue-500/20 hover:text-blue-300'
-                            }`}
-                          >
-                            {type.replace('Modification-', '').replace('Quick Use-', '')}
-                          </button>
-                        ))}
+                        {types.map((type) => {
+                          const displayName = category === 'Special' 
+                            ? (specialTypeLabels[type] || type)
+                            : type.replace('Modification-', '').replace('Quick Use-', '');
+                          
+                          const isSpecial = category === 'Special';
+                          
+                          return (
+                            <button
+                              key={type}
+                              onClick={() => toggleType(type)}
+                              className={`px-2.5 py-1 rounded-md text-xs font-semibold transition-colors ${
+                                selectedTypes.has(type)
+                                  ? isSpecial
+                                    ? 'bg-emerald-500/40 text-emerald-100 border border-emerald-400/60'
+                                    : 'bg-blue-500/40 text-blue-100 border border-blue-400/60'
+                                  : isSpecial
+                                    ? 'bg-emerald-950/20 text-gray-400 border border-emerald-500/15 hover:bg-emerald-500/20 hover:text-emerald-300 hover:border-emerald-400/30'
+                                    : 'bg-black/40 text-gray-400 border border-purple-500/20 hover:bg-blue-500/20 hover:text-blue-300'
+                              }`}
+                            >
+                              {displayName}
+                            </button>
+                          );
+                        })}
                       </div>
                     </div>
                   );

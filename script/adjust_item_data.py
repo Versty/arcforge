@@ -10,6 +10,7 @@ def adjust_item_data():
     """Apply manual corrections to item database."""
     data_dir = Path(__file__).parent.parent / "data"
     database_file = data_dir / "items_database.json"
+    special_types_file = data_dir / "special_item_types.json"
     
     if not database_file.exists():
         print(f"Error: {database_file} not found!")
@@ -17,6 +18,19 @@ def adjust_item_data():
     
     with open(database_file, 'r', encoding='utf-8') as f:
         items_database = json.load(f)
+    
+    # Load special item types
+    special_types_map = {}
+    if special_types_file.exists():
+        with open(special_types_file, 'r', encoding='utf-8') as f:
+            special_types_data = json.load(f)
+            
+        # Build a reverse map: item_name -> [special_types]
+        for special_type, item_names in special_types_data.items():
+            for item_name in item_names:
+                if item_name not in special_types_map:
+                    special_types_map[item_name] = []
+                special_types_map[item_name].append(special_type)
     
     # Define adjustments
     type_adjustments = {
@@ -55,6 +69,11 @@ def adjust_item_data():
             if item['name'] in names:
                 item['infobox']['type'] = item_type
                 updated += 1
+        
+        # Special type adjustments
+        if item['name'] in special_types_map:
+            item['infobox']['special_types'] = special_types_map[item['name']]
+            updated += 1
         
         # Price adjustments
         if item['name'] in price_adjustments:
