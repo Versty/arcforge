@@ -103,7 +103,7 @@ export const cytoscapeStyles = [
       'source-endpoint': '90deg',
       'target-endpoint': '270deg',
       'label': 'data(label)',
-      'font-size': '9px',
+      'font-size': '11px',
       'line-height': 1.6,
       'color': '#c4b5fd',
       'text-outline-color': '#07020b',

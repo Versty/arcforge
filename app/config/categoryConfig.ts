@@ -40,8 +40,10 @@ export const allCategories = ['Special', 'Weapon', 'Modification', 'Quick Use', 
 
 export const specialTypeLabels: { [key: string]: string } = {
   'workshop_upgrade': 'Workshop Upgrade',
-  'project': 'Project',
+  'expedition': 'Expedition',
   'safe_to_recycle': 'Safe to Recycle',
   'crafting_material': 'Crafting Material',
+  'quest': 'Quest',
+  'scrappy': 'Scrappy',
 };
 

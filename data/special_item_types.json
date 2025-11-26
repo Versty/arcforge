@@ -49,7 +49,7 @@
         "Very Comfortable Pillow",
         "Wasp Driver"
     ],
-    "project": [
+    "expedition": [
         "Advanced Electrical Components",
         "ARC Alloy",
         "Battery",
@@ -227,5 +227,39 @@
         "Steel Spring",
         "Voltage Converter",
         "Wires"
+    ],
+    "quest": [
+        "Antiseptic",
+        "ARC Alloy",
+        "Battery",
+        "Celeste's Journal",
+        "Durable Cloth",
+        "Fertilizer",
+        "First Wave Compass",
+        "First Wave Rations",
+        "First Wave Tape",
+        "Flow Controller",
+        "Great Mullein",
+        "Hornet Driver",
+        "Leaper Pulse Unit",
+        "Magnetron",
+        "Power Rod",
+        "Rocketeer Driver",
+        "Snitch Scanner",
+        "Surveyor Vault",
+        "Syringe",
+        "Wasp Driver",
+        "Water Pump",
+        "Wires"
+    ],
+    "scrappy": [
+        "Apricot",
+        "Cat Bed",
+        "Dog Collar",
+        "Lemon",
+        "Mushroom",
+        "Olives",
+        "Prickly Pear",
+        "Very Comfortable Pillow"
     ]
 }
