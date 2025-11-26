@@ -268,13 +268,17 @@ def process_recycling(item_data: Dict[str, Any], item_name: str) -> List[Dict[st
 
 def create_node(
     name: str,
+    node_type: str = "item",
     wiki_url: str = None,
     source_url: str = None,
     infobox: Dict[str, Any] = None,
     image_urls: Dict[str, str] = None
 ) -> Dict[str, Any]:
     """Create a node with basic info."""
-    node = {"name": name}
+    node = {
+        "name": name,
+        "node_type": node_type
+    }
     
     if wiki_url:
         node["wiki_url"] = wiki_url
@@ -290,14 +294,14 @@ def create_node(
     return node
 
 
-def build_relation_graph(items_database: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+def build_relation_graph(items_database: List[Dict[str, Any]], traders_database: List[Dict[str, Any]] = None) -> Dict[str, Dict[str, Any]]:
     """
-    Build relation graph from items database.
-    Returns a dictionary mapping item name to node data.
+    Build relation graph from items database and traders database.
+    Returns a dictionary mapping item/trader name to node data.
     """
     nodes = {}
     
-    # First pass: create all nodes (one per base item, not per level)
+    # First pass: create all item nodes (one per base item, not per level)
     for item_data in items_database:
         base_name = get_base_item_name(item_data)
         if not base_name:
@@ -307,6 +311,7 @@ def build_relation_graph(items_database: List[Dict[str, Any]]) -> Dict[str, Dict
             # Create node with basic info
             nodes[base_name] = create_node(
                 name=base_name,
+                node_type="item",
                 wiki_url=item_data.get("wiki_url"),
                 source_url=item_data.get("source_url"),
                 infobox=item_data.get("infobox"),
@@ -338,6 +343,82 @@ def build_relation_graph(items_database: List[Dict[str, Any]]) -> Dict[str, Dict
         
         # Merge edges with existing ones
         nodes[base_name]["edges"].extend(edges)
+    
+    # Process traders if provided
+    if traders_database:
+        for trader_data in traders_database:
+            trader_name = trader_data.get("name")
+            if not trader_name:
+                continue
+            
+            # Create trader node
+            nodes[trader_name] = create_node(
+                name=trader_name,
+                node_type="trader",
+                wiki_url=trader_data.get("wiki_url"),
+                source_url=trader_data.get("source_url"),
+                image_urls=trader_data.get("image_urls")
+            )
+            
+            # Add edges from trader to items in shop
+            shop = trader_data.get("shop", [])
+            for item in shop:
+                item_name = item.get("name")
+                if not item_name:
+                    continue
+                
+                # Build dependency list with price/stock info
+                dependency = []
+                
+                # Add price information
+                if "price" in item or "currency" in item:
+                    price_dep = {"type": "price"}
+                    if "price" in item:
+                        price_dep["amount"] = item["price"]
+                    if "currency" in item:
+                        price_dep["currency"] = item["currency"]
+                    dependency.append(price_dep)
+                
+                # Add stock information
+                if "stock" in item or "is_limited" in item:
+                    stock_dep = {"type": "stock"}
+                    if "stock" in item:
+                        stock_dep["value"] = item["stock"]
+                    if "is_limited" in item:
+                        stock_dep["is_limited"] = item["is_limited"]
+                    dependency.append(stock_dep)
+                
+                # Add ammo count information
+                if "ammo_count" in item:
+                    dependency.append({
+                        "type": "ammo_count",
+                        "value": item["ammo_count"]
+                    })
+                
+                # Create edge from trader to item
+                edge = create_edge(
+                    name=item_name,
+                    direction="out",
+                    relation="trader",
+                    quantity=1,
+                    dependency=dependency if dependency else None
+                )
+                
+                nodes[trader_name]["edges"].append(edge)
+                
+                # Add reverse edge from item to trader (sold_by)
+                if item_name not in nodes:
+                    nodes[item_name] = create_node(name=item_name, node_type="item")
+                
+                reverse_edge = create_edge(
+                    name=trader_name,
+                    direction="in",
+                    relation="sold_by",
+                    quantity=1,
+                    dependency=dependency if dependency else None
+                )
+                
+                nodes[item_name]["edges"].append(reverse_edge)
     
     # Third pass: add reverse edges
     # For each craft_from edge, add craft_to edge to the material
@@ -403,7 +484,7 @@ def build_relation_graph(items_database: List[Dict[str, Any]]) -> Dict[str, Dict
     # Create any missing nodes and add reverse edges
     for target_name, edge in reverse_edges:
         if target_name not in nodes:
-            nodes[target_name] = create_node(name=target_name)
+            nodes[target_name] = create_node(name=target_name, node_type="item")
         nodes[target_name]["edges"].append(edge)
     
     return nodes
@@ -413,25 +494,36 @@ def main():
     """Main function to build relation graph."""
     data_dir = Path(__file__).parent.parent / "data"
     
-    input_file = data_dir / "items_database.json"
+    items_file = data_dir / "items_database.json"
+    traders_file = data_dir / "traders_database.json"
     output_file = data_dir / "items_relation.json"
     
     # Check if input file exists
-    if not input_file.exists():
-        print(f"Error: {input_file} not found!")
+    if not items_file.exists():
+        print(f"Error: {items_file} not found!")
         return
     
-    print(f"Reading items database from {input_file}...")
+    print(f"Reading items database from {items_file}...")
     
     # Read items database
-    with open(input_file, 'r', encoding='utf-8') as f:
+    with open(items_file, 'r', encoding='utf-8') as f:
         items_database = json.load(f)
     
     print(f"Found {len(items_database)} items in database")
     
+    # Read traders database if available
+    traders_database = None
+    if traders_file.exists():
+        print(f"Reading traders database from {traders_file}...")
+        with open(traders_file, 'r', encoding='utf-8') as f:
+            traders_database = json.load(f)
+        print(f"Found {len(traders_database)} traders in database")
+    else:
+        print("No traders database found, skipping trader nodes")
+    
     # Build relation graph
     print("Building relation graph...")
-    nodes = build_relation_graph(items_database)
+    nodes = build_relation_graph(items_database, traders_database)
     
     print(f"Created {len(nodes)} nodes in graph")
     
@@ -447,8 +539,17 @@ def main():
     
     # Print some statistics
     total_edges = sum(len(node["edges"]) for node in items_relation)
+    
+    # Count node types
+    node_types = {}
+    for node in items_relation:
+        node_type = node.get("node_type", "unknown")
+        node_types[node_type] = node_types.get(node_type, 0) + 1
+    
     print(f"\nStatistics:")
     print(f"  Total nodes: {len(items_relation)}")
+    for node_type, count in sorted(node_types.items()):
+        print(f"    {node_type}: {count}")
     print(f"  Total edges: {total_edges}")
     print(f"  Average edges per node: {total_edges / len(items_relation):.1f}")
     

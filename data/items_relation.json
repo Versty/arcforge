@@ -1,6 +1,7 @@
 [
   {
     "name": "Advanced ARC Powercell",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Advanced_ARC_Powercell",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Advanced_ARC_Powercell&action=edit",
     "infobox": {
@@ -50,6 +51,7 @@
   },
   {
     "name": "Advanced Electrical Components",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Advanced_Electrical_Components",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Advanced_Electrical_Components&action=edit",
     "infobox": {
@@ -453,6 +455,7 @@
   },
   {
     "name": "Advanced Mechanical Components",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Advanced_Mechanical_Components",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Advanced_Mechanical_Components&action=edit",
     "infobox": {
@@ -2283,6 +2286,7 @@
   },
   {
     "name": "Agave",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Agave",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Agave&action=edit",
     "infobox": {
@@ -2328,6 +2332,7 @@
   },
   {
     "name": "Air Freshener",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Air_Freshener",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Air_Freshener&action=edit",
     "infobox": {
@@ -2370,6 +2375,7 @@
   },
   {
     "name": "Alarm Clock",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Alarm_Clock",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Alarm_Clock&action=edit",
     "infobox": {
@@ -2421,6 +2427,7 @@
   },
   {
     "name": "Antiseptic",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Antiseptic",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Antiseptic&action=edit",
     "infobox": {
@@ -2572,6 +2579,7 @@
   },
   {
     "name": "Apricot",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Apricot",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Apricot&action=edit",
     "infobox": {
@@ -2621,6 +2629,7 @@
   },
   {
     "name": "ARC Alloy",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/ARC_Alloy",
     "source_url": "https://arcraiders.wiki/w/index.php?title=ARC_Alloy&action=edit",
     "infobox": {
@@ -3069,6 +3078,7 @@
   },
   {
     "name": "ARC Circuitry",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/ARC_Circuitry",
     "source_url": "https://arcraiders.wiki/w/index.php?title=ARC_Circuitry&action=edit",
     "infobox": {
@@ -3232,6 +3242,7 @@
   },
   {
     "name": "ARC Coolant",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/ARC_Coolant",
     "source_url": "https://arcraiders.wiki/w/index.php?title=ARC_Coolant&action=edit",
     "infobox": {
@@ -3281,6 +3292,7 @@
   },
   {
     "name": "ARC Flex Rubber",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/ARC_Flex_Rubber",
     "source_url": "https://arcraiders.wiki/w/index.php?title=ARC_Flex_Rubber&action=edit",
     "infobox": {
@@ -3330,6 +3342,7 @@
   },
   {
     "name": "ARC Motion Core",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/ARC_Motion_Core",
     "source_url": "https://arcraiders.wiki/w/index.php?title=ARC_Motion_Core&action=edit",
     "infobox": {
@@ -3417,6 +3430,7 @@
   },
   {
     "name": "ARC Performance Steel",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/ARC_Performance_Steel",
     "source_url": "https://arcraiders.wiki/w/index.php?title=ARC_Performance_Steel&action=edit",
     "infobox": {
@@ -3466,6 +3480,7 @@
   },
   {
     "name": "ARC Powercell",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/ARC_Powercell",
     "source_url": "https://arcraiders.wiki/w/index.php?title=ARC_Powercell&action=edit",
     "infobox": {
@@ -3535,6 +3550,7 @@
   },
   {
     "name": "ARC Synthetic Resin",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/ARC_Synthetic_Resin",
     "source_url": "https://arcraiders.wiki/w/index.php?title=ARC_Synthetic_Resin&action=edit",
     "infobox": {
@@ -3584,6 +3600,7 @@
   },
   {
     "name": "ARC Thermo Lining",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/ARC_Thermo_Lining",
     "source_url": "https://arcraiders.wiki/w/index.php?title=ARC_Thermo_Lining&action=edit",
     "infobox": {
@@ -3643,6 +3660,7 @@
   },
   {
     "name": "Assorted Seeds",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Assorted_Seeds",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Assorted_Seeds&action=edit",
     "infobox": {
@@ -3799,6 +3817,7 @@
   },
   {
     "name": "Bastion Cell",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Bastion_Cell",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Bastion_Cell&action=edit",
     "infobox": {
@@ -3870,6 +3889,7 @@
   },
   {
     "name": "Battery",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Battery",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Battery&action=edit",
     "infobox": {
@@ -3900,6 +3920,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 5,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Broken Flashlight",
@@ -4091,6 +4129,7 @@
   },
   {
     "name": "Bicycle Pump",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Bicycle_Pump",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Bicycle_Pump&action=edit",
     "infobox": {
@@ -4163,6 +4202,7 @@
   },
   {
     "name": "Bloated Tuna Can",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Bloated_Tuna_Can",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Bloated_Tuna_Can&action=edit",
     "infobox": {
@@ -4187,6 +4227,7 @@
   },
   {
     "name": "Blue Gate Communication Tower Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Blue_Gate_Communication_Tower_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Blue_Gate_Communication_Tower_Key&action=edit",
     "infobox": {
@@ -4208,6 +4249,7 @@
   },
   {
     "name": "Blue Gate Confiscation Room Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Blue_Gate_Confiscation_Room_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Blue_Gate_Confiscation_Room_Key&action=edit",
     "infobox": {
@@ -4230,6 +4272,7 @@
   },
   {
     "name": "Blue Gate Cellar Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Blue_Gate_Cellar_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Blue_Gate_Cellar_Key&action=edit",
     "infobox": {
@@ -4252,6 +4295,7 @@
   },
   {
     "name": "Blue Gate Village Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Blue_Gate_Village_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Blue_Gate_Village_Key&action=edit",
     "infobox": {
@@ -4273,6 +4317,7 @@
   },
   {
     "name": "Bombardier Cell",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Bombardier_Cell",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Bombardier_Cell&action=edit",
     "infobox": {
@@ -4322,6 +4367,7 @@
   },
   {
     "name": "Breathtaking Snow Globe",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Breathtaking_Snow_Globe",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Breathtaking_Snow_Globe&action=edit",
     "infobox": {
@@ -4344,6 +4390,7 @@
   },
   {
     "name": "Broken Flashlight",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Broken_Flashlight",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Broken_Flashlight&action=edit",
     "infobox": {
@@ -4413,6 +4460,7 @@
   },
   {
     "name": "Broken Guidance System",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Broken_Guidance_System",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Broken_Guidance_System&action=edit",
     "infobox": {
@@ -4472,6 +4520,7 @@
   },
   {
     "name": "Broken Handheld Radio",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Broken_Handheld_Radio",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Broken_Handheld_Radio&action=edit",
     "infobox": {
@@ -4521,6 +4570,7 @@
   },
   {
     "name": "Broken Taser",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Broken_Taser",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Broken_Taser&action=edit",
     "infobox": {
@@ -4570,6 +4620,7 @@
   },
   {
     "name": "Buried City Hospital Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Buried_City_Hospital_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Buried_City_Hospital_Key&action=edit",
     "infobox": {
@@ -4591,6 +4642,7 @@
   },
   {
     "name": "Buried City JKV Employee Access Card",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Buried_City_JKV_Employee_Access_Card",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Buried_City_JKV_Employee_Access_Card&action=edit",
     "infobox": {
@@ -4612,6 +4664,7 @@
   },
   {
     "name": "Buried City Residential Mastery Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Buried_City_Residential_Mastery_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Buried_City_Residential_Mastery_Key&action=edit",
     "infobox": {
@@ -4633,6 +4686,7 @@
   },
   {
     "name": "Buried City Town Hall Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Buried_City_Town_Hall_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Buried_City_Town_Hall_Key&action=edit",
     "infobox": {
@@ -4654,6 +4708,7 @@
   },
   {
     "name": "Burned ARC Circuitry",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Burned_ARC_Circuitry",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Burned_ARC_Circuitry&action=edit",
     "infobox": {
@@ -4712,6 +4767,7 @@
   },
   {
     "name": "Camera Lens",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Camera_Lens",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Camera_Lens&action=edit",
     "infobox": {
@@ -4761,6 +4817,7 @@
   },
   {
     "name": "Candle Holder",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Candle_Holder",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Candle_Holder&action=edit",
     "infobox": {
@@ -4810,6 +4867,7 @@
   },
   {
     "name": "Canister",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Canister",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Canister&action=edit",
     "infobox": {
@@ -4840,6 +4898,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Bicycle Pump",
@@ -5040,6 +5116,7 @@
   },
   {
     "name": "Cat Bed",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Cat_Bed",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Cat_Bed&action=edit",
     "infobox": {
@@ -5062,6 +5139,7 @@
   },
   {
     "name": "Chemicals",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Chemicals",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Chemicals&action=edit",
     "infobox": {
@@ -5081,6 +5159,19 @@
       "file_page": "https://arcraiders.wiki/wiki/File:Chemicals.png"
     },
     "edges": [
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
       {
         "name": "Antiseptic",
         "direction": "out",
@@ -5554,6 +5645,7 @@
   },
   {
     "name": "Coffee Pot",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Coffee_Pot",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Coffee_Pot&action=edit",
     "infobox": {
@@ -5576,6 +5668,7 @@
   },
   {
     "name": "Complex Gun Parts",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Complex_Gun_Parts",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Complex_Gun_Parts&action=edit",
     "infobox": {
@@ -5654,6 +5747,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 60,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Aphelion",
@@ -5759,6 +5870,7 @@
   },
   {
     "name": "Coolant",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Coolant",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Coolant&action=edit",
     "infobox": {
@@ -5821,6 +5933,7 @@
   },
   {
     "name": "Cooling Coil",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Cooling_Coil",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Cooling_Coil&action=edit",
     "infobox": {
@@ -5893,6 +6006,7 @@
   },
   {
     "name": "Cooling Fan",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Cooling_Fan",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Cooling_Fan&action=edit",
     "infobox": {
@@ -5955,6 +6069,7 @@
   },
   {
     "name": "Cracked Bioscanner",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Cracked_Bioscanner",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Cracked_Bioscanner&action=edit",
     "infobox": {
@@ -6017,6 +6132,7 @@
   },
   {
     "name": "Crude Explosives",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Crude_Explosives",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Crude_Explosives&action=edit",
     "infobox": {
@@ -6215,6 +6331,7 @@
   },
   {
     "name": "Crumpled Plastic Bottle",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Crumpled_Plastic_Bottle",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Crumpled_Plastic_Bottle&action=edit",
     "infobox": {
@@ -6264,6 +6381,7 @@
   },
   {
     "name": "Dam Control Tower Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Dam_Control_Tower_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Dam_Control_Tower_Key&action=edit",
     "infobox": {
@@ -6285,6 +6403,7 @@
   },
   {
     "name": "Dam Staff Room Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Dam_Staff_Room_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Dam_Staff_Room_Key&action=edit",
     "infobox": {
@@ -6306,6 +6425,7 @@
   },
   {
     "name": "Dam Surveillance Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Dam_Surveillance_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Dam_Surveillance_Key&action=edit",
     "infobox": {
@@ -6327,6 +6447,7 @@
   },
   {
     "name": "Dam Testing Annex Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Dam_Testing_Annex_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Dam_Testing_Annex_Key&action=edit",
     "infobox": {
@@ -6348,6 +6469,7 @@
   },
   {
     "name": "Dam Utility Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Dam_Utility_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Dam_Utility_Key&action=edit",
     "infobox": {
@@ -6369,6 +6491,7 @@
   },
   {
     "name": "Damaged ARC Motion Core",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Damaged_ARC_Motion_Core",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Damaged_ARC_Motion_Core&action=edit",
     "infobox": {
@@ -6428,6 +6551,7 @@
   },
   {
     "name": "Damaged ARC Powercell",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Damaged_ARC_Powercell",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Damaged_ARC_Powercell&action=edit",
     "infobox": {
@@ -6484,6 +6608,7 @@
   },
   {
     "name": "Damaged Fireball Burner",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Damaged_Fireball_Burner",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Damaged_Fireball_Burner&action=edit",
     "infobox": {
@@ -6520,6 +6645,7 @@
   },
   {
     "name": "Damaged Heat Sink",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Damaged_Heat_Sink",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Damaged_Heat_Sink&action=edit",
     "infobox": {
@@ -6582,6 +6708,7 @@
   },
   {
     "name": "Damaged Hornet Driver",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Damaged_Hornet_Driver",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Damaged_Hornet_Driver&action=edit",
     "infobox": {
@@ -6615,6 +6742,7 @@
   },
   {
     "name": "Damaged Rocketeer Driver",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Damaged_Rocketeer_Driver",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Damaged_Rocketeer_Driver&action=edit",
     "infobox": {
@@ -6671,6 +6799,7 @@
   },
   {
     "name": "Damaged Snitch Scanner",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Damaged_Snitch_Scanner",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Damaged_Snitch_Scanner&action=edit",
     "infobox": {
@@ -6704,6 +6833,7 @@
   },
   {
     "name": "Damaged Tick Pod",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Damaged_Tick_Pod",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Damaged_Tick_Pod&action=edit",
     "infobox": {
@@ -6760,6 +6890,7 @@
   },
   {
     "name": "Damaged Wasp Driver",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Damaged_Wasp_Driver",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Damaged_Wasp_Driver&action=edit",
     "infobox": {
@@ -6818,6 +6949,7 @@
   },
   {
     "name": "Dart Board",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Dart_Board",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Dart_Board&action=edit",
     "infobox": {
@@ -6840,6 +6972,7 @@
   },
   {
     "name": "Deflated Football",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Deflated_Football",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Deflated_Football&action=edit",
     "infobox": {
@@ -6912,6 +7045,7 @@
   },
   {
     "name": "Degraded ARC Rubber",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Degraded_ARC_Rubber",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Degraded_ARC_Rubber&action=edit",
     "infobox": {
@@ -6971,6 +7105,7 @@
   },
   {
     "name": "Diving Goggles",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Diving_Goggles",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Diving_Goggles&action=edit",
     "infobox": {
@@ -7020,6 +7155,7 @@
   },
   {
     "name": "Dog Collar",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Dog_Collar",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Dog_Collar&action=edit",
     "infobox": {
@@ -7082,6 +7218,7 @@
   },
   {
     "name": "Dried-Out ARC Resin",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Dried-Out_ARC_Resin",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Dried-Out_ARC_Resin&action=edit",
     "infobox": {
@@ -7127,6 +7264,7 @@
   },
   {
     "name": "Duct Tape",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Duct_Tape",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Duct_Tape&action=edit",
     "infobox": {
@@ -7157,6 +7295,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Angled Grip I",
@@ -7393,6 +7549,7 @@
   },
   {
     "name": "Durable Cloth",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Durable_Cloth",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Durable_Cloth&action=edit",
     "infobox": {
@@ -7507,6 +7664,7 @@
   },
   {
     "name": "Electrical Components",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Electrical_Components",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Electrical_Components&action=edit",
     "infobox": {
@@ -7935,6 +8093,7 @@
   },
   {
     "name": "Empty Wine Bottle",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Empty_Wine_Bottle",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Empty_Wine_Bottle&action=edit",
     "infobox": {
@@ -7976,6 +8135,7 @@
   },
   {
     "name": "Exodus Modules",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Exodus_Modules",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Exodus_Modules&action=edit",
     "infobox": {
@@ -8023,6 +8183,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 55,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Ion Sputter",
@@ -8180,6 +8358,7 @@
   },
   {
     "name": "Expired Pasta",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Expired_Pasta",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Expired_Pasta&action=edit",
     "infobox": {
@@ -8212,6 +8391,7 @@
   },
   {
     "name": "Expired Respirator",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Expired_Respirator",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Expired_Respirator&action=edit",
     "infobox": {
@@ -8274,6 +8454,7 @@
   },
   {
     "name": "Explosive Compound",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Explosive_Compound",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Explosive_Compound&action=edit",
     "infobox": {
@@ -8455,6 +8636,7 @@
   },
   {
     "name": "Fabric",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Fabric",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Fabric&action=edit",
     "infobox": {
@@ -8478,6 +8660,19 @@
       "file_page": "https://arcraiders.wiki/wiki/File:Fabric.png"
     },
     "edges": [
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
       {
         "name": "ARC Thermo Lining",
         "direction": "in",
@@ -8805,6 +9000,7 @@
   },
   {
     "name": "Faded Photograph",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Faded_Photograph",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Faded_Photograph&action=edit",
     "infobox": {
@@ -8826,6 +9022,7 @@
   },
   {
     "name": "Fertilizer",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Fertilizer",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Fertilizer&action=edit",
     "infobox": {
@@ -8855,6 +9052,7 @@
   },
   {
     "name": "Film Reel",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Film_Reel",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Film_Reel&action=edit",
     "infobox": {
@@ -8877,6 +9075,7 @@
   },
   {
     "name": "Fine Wristwatch",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Fine_Wristwatch",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Fine_Wristwatch&action=edit",
     "infobox": {
@@ -8898,6 +9097,7 @@
   },
   {
     "name": "Fireball Burner",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Fireball_Burner",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Fireball_Burner&action=edit",
     "infobox": {
@@ -9001,6 +9201,7 @@
   },
   {
     "name": "Frequency Modulation Box",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Frequency_Modulation_Box",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Frequency_Modulation_Box&action=edit",
     "infobox": {
@@ -9063,6 +9264,7 @@
   },
   {
     "name": "Fried Motherboard",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Fried_Motherboard",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Fried_Motherboard&action=edit",
     "infobox": {
@@ -9125,6 +9327,7 @@
   },
   {
     "name": "Frying Pan",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Frying_Pan",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Frying_Pan&action=edit",
     "infobox": {
@@ -9174,6 +9377,7 @@
   },
   {
     "name": "Garlic Press",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Garlic_Press",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Garlic_Press&action=edit",
     "infobox": {
@@ -9223,6 +9427,7 @@
   },
   {
     "name": "Great Mullein",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Great_Mullein",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Great_Mullein&action=edit",
     "infobox": {
@@ -9260,6 +9465,24 @@
         "quantity": 1
       },
       {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 5,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
+      },
+      {
         "name": "Antiseptic",
         "direction": "out",
         "relation": "craft_to",
@@ -9287,6 +9510,7 @@
   },
   {
     "name": "Headphones",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Headphones",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Headphones&action=edit",
     "infobox": {
@@ -9349,6 +9573,7 @@
   },
   {
     "name": "Heavy Gun Parts",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Heavy_Gun_Parts",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Heavy_Gun_Parts&action=edit",
     "infobox": {
@@ -10169,6 +10394,7 @@
   },
   {
     "name": "Hornet Driver",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Hornet_Driver",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Hornet_Driver&action=edit",
     "infobox": {
@@ -10241,6 +10467,7 @@
   },
   {
     "name": "Household Cleaner",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Household_Cleaner",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Household_Cleaner&action=edit",
     "infobox": {
@@ -10290,6 +10517,7 @@
   },
   {
     "name": "Humidifier",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Humidifier",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Humidifier&action=edit",
     "infobox": {
@@ -10352,6 +10580,7 @@
   },
   {
     "name": "Ice Cream Scooper",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ice_Cream_Scooper",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ice_Cream_Scooper&action=edit",
     "infobox": {
@@ -10401,6 +10630,7 @@
   },
   {
     "name": "Impure ARC Coolant",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Impure_ARC_Coolant",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Impure_ARC_Coolant&action=edit",
     "infobox": {
@@ -10447,6 +10677,7 @@
   },
   {
     "name": "Industrial Battery",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Industrial_Battery",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Industrial_Battery&action=edit",
     "infobox": {
@@ -10519,6 +10750,7 @@
   },
   {
     "name": "Industrial Charger",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Industrial_Charger",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Industrial_Charger&action=edit",
     "infobox": {
@@ -10581,6 +10813,7 @@
   },
   {
     "name": "Industrial Magnet",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Industrial_Magnet",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Industrial_Magnet&action=edit",
     "infobox": {
@@ -10643,6 +10876,7 @@
   },
   {
     "name": "Ion Sputter",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ion_Sputter",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ion_Sputter&action=edit",
     "infobox": {
@@ -10705,6 +10939,7 @@
   },
   {
     "name": "Laboratory Reagents",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Laboratory_Reagents",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Laboratory_Reagents&action=edit",
     "infobox": {
@@ -10772,6 +11007,7 @@
   },
   {
     "name": "Lance's Mixtape (5th Edition)",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Lance%27s_Mixtape_%285th_Edition%29",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Lance%27s_Mixtape_%285th_Edition%29&action=edit",
     "infobox": {
@@ -10794,6 +11030,7 @@
   },
   {
     "name": "Lemon",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Lemon",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Lemon&action=edit",
     "infobox": {
@@ -10851,6 +11088,7 @@
   },
   {
     "name": "Leaper Pulse Unit",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Leaper_Pulse_Unit",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Leaper_Pulse_Unit&action=edit",
     "infobox": {
@@ -10916,6 +11154,7 @@
   },
   {
     "name": "Light Bulb",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Light_Bulb",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Light_Bulb&action=edit",
     "infobox": {
@@ -10938,6 +11177,7 @@
   },
   {
     "name": "Light Gun Parts",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Light_Gun_Parts",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Light_Gun_Parts&action=edit",
     "infobox": {
@@ -10991,6 +11231,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Complex Gun Parts",
@@ -11277,6 +11535,7 @@
   },
   {
     "name": "Magnet",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Magnet",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Magnet&action=edit",
     "infobox": {
@@ -11307,6 +11566,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Exodus Modules",
@@ -11512,6 +11789,7 @@
   },
   {
     "name": "Magnetic Accelerator",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Magnetic_Accelerator",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Magnetic_Accelerator&action=edit",
     "infobox": {
@@ -11817,6 +12095,7 @@
   },
   {
     "name": "Magnetron",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Magnetron",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Magnetron&action=edit",
     "infobox": {
@@ -11882,6 +12161,7 @@
   },
   {
     "name": "Matriarch Reactor",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Matriarch_Reactor",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Matriarch_Reactor&action=edit",
     "infobox": {
@@ -11960,6 +12240,7 @@
   },
   {
     "name": "Mechanical Components",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Mechanical_Components",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Mechanical_Components&action=edit",
     "infobox": {
@@ -13634,6 +13915,7 @@
   },
   {
     "name": "Medium Gun Parts",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Medium_Gun_Parts",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Medium_Gun_Parts&action=edit",
     "infobox": {
@@ -13687,6 +13969,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Complex Gun Parts",
@@ -14847,6 +15147,7 @@
   },
   {
     "name": "Metal Brackets",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Metal_Brackets",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Metal_Brackets&action=edit",
     "infobox": {
@@ -14896,6 +15197,7 @@
   },
   {
     "name": "Metal Parts",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Metal_Parts",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Metal_Parts&action=edit",
     "infobox": {
@@ -14915,6 +15217,19 @@
       "file_page": "https://arcraiders.wiki/wiki/File:Metal_Parts.png"
     },
     "edges": [
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
       {
         "name": "ARC Alloy",
         "direction": "in",
@@ -16399,6 +16714,7 @@
   },
   {
     "name": "Microscope",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Microscope",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Microscope&action=edit",
     "infobox": {
@@ -16461,6 +16777,7 @@
   },
   {
     "name": "Mini Centrifuge",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Mini_Centrifuge",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Mini_Centrifuge&action=edit",
     "infobox": {
@@ -16523,6 +16840,7 @@
   },
   {
     "name": "Mod Components",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Mod_Components",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Mod_Components&action=edit",
     "infobox": {
@@ -16920,6 +17238,7 @@
   },
   {
     "name": "Moss",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Moss",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Moss&action=edit",
     "infobox": {
@@ -16955,6 +17274,24 @@
         "quantity": 2
       },
       {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
         "name": "Defibrillator",
         "direction": "out",
         "relation": "craft_to",
@@ -16980,6 +17317,7 @@
   },
   {
     "name": "Motor",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Motor",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Motor&action=edit",
     "infobox": {
@@ -17031,6 +17369,7 @@
   },
   {
     "name": "Mushroom",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Mushroom",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Mushroom&action=edit",
     "infobox": {
@@ -17063,6 +17402,7 @@
   },
   {
     "name": "Music Album",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Music_Album",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Music_Album&action=edit",
     "infobox": {
@@ -17095,6 +17435,7 @@
   },
   {
     "name": "Music Box",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Music_Box",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Music_Box&action=edit",
     "infobox": {
@@ -17127,6 +17468,7 @@
   },
   {
     "name": "Number Plate",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Number_Plate",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Number_Plate&action=edit",
     "infobox": {
@@ -17181,6 +17523,7 @@
   },
   {
     "name": "Oil",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Oil",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Oil&action=edit",
     "infobox": {
@@ -17211,6 +17554,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Coolant",
@@ -17400,6 +17761,7 @@
   },
   {
     "name": "Olives",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Olives",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Olives&action=edit",
     "infobox": {
@@ -17445,6 +17807,7 @@
   },
   {
     "name": "Painted Box",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Painted_Box",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Painted_Box&action=edit",
     "infobox": {
@@ -17467,6 +17830,7 @@
   },
   {
     "name": "Patrol Car Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Patrol_Car_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Patrol_Car_Key&action=edit",
     "infobox": {
@@ -17488,6 +17852,7 @@
   },
   {
     "name": "Plastic Parts",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Plastic_Parts",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Plastic_Parts&action=edit",
     "infobox": {
@@ -17516,6 +17881,19 @@
       "file_page": "https://arcraiders.wiki/wiki/File:Plastic_Parts.png"
     },
     "edges": [
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
       {
         "name": "Alarm Clock",
         "direction": "in",
@@ -18302,6 +18680,7 @@
   },
   {
     "name": "Playing Cards",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Playing_Cards",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Playing_Cards&action=edit",
     "infobox": {
@@ -18334,6 +18713,7 @@
   },
   {
     "name": "Polluted Air Filter",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Polluted_Air_Filter",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Polluted_Air_Filter&action=edit",
     "infobox": {
@@ -18405,6 +18785,7 @@
   },
   {
     "name": "Pop Trigger",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Pop_Trigger",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Pop_Trigger&action=edit",
     "infobox": {
@@ -18467,6 +18848,7 @@
   },
   {
     "name": "Portable TV",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Portable_TV",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Portable_TV&action=edit",
     "infobox": {
@@ -18539,6 +18921,7 @@
   },
   {
     "name": "Pottery",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Pottery",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Pottery&action=edit",
     "infobox": {
@@ -18571,6 +18954,7 @@
   },
   {
     "name": "Power Bank",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Power_Bank",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Power_Bank&action=edit",
     "infobox": {
@@ -18643,6 +19027,7 @@
   },
   {
     "name": "Power Cable",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Power_Cable",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Power_Cable&action=edit",
     "infobox": {
@@ -18697,6 +19082,7 @@
   },
   {
     "name": "Power Rod",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Power_Rod",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Power_Rod&action=edit",
     "infobox": {
@@ -18861,6 +19247,7 @@
   },
   {
     "name": "Prickly Pear",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Prickly_Pear",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Prickly_Pear&action=edit",
     "infobox": {
@@ -18918,6 +19305,7 @@
   },
   {
     "name": "Processor",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Processor",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Processor&action=edit",
     "infobox": {
@@ -18954,6 +19342,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Alarm Clock",
@@ -19287,6 +19693,7 @@
   },
   {
     "name": "Projector",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Projector",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Projector&action=edit",
     "infobox": {
@@ -19349,6 +19756,7 @@
   },
   {
     "name": "Queen Reactor",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Queen_Reactor",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Queen_Reactor&action=edit",
     "infobox": {
@@ -19453,6 +19861,7 @@
   },
   {
     "name": "Radio",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Radio",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Radio&action=edit",
     "infobox": {
@@ -19515,6 +19924,7 @@
   },
   {
     "name": "Radio Relay",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Radio_Relay",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Radio_Relay&action=edit",
     "infobox": {
@@ -19577,6 +19987,7 @@
   },
   {
     "name": "Raider Hatch Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Raider_Hatch_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Raider_Hatch_Key&action=edit",
     "infobox": {
@@ -19618,11 +20029,30 @@
             "name": "Utility Station 2"
           }
         ]
+      },
+      {
+        "name": "Shani",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 9000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Red Coral Jewelry",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Red_Coral_Jewelry",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Red_Coral_Jewelry&action=edit",
     "infobox": {
@@ -19655,6 +20085,7 @@
   },
   {
     "name": "Remote Control",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Remote_Control",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Remote_Control&action=edit",
     "infobox": {
@@ -19717,6 +20148,7 @@
   },
   {
     "name": "Resin",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Resin",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Resin&action=edit",
     "infobox": {
@@ -19749,6 +20181,7 @@
   },
   {
     "name": "Ripped Safety Vest",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ripped_Safety_Vest",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ripped_Safety_Vest&action=edit",
     "infobox": {
@@ -19811,6 +20244,7 @@
   },
   {
     "name": "Rocket Thruster",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rocket_Thruster",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rocket_Thruster&action=edit",
     "infobox": {
@@ -19873,6 +20307,7 @@
   },
   {
     "name": "Rocketeer Driver",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rocketeer_Driver",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rocketeer_Driver&action=edit",
     "infobox": {
@@ -19935,6 +20370,7 @@
   },
   {
     "name": "Roots",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Roots",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Roots&action=edit",
     "infobox": {
@@ -19974,6 +20410,7 @@
   },
   {
     "name": "Rope",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rope",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rope&action=edit",
     "infobox": {
@@ -20004,6 +20441,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Zipline",
@@ -20049,6 +20504,7 @@
   },
   {
     "name": "Rosary",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rosary",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rosary&action=edit",
     "infobox": {
@@ -20071,6 +20527,7 @@
   },
   {
     "name": "Rotary Encoder",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rotary_Encoder",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rotary_Encoder&action=edit",
     "infobox": {
@@ -20095,6 +20552,7 @@
   },
   {
     "name": "Rubber Duck",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rubber_Duck",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rubber_Duck&action=edit",
     "infobox": {
@@ -20125,6 +20583,7 @@
   },
   {
     "name": "Rubber Pad",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rubber_Pad",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rubber_Pad&action=edit",
     "infobox": {
@@ -20174,6 +20633,7 @@
   },
   {
     "name": "Rubber Parts",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rubber_Parts",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rubber_Parts&action=edit",
     "infobox": {
@@ -20193,6 +20653,19 @@
       "file_page": "https://arcraiders.wiki/wiki/File:Rubber_Parts.png"
     },
     "edges": [
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
       {
         "name": "ARC Flex Rubber",
         "direction": "in",
@@ -21133,6 +21606,7 @@
   },
   {
     "name": "Ruined Accordion",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ruined_Accordion",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ruined_Accordion&action=edit",
     "infobox": {
@@ -21195,6 +21669,7 @@
   },
   {
     "name": "Ruined Augment",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ruined_Augment",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ruined_Augment&action=edit",
     "infobox": {
@@ -21254,6 +21729,7 @@
   },
   {
     "name": "Ruined Baton",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ruined_Baton",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ruined_Baton&action=edit",
     "infobox": {
@@ -21303,6 +21779,7 @@
   },
   {
     "name": "Ruined Handcuffs",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ruined_Handcuffs",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ruined_Handcuffs&action=edit",
     "infobox": {
@@ -21362,6 +21839,7 @@
   },
   {
     "name": "Ruined Parachute",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ruined_Parachute",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ruined_Parachute&action=edit",
     "infobox": {
@@ -21398,6 +21876,7 @@
   },
   {
     "name": "Ruined Tactical Vest",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ruined_Tactical_Vest",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ruined_Tactical_Vest&action=edit",
     "infobox": {
@@ -21460,6 +21939,7 @@
   },
   {
     "name": "Ruined Riot Shield",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ruined_Riot_Shield",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ruined_Riot_Shield&action=edit",
     "infobox": {
@@ -21522,6 +22002,7 @@
   },
   {
     "name": "Rusted Bolts",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rusted_Bolts",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rusted_Bolts&action=edit",
     "infobox": {
@@ -21571,6 +22052,7 @@
   },
   {
     "name": "Rusted Gear",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rusted_Gear",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rusted_Gear&action=edit",
     "infobox": {
@@ -21642,6 +22124,7 @@
   },
   {
     "name": "Rusted Shut Medical Kit",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rusted_Shut_Medical_Kit",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rusted_Shut_Medical_Kit&action=edit",
     "infobox": {
@@ -21714,6 +22197,7 @@
   },
   {
     "name": "Rusted Tools",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rusted_Tools",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rusted_Tools&action=edit",
     "infobox": {
@@ -21776,6 +22260,7 @@
   },
   {
     "name": "Rusty ARC Steel",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rusty_ARC_Steel",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rusty_ARC_Steel&action=edit",
     "infobox": {
@@ -21824,6 +22309,7 @@
   },
   {
     "name": "Sample Cleaner",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Sample_Cleaner",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Sample_Cleaner&action=edit",
     "infobox": {
@@ -21886,6 +22372,7 @@
   },
   {
     "name": "Sensors",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Sensors",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Sensors&action=edit",
     "infobox": {
@@ -21922,6 +22409,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Broken Handheld Radio",
@@ -22115,6 +22620,7 @@
   },
   {
     "name": "Sentinel Firing Core",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Sentinel_Firing_Core",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Sentinel_Firing_Core&action=edit",
     "infobox": {
@@ -22187,6 +22693,7 @@
   },
   {
     "name": "Signal Amplifier",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Signal_Amplifier",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Signal_Amplifier&action=edit",
     "infobox": {
@@ -22249,6 +22756,7 @@
   },
   {
     "name": "Silver Teaspoon Set",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Silver_Teaspoon_Set",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Silver_Teaspoon_Set&action=edit",
     "infobox": {
@@ -22271,6 +22779,7 @@
   },
   {
     "name": "Simple Gun Parts",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Simple_Gun_Parts",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Simple_Gun_Parts&action=edit",
     "infobox": {
@@ -22301,6 +22810,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 7,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Complex Gun Parts",
@@ -23853,6 +24380,7 @@
   },
   {
     "name": "Snitch Scanner",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Snitch_Scanner",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Snitch_Scanner&action=edit",
     "infobox": {
@@ -23926,6 +24454,7 @@
   },
   {
     "name": "Spaceport Container Storage Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Spaceport_Container_Storage_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Spaceport_Container_Storage_Key&action=edit",
     "infobox": {
@@ -23947,6 +24476,7 @@
   },
   {
     "name": "Spaceport Control Tower Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Spaceport_Control_Tower_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Spaceport_Control_Tower_Key&action=edit",
     "infobox": {
@@ -23968,6 +24498,7 @@
   },
   {
     "name": "Spaceport Trench Tower Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Spaceport_Trench_Tower_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Spaceport_Trench_Tower_Key&action=edit",
     "infobox": {
@@ -23989,6 +24520,7 @@
   },
   {
     "name": "Spaceport Warehouse Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Spaceport_Warehouse_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Spaceport_Warehouse_Key&action=edit",
     "infobox": {
@@ -24010,6 +24542,7 @@
   },
   {
     "name": "Speaker Component",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Speaker_Component",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Speaker_Component&action=edit",
     "infobox": {
@@ -24046,6 +24579,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Frequency Modulation Box",
@@ -24211,6 +24762,7 @@
   },
   {
     "name": "Spectrometer",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Spectrometer",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Spectrometer&action=edit",
     "infobox": {
@@ -24273,6 +24825,7 @@
   },
   {
     "name": "Spectrum Analyzer",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Spectrum_Analyzer",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Spectrum_Analyzer&action=edit",
     "infobox": {
@@ -24335,6 +24888,7 @@
   },
   {
     "name": "Spring Cushion",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Spring_Cushion",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Spring_Cushion&action=edit",
     "infobox": {
@@ -24397,6 +24951,7 @@
   },
   {
     "name": "Spotter Relay",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Spotter_Relay",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Spotter_Relay&action=edit",
     "infobox": {
@@ -24457,6 +25012,7 @@
   },
   {
     "name": "Statuette",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Statuette",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Statuette&action=edit",
     "infobox": {
@@ -24479,6 +25035,7 @@
   },
   {
     "name": "Steel Spring",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Steel_Spring",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Steel_Spring&action=edit",
     "infobox": {
@@ -24514,6 +25071,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Advanced Mechanical Components",
@@ -24899,6 +25474,7 @@
   },
   {
     "name": "Stella Montis Archives Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Stella_Montis_Archives_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Stella_Montis_Archives_Key&action=edit",
     "infobox": {
@@ -24920,6 +25496,7 @@
   },
   {
     "name": "Stella Montis Assembly Admin Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Stella_Montis_Assembly_Admin_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Stella_Montis_Assembly_Admin_Key&action=edit",
     "infobox": {
@@ -24953,6 +25530,7 @@
   },
   {
     "name": "Stella Montis Medical Storage Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Stella_Montis_Medical_Storage_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Stella_Montis_Medical_Storage_Key&action=edit",
     "infobox": {
@@ -24974,6 +25552,7 @@
   },
   {
     "name": "Stella Montis Security Checkpoint Key",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Stella_Montis_Security_Checkpoint_Key",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Stella_Montis_Security_Checkpoint_Key&action=edit",
     "infobox": {
@@ -24995,6 +25574,7 @@
   },
   {
     "name": "Surveyor Vault",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Surveyor_Vault",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Surveyor_Vault&action=edit",
     "infobox": {
@@ -25067,6 +25647,7 @@
   },
   {
     "name": "Synthesized Fuel",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Synthesized_Fuel",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Synthesized_Fuel&action=edit",
     "infobox": {
@@ -25106,6 +25687,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 14,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Rocket Thruster",
@@ -25152,6 +25751,7 @@
   },
   {
     "name": "Syringe",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Syringe",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Syringe&action=edit",
     "infobox": {
@@ -25193,6 +25793,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Rusted Shut Medical Kit",
@@ -25246,6 +25864,7 @@
   },
   {
     "name": "Tattered ARC Lining",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Tattered_ARC_Lining",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Tattered_ARC_Lining&action=edit",
     "infobox": {
@@ -25304,6 +25923,7 @@
   },
   {
     "name": "Tattered Clothes",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Tattered_Clothes",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Tattered_Clothes&action=edit",
     "infobox": {
@@ -25353,6 +25973,7 @@
   },
   {
     "name": "Telemetry Transceiver",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Telemetry_Transceiver",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Telemetry_Transceiver&action=edit",
     "infobox": {
@@ -25415,6 +26036,7 @@
   },
   {
     "name": "Thermostat",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Thermostat",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Thermostat&action=edit",
     "infobox": {
@@ -25476,6 +26098,7 @@
   },
   {
     "name": "Tick Pod",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Tick_Pod",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Tick_Pod&action=edit",
     "infobox": {
@@ -25538,6 +26161,7 @@
   },
   {
     "name": "Toaster",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Toaster",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Toaster&action=edit",
     "infobox": {
@@ -25600,6 +26224,7 @@
   },
   {
     "name": "Torn Book",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Torn_Book",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Torn_Book&action=edit",
     "infobox": {
@@ -25633,6 +26258,7 @@
   },
   {
     "name": "Torn Blanket",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Torn_Blanket",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Torn_Blanket&action=edit",
     "infobox": {
@@ -25682,6 +26308,7 @@
   },
   {
     "name": "Turbo Pump",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Turbo_Pump",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Turbo_Pump&action=edit",
     "infobox": {
@@ -25744,6 +26371,7 @@
   },
   {
     "name": "Unusable Weapon",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Unusable_Weapon",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Unusable_Weapon&action=edit",
     "infobox": {
@@ -25817,6 +26445,7 @@
   },
   {
     "name": "Vase",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Vase",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Vase&action=edit",
     "infobox": {
@@ -25849,6 +26478,7 @@
   },
   {
     "name": "Very Comfortable Pillow",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Very_Comfortable_Pillow",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Very_Comfortable_Pillow&action=edit",
     "infobox": {
@@ -25881,6 +26511,7 @@
   },
   {
     "name": "Volcanic Rock",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Volcanic_Rock",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Volcanic_Rock&action=edit",
     "infobox": {
@@ -25914,6 +26545,7 @@
   },
   {
     "name": "Voltage Converter",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Voltage_Converter",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Voltage_Converter&action=edit",
     "infobox": {
@@ -25950,6 +26582,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Industrial Charger",
@@ -26066,6 +26716,7 @@
   },
   {
     "name": "Wasp Driver",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Wasp_Driver",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Wasp_Driver&action=edit",
     "infobox": {
@@ -26139,6 +26790,7 @@
   },
   {
     "name": "Water Filter",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Water_Filter",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Water_Filter&action=edit",
     "infobox": {
@@ -26201,6 +26853,7 @@
   },
   {
     "name": "Water Pump",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Water_Pump",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Water_Pump&action=edit",
     "infobox": {
@@ -26263,6 +26916,7 @@
   },
   {
     "name": "Wires",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Wires",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Wires&action=edit",
     "infobox": {
@@ -26293,6 +26947,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 4,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
       },
       {
         "name": "Advanced Electrical Components",
@@ -26846,6 +27518,7 @@
   },
   {
     "name": "Tempest",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Tempest",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Tempest&action=edit",
     "infobox": {
@@ -27316,6 +27989,7 @@
   },
   {
     "name": "Rattler",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Rattler",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Rattler&action=edit",
     "infobox": {
@@ -27845,6 +28519,7 @@
   },
   {
     "name": "Kettle",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Kettle",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Kettle&action=edit",
     "infobox": {
@@ -28376,6 +29051,19 @@
         "input_level": "Kettle IV"
       },
       {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2520,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
         "name": "Kettle",
         "direction": "in",
         "relation": "upgrade_from",
@@ -28442,6 +29130,7 @@
   },
   {
     "name": "Bettina",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Bettina",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Bettina&action=edit",
     "infobox": {
@@ -29068,6 +29757,7 @@
   },
   {
     "name": "Arpeggio",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Arpeggio",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Arpeggio&action=edit",
     "infobox": {
@@ -29665,6 +30355,7 @@
   },
   {
     "name": "Ferro",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Ferro",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Ferro&action=edit",
     "infobox": {
@@ -30178,6 +30869,19 @@
         "input_level": "Ferro IV"
       },
       {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1425,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
         "name": "Ferro",
         "direction": "in",
         "relation": "upgrade_from",
@@ -30244,6 +30948,7 @@
   },
   {
     "name": "Renegade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Renegade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Renegade&action=edit",
     "infobox": {
@@ -30629,11 +31334,30 @@
           }
         ],
         "input_level": "Renegade IV"
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 21000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Aphelion",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Aphelion",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Aphelion&action=edit",
     "infobox": {
@@ -30730,6 +31454,7 @@
   },
   {
     "name": "Stitcher",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Stitcher",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Stitcher&action=edit",
     "infobox": {
@@ -31261,6 +31986,19 @@
         "input_level": "Stitcher IV"
       },
       {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2400,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
         "name": "Stitcher",
         "direction": "in",
         "relation": "upgrade_from",
@@ -31327,6 +32065,7 @@
   },
   {
     "name": "Bobcat",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Bobcat",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Bobcat&action=edit",
     "infobox": {
@@ -31953,6 +32692,7 @@
   },
   {
     "name": "Il Toro",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Il_Toro",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Il_Toro&action=edit",
     "infobox": {
@@ -32492,6 +33232,24 @@
         "input_level": "Il Toro IV"
       },
       {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
         "name": "Il Toro",
         "direction": "in",
         "relation": "upgrade_from",
@@ -32558,6 +33316,7 @@
   },
   {
     "name": "Vulcano",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Vulcano",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Vulcano&action=edit",
     "infobox": {
@@ -33184,6 +33943,7 @@
   },
   {
     "name": "Hairpin",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Hairpin",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Hairpin&action=edit",
     "infobox": {
@@ -33690,6 +34450,19 @@
         "input_level": "Hairpin IV"
       },
       {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1350,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
         "name": "Hairpin",
         "direction": "in",
         "relation": "upgrade_from",
@@ -33752,6 +34525,7 @@
   },
   {
     "name": "Burletta",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Burletta",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Burletta&action=edit",
     "infobox": {
@@ -34291,6 +35065,24 @@
         "input_level": "Burletta IV"
       },
       {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 8700,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
         "name": "Burletta",
         "direction": "in",
         "relation": "upgrade_from",
@@ -34357,6 +35149,7 @@
   },
   {
     "name": "Anvil",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Anvil",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Anvil&action=edit",
     "infobox": {
@@ -34896,6 +35689,24 @@
         "input_level": "Anvil IV"
       },
       {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
         "name": "Anvil",
         "direction": "in",
         "relation": "upgrade_from",
@@ -34962,6 +35773,7 @@
   },
   {
     "name": "Venator",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Venator",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Venator&action=edit",
     "infobox": {
@@ -35433,6 +36245,7 @@
   },
   {
     "name": "Torrente",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Torrente",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Torrente&action=edit",
     "infobox": {
@@ -36059,6 +36872,7 @@
   },
   {
     "name": "Osprey",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Osprey",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Osprey&action=edit",
     "infobox": {
@@ -36530,6 +37344,7 @@
   },
   {
     "name": "Jupiter",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Jupiter",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Jupiter&action=edit",
     "infobox": {
@@ -36662,6 +37477,7 @@
   },
   {
     "name": "Hullcracker",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Hullcracker",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Hullcracker&action=edit",
     "infobox": {
@@ -37128,11 +37944,30 @@
           }
         ],
         "input_level": "Hullcracker IV"
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 30000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Equalizer",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Equalizer",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Equalizer&action=edit",
     "infobox": {
@@ -37262,6 +38097,7 @@
   },
   {
     "name": "Free Loadout Augment",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Free_Loadout_Augment",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Free_Loadout_Augment&action=edit",
     "infobox": {
@@ -37288,6 +38124,7 @@
   },
   {
     "name": "Looting Mk. 1",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Looting_Mk._1",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Looting_Mk._1&action=edit",
     "infobox": {
@@ -37378,11 +38215,38 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Augment"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Combat Mk. 1",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Combat_Mk._1",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Combat_Mk._1&action=edit",
     "infobox": {
@@ -37473,11 +38337,38 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Augment"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Tactical Mk. 1",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Tactical_Mk._1",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Tactical_Mk._1&action=edit",
     "infobox": {
@@ -37576,11 +38467,38 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Augment"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Looting Mk. 2",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Looting_Mk._2",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Looting_Mk._2&action=edit",
     "infobox": {
@@ -37674,11 +38592,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Combat Mk. 2",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Combat_Mk._2",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Combat_Mk._2&action=edit",
     "infobox": {
@@ -37772,11 +38709,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Tactical Mk. 2",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Tactical_Mk._2",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Tactical_Mk._2&action=edit",
     "infobox": {
@@ -37870,11 +38826,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Looting Mk. 3 (Cautious)",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Looting_Mk._3_%28Cautious%29",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Looting_Mk._3_%28Cautious%29&action=edit",
     "infobox": {
@@ -37966,6 +38941,7 @@
   },
   {
     "name": "Looting Mk. 3 (Survivor)",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Looting_Mk._3_%28Survivor%29",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Looting_Mk._3_%28Survivor%29&action=edit",
     "infobox": {
@@ -38065,6 +39041,7 @@
   },
   {
     "name": "Combat Mk. 3 (Aggressive)",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Combat_Mk._3_%28Aggressive%29",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Combat_Mk._3_%28Aggressive%29&action=edit",
     "infobox": {
@@ -38157,6 +39134,7 @@
   },
   {
     "name": "Combat Mk. 3 (Flanking)",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Combat_Mk._3_%28Flanking%29",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Combat_Mk._3_%28Flanking%29&action=edit",
     "infobox": {
@@ -38257,6 +39235,7 @@
   },
   {
     "name": "Tactical Mk. 3 (Defensive)",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Tactical_Mk._3_%28Defensive%29",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Tactical_Mk._3_%28Defensive%29&action=edit",
     "infobox": {
@@ -38345,6 +39324,7 @@
   },
   {
     "name": "Tactical Mk. 3 (Healing)",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Tactical_Mk._3_%28Healing%29",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Tactical_Mk._3_%28Healing%29&action=edit",
     "infobox": {
@@ -38451,6 +39431,7 @@
   },
   {
     "name": "Light Shield",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Light_Shield",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Light_Shield&action=edit",
     "infobox": {
@@ -38568,11 +39549,25 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Medium Shield",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Medium_Shield",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Medium_Shield&action=edit",
     "infobox": {
@@ -38656,11 +39651,30 @@
         "direction": "out",
         "relation": "recycle_to",
         "quantity": 1
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Heavy Shield",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Heavy_Shield",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Heavy_Shield&action=edit",
     "infobox": {
@@ -38740,11 +39754,30 @@
         "direction": "out",
         "relation": "recycle_to",
         "quantity": 1
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 16500,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Bandage",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Bandage",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Bandage&action=edit",
     "infobox": {
@@ -38809,11 +39842,25 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 750,
+            "currency": "Coins"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Defibrillator",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Defibrillator",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Defibrillator&action=edit",
     "infobox": {
@@ -38892,11 +39939,25 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Fruit Mix",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Fruit_Mix",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Fruit_Mix&action=edit",
     "infobox": {
@@ -38966,6 +40027,7 @@
   },
   {
     "name": "Herbal Bandage",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Herbal_Bandage",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Herbal_Bandage&action=edit",
     "infobox": {
@@ -39029,11 +40091,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 8
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2700,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Sterilized Bandage",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Sterilized_Bandage",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Sterilized_Bandage&action=edit",
     "infobox": {
@@ -39104,11 +40185,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Vita Shot",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Vita_Shot",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Vita_Shot&action=edit",
     "infobox": {
@@ -39186,6 +40286,7 @@
   },
   {
     "name": "Vita Spray",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Vita_Spray",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Vita_Spray&action=edit",
     "infobox": {
@@ -39294,6 +40395,7 @@
   },
   {
     "name": "Integrated Shield Recharger",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Integrated_Shield_Recharger",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Integrated_Shield_Recharger&action=edit",
     "infobox": {
@@ -39318,6 +40420,7 @@
   },
   {
     "name": "Shield Recharger",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Shield_Recharger",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Shield_Recharger&action=edit",
     "infobox": {
@@ -39417,11 +40520,25 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1560,
+            "currency": "Coins"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Surge Shield Recharger",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Surge_Shield_Recharger",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Surge_Shield_Recharger&action=edit",
     "infobox": {
@@ -39487,11 +40604,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 5
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3600,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Adrenaline Shot",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Adrenaline_Shot",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Adrenaline_Shot&action=edit",
     "infobox": {
@@ -39586,11 +40722,25 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Lance",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Agave Juice",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Agave_Juice",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Agave_Juice&action=edit",
     "infobox": {
@@ -39649,6 +40799,7 @@
   },
   {
     "name": "Barricade Kit",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Barricade_Kit",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Barricade_Kit&action=edit",
     "infobox": {
@@ -39705,11 +40856,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Door Blocker",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Door_Blocker",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Door_Blocker&action=edit",
     "infobox": {
@@ -39774,11 +40944,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Remote Raider Flare",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Remote_Raider_Flare",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Remote_Raider_Flare&action=edit",
     "infobox": {
@@ -39851,11 +41040,25 @@
         "direction": "out",
         "relation": "recycle_to",
         "quantity": 1
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Zipline",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Zipline",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Zipline&action=edit",
     "infobox": {
@@ -39923,11 +41126,30 @@
         "direction": "out",
         "relation": "recycle_to",
         "quantity": 1
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Binoculars",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Binoculars",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Binoculars&action=edit",
     "infobox": {
@@ -39998,11 +41220,25 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 4
+      },
+      {
+        "name": "Shani",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Flame Spray",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Flame_Spray",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Flame_Spray&action=edit",
     "infobox": {
@@ -40105,6 +41341,7 @@
   },
   {
     "name": "Integrated Binoculars",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Integrated_Binoculars",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Integrated_Binoculars&action=edit",
     "infobox": {
@@ -40125,6 +41362,7 @@
   },
   {
     "name": "Noisemaker",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Noisemaker",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Noisemaker&action=edit",
     "infobox": {
@@ -40189,11 +41427,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Photoelectric Cloak",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Photoelectric_Cloak",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Photoelectric_Cloak&action=edit",
     "infobox": {
@@ -40293,6 +41550,7 @@
   },
   {
     "name": "Recorder",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Recorder",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Recorder&action=edit",
     "infobox": {
@@ -40328,11 +41586,30 @@
         "direction": "out",
         "relation": "recycle_to",
         "quantity": 10
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Snap Hook",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Snap_Hook",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Snap_Hook&action=edit",
     "infobox": {
@@ -40458,6 +41735,7 @@
   },
   {
     "name": "Light Impact Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Light_Impact_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Light_Impact_Grenade&action=edit",
     "infobox": {
@@ -40552,11 +41830,25 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Heavy Fuze Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Heavy_Fuze_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Heavy_Fuze_Grenade&action=edit",
     "infobox": {
@@ -40627,11 +41919,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 4800,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Blaze Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Blaze_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Blaze_Grenade&action=edit",
     "infobox": {
@@ -40727,6 +42038,7 @@
   },
   {
     "name": "Gas Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Gas_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Gas_Grenade&action=edit",
     "infobox": {
@@ -40799,6 +42111,24 @@
         "quantity": 1
       },
       {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
+      },
+      {
         "name": "Gas Grenade Trap",
         "direction": "out",
         "relation": "craft_to",
@@ -40814,6 +42144,7 @@
   },
   {
     "name": "Showstopper",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Showstopper",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Showstopper&action=edit",
     "infobox": {
@@ -40897,6 +42228,7 @@
   },
   {
     "name": "Snap Blast Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Snap_Blast_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Snap_Blast_Grenade&action=edit",
     "infobox": {
@@ -40967,11 +42299,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2400,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Seeker Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Seeker_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Seeker_Grenade&action=edit",
     "infobox": {
@@ -41003,11 +42354,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Shrapnel Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Shrapnel_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Shrapnel_Grenade&action=edit",
     "infobox": {
@@ -41066,6 +42436,7 @@
   },
   {
     "name": "Trigger 'Nade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Trigger_%27Nade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Trigger_%27Nade&action=edit",
     "infobox": {
@@ -41149,6 +42520,7 @@
   },
   {
     "name": "Trailblazer",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Trailblazer",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Trailblazer&action=edit",
     "infobox": {
@@ -41215,6 +42587,7 @@
   },
   {
     "name": "Wolfpack",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Wolfpack",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Wolfpack&action=edit",
     "infobox": {
@@ -41289,6 +42662,7 @@
   },
   {
     "name": "Lure Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Lure_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Lure_Grenade&action=edit",
     "infobox": {
@@ -41378,6 +42752,7 @@
   },
   {
     "name": "Li'l Smoke Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Li%27l_Smoke_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Li%27l_Smoke_Grenade&action=edit",
     "infobox": {
@@ -41472,6 +42847,7 @@
   },
   {
     "name": "Smoke Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Smoke_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Smoke_Grenade&action=edit",
     "infobox": {
@@ -41535,6 +42911,24 @@
         "quantity": 3
       },
       {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
+      },
+      {
         "name": "Smoke Grenade Trap",
         "direction": "out",
         "relation": "craft_to",
@@ -41550,6 +42944,7 @@
   },
   {
     "name": "Tagging Grenade",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Tagging_Grenade",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Tagging_Grenade&action=edit",
     "infobox": {
@@ -41632,6 +43027,7 @@
   },
   {
     "name": "Light Stick",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Light_Stick",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Light_Stick&action=edit",
     "infobox": {
@@ -41679,11 +43075,64 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 450,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 450,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 450,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 450,
+            "currency": "Coins"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Blaze Grenade Trap",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Blaze_Grenade_Trap",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Blaze_Grenade_Trap&action=edit",
     "infobox": {
@@ -41742,6 +43191,7 @@
   },
   {
     "name": "Gas Grenade Trap",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Gas_Grenade_Trap",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Gas_Grenade_Trap&action=edit",
     "infobox": {
@@ -41791,6 +43241,7 @@
   },
   {
     "name": "Lure Grenade Trap",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Lure_Grenade_Trap",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Lure_Grenade_Trap&action=edit",
     "infobox": {
@@ -41840,6 +43291,7 @@
   },
   {
     "name": "Smoke Grenade Trap",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Smoke_Grenade_Trap",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Smoke_Grenade_Trap&action=edit",
     "infobox": {
@@ -41888,6 +43340,7 @@
   },
   {
     "name": "Explosive Mine",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Explosive_Mine",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Explosive_Mine&action=edit",
     "infobox": {
@@ -41948,6 +43401,7 @@
   },
   {
     "name": "Gas Mine",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Gas_Mine",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Gas_Mine&action=edit",
     "infobox": {
@@ -41986,11 +43440,29 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "is_limited": false
+          }
+        ]
       }
     ]
   },
   {
     "name": "Jolt Mine",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Jolt_Mine",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Jolt_Mine&action=edit",
     "infobox": {
@@ -42061,11 +43533,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2550,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Pulse Mine",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Pulse_Mine",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Pulse_Mine&action=edit",
     "infobox": {
@@ -42096,11 +43587,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1410,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Deadline",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Deadline",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Deadline&action=edit",
     "infobox": {
@@ -42171,11 +43681,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Apollo",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Compensator I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Compensator_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Compensator_I&action=edit",
     "infobox": {
@@ -42259,11 +43788,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Muzzle Brake I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Muzzle_Brake_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Muzzle_Brake_I&action=edit",
     "infobox": {
@@ -42347,11 +43895,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Shotgun Choke I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Shotgun_Choke_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Shotgun_Choke_I&action=edit",
     "infobox": {
@@ -42410,11 +43977,30 @@
           }
         ],
         "output_level": "1x Shotgun Choke I"
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Angled Grip I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Angled_Grip_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Angled_Grip_I&action=edit",
     "infobox": {
@@ -42494,11 +44080,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Vertical Grip I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Vertical_Grip_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Vertical_Grip_I&action=edit",
     "infobox": {
@@ -42566,11 +44171,30 @@
           }
         ],
         "output_level": "1x Vertical Grip I"
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Extended Light Mag I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Light_Mag_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Light_Mag_I&action=edit",
     "infobox": {
@@ -42642,6 +44266,7 @@
   },
   {
     "name": "Extended Medium Mag I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Medium_Mag_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Medium_Mag_I&action=edit",
     "infobox": {
@@ -42721,6 +44346,7 @@
   },
   {
     "name": "Extended Shotgun Mag I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Shotgun_Mag_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Shotgun_Mag_I&action=edit",
     "infobox": {
@@ -42796,6 +44422,7 @@
   },
   {
     "name": "Stable Stock I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Stable_Stock_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Stable_Stock_I&action=edit",
     "infobox": {
@@ -42866,11 +44493,30 @@
           }
         ],
         "output_level": "1x Stable Stock I"
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Compensator II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Compensator_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Compensator_II&action=edit",
     "infobox": {
@@ -42967,6 +44613,7 @@
   },
   {
     "name": "Muzzle Brake II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Muzzle_Brake_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Muzzle_Brake_II&action=edit",
     "infobox": {
@@ -43058,6 +44705,7 @@
   },
   {
     "name": "Shotgun Choke II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Shotgun_Choke_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Shotgun_Choke_II&action=edit",
     "infobox": {
@@ -43081,10 +44729,30 @@
       "thumb": "https://arcraiders.wiki/w/images/6/63/Shotgun_Choke_II.png",
       "file_page": "https://arcraiders.wiki/wiki/File:Shotgun_Choke_II.png"
     },
-    "edges": []
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Silencer I",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Silencer_I",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Silencer_I&action=edit",
     "infobox": {
@@ -43166,6 +44834,7 @@
   },
   {
     "name": "Angled Grip II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Angled_Grip_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Angled_Grip_II&action=edit",
     "infobox": {
@@ -43254,6 +44923,7 @@
   },
   {
     "name": "Vertical Grip II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Vertical_Grip_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Vertical_Grip_II&action=edit",
     "infobox": {
@@ -43324,6 +44994,7 @@
   },
   {
     "name": "Extended Light Mag II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Light_Mag_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Light_Mag_II&action=edit",
     "infobox": {
@@ -43412,11 +45083,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 1
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Extended Medium Mag II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Medium_Mag_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Medium_Mag_II&action=edit",
     "infobox": {
@@ -43511,6 +45201,7 @@
   },
   {
     "name": "Extended Shotgun Mag II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Shotgun_Mag_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Shotgun_Mag_II&action=edit",
     "infobox": {
@@ -43600,6 +45291,7 @@
   },
   {
     "name": "Stable Stock II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Stable_Stock_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Stable_Stock_II&action=edit",
     "infobox": {
@@ -43674,6 +45366,7 @@
   },
   {
     "name": "Compensator III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Compensator_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Compensator_III&action=edit",
     "infobox": {
@@ -43763,6 +45456,7 @@
   },
   {
     "name": "Muzzle Brake III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Muzzle_Brake_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Muzzle_Brake_III&action=edit",
     "infobox": {
@@ -43852,6 +45546,7 @@
   },
   {
     "name": "Shotgun Choke III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Shotgun_Choke_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Shotgun_Choke_III&action=edit",
     "infobox": {
@@ -43917,6 +45612,7 @@
   },
   {
     "name": "Silencer II",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Silencer_II",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Silencer_II&action=edit",
     "infobox": {
@@ -43991,6 +45687,7 @@
   },
   {
     "name": "Silencer III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Silencer_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Silencer_III&action=edit",
     "infobox": {
@@ -44036,6 +45733,7 @@
   },
   {
     "name": "Shotgun Silencer",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Shotgun_Silencer",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Shotgun_Silencer&action=edit",
     "infobox": {
@@ -44102,6 +45800,7 @@
   },
   {
     "name": "Extended Barrel",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Barrel",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Barrel&action=edit",
     "infobox": {
@@ -44194,6 +45893,7 @@
   },
   {
     "name": "Angled Grip III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Angled_Grip_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Angled_Grip_III&action=edit",
     "infobox": {
@@ -44277,11 +45977,30 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
   {
     "name": "Vertical Grip III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Vertical_Grip_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Vertical_Grip_III&action=edit",
     "infobox": {
@@ -44357,6 +46076,7 @@
   },
   {
     "name": "Horizontal Grip",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Horizontal_Grip",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Horizontal_Grip&action=edit",
     "infobox": {
@@ -44448,6 +46168,7 @@
   },
   {
     "name": "Extended Light Mag III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Light_Mag_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Light_Mag_III&action=edit",
     "infobox": {
@@ -44539,6 +46260,7 @@
   },
   {
     "name": "Extended Medium Mag III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Medium_Mag_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Medium_Mag_III&action=edit",
     "infobox": {
@@ -44632,6 +46354,7 @@
   },
   {
     "name": "Extended Shotgun Mag III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Extended_Shotgun_Mag_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Extended_Shotgun_Mag_III&action=edit",
     "infobox": {
@@ -44716,6 +46439,7 @@
   },
   {
     "name": "Stable Stock III",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Stable_Stock_III",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Stable_Stock_III&action=edit",
     "infobox": {
@@ -44793,6 +46517,7 @@
   },
   {
     "name": "Lightweight Stock",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Lightweight_Stock",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Lightweight_Stock&action=edit",
     "infobox": {
@@ -44882,6 +46607,7 @@
   },
   {
     "name": "Padded Stock",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Padded_Stock",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Padded_Stock&action=edit",
     "infobox": {
@@ -44972,6 +46698,7 @@
   },
   {
     "name": "Kinetic Converter",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Kinetic_Converter",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Kinetic_Converter&action=edit",
     "infobox": {
@@ -45035,6 +46762,7 @@
   },
   {
     "name": "Anvil Splitter",
+    "node_type": "item",
     "wiki_url": "https://arcraiders.wiki/wiki/Anvil_Splitter",
     "source_url": "https://arcraiders.wiki/w/index.php?title=Anvil_Splitter&action=edit",
     "infobox": {
@@ -45077,6 +46805,1860 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 2
+      }
+    ]
+  },
+  {
+    "name": "Celeste",
+    "node_type": "trader",
+    "wiki_url": "https://arcraiders.wiki/wiki/Celeste",
+    "source_url": "https://arcraiders.wiki/w/index.php?title=Celeste&action=edit",
+    "image_urls": {
+      "thumb": "https://arcraiders.wiki/w/images/thumb/0/00/Trader_Celeste.png/100px-Trader_Celeste.png.webp",
+      "original": "https://arcraiders.wiki/w/images/thumb/0/00/Trader_Celeste.png/150px-Trader_Celeste.png.webp"
+    },
+    "edges": [
+      {
+        "name": "Chemicals",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
+      {
+        "name": "Fabric",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
+      {
+        "name": "Metal Parts",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
+      {
+        "name": "Plastic Parts",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
+      {
+        "name": "Rubber Parts",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Assorted Seeds"
+          }
+        ]
+      },
+      {
+        "name": "Complex Gun Parts",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 60,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Exodus Modules",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 55,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Heavy_Gun_Parts",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Light Gun Parts",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Medium Gun Parts",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Moss",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Processor",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Rope",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Sensors",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Speaker Component",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Synthesized Fuel",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 14,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Syringe",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Voltage Converter",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 10,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Battery",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 5,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Canister",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Duct Tape",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Great Mullein",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 5,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Magnet",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Oil",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Simple Gun Parts",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 7,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Steel Spring",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Wires",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 4,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "10/10",
+            "is_limited": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Heavy_Gun_Parts",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shani",
+    "node_type": "trader",
+    "wiki_url": "https://arcraiders.wiki/wiki/Shani",
+    "source_url": "https://arcraiders.wiki/w/index.php?title=Shani&action=edit",
+    "image_urls": {
+      "thumb": "https://arcraiders.wiki/w/images/thumb/0/06/Trader_Shani.png/100px-Trader_Shani.png.webp",
+      "original": "https://arcraiders.wiki/w/images/thumb/0/06/Trader_Shani.png/150px-Trader_Shani.png.webp"
+    },
+    "edges": [
+      {
+        "name": "Binoculars",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Raider Hatch Key",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 9000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tian Wen",
+    "node_type": "trader",
+    "wiki_url": "https://arcraiders.wiki/wiki/Tian_Wen",
+    "source_url": "https://arcraiders.wiki/w/index.php?title=Tian_Wen&action=edit",
+    "image_urls": {
+      "thumb": "https://arcraiders.wiki/w/images/thumb/2/20/Trader_Tian_Wen.png/100px-Trader_Tian_Wen.png.webp",
+      "original": "https://arcraiders.wiki/w/images/thumb/2/20/Trader_Tian_Wen.png/150px-Trader_Tian_Wen.png.webp"
+    },
+    "edges": [
+      {
+        "name": "Ferro",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1425,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Hairpin",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1350,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Kettle",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2520,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Stitcher",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2400,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Energy Clip",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Launcher Ammo",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 4500,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "name": "Heavy Ammo",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "name": "Light Ammo",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 25
+          }
+        ]
+      },
+      {
+        "name": "Medium Ammo",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "name": "Shotgun Ammo",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "name": "Hullcracker",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 30000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Renegade",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 21000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Anvil",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Burletta",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 8700,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Il Toro",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Angled Grip III",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Extended Light Mag II",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Shotgun Choke II",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Angled Grip I",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Compensator I",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Extended Light Magazine I",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Extended Medium Magazine I",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Extended Shotgun Magazine I",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Muzzle Brake I",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Shotgun Choke I",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Stable Stock I",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Vertical Grip I",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Energy Clip",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Launcher Ammo",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 4500,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Heavy Ammo",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Light Ammo",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 25
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Medium Ammo",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shotgun Ammo",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          },
+          {
+            "type": "ammo_count",
+            "value": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Extended Light Magazine I",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Extended Medium Magazine I",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Extended Shotgun Magazine I",
+    "node_type": "item",
+    "edges": [
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Apollo",
+    "node_type": "trader",
+    "wiki_url": "https://arcraiders.wiki/wiki/Apollo",
+    "source_url": "https://arcraiders.wiki/w/index.php?title=Apollo&action=edit",
+    "image_urls": {
+      "thumb": "https://arcraiders.wiki/w/images/thumb/9/96/Trader_Apollo.png/100px-Trader_Apollo.png.webp",
+      "original": "https://arcraiders.wiki/w/images/thumb/9/96/Trader_Apollo.png/150px-Trader_Apollo.png.webp"
+    },
+    "edges": [
+      {
+        "name": "Light Stick",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 450,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Light Stick",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 450,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Light Impact Grenade",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Light Stick",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 450,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Light Stick",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 450,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Gas Mine",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "is_limited": false
+          }
+        ]
+      },
+      {
+        "name": "Recorder",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Noisemaker",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Remote Raider Flare",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Heavy Fuze Grenade",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 4800,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Smoke Grenade",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Seeker Grenade",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Snap Blast Grenade",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2400,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Gas Grenade",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Deadline",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Jolt Mine",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2550,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Pulse Mine",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1410,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "6/6",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Zipline",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Barricade Kit",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Door Blocker",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 810,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lance",
+    "node_type": "trader",
+    "wiki_url": "https://arcraiders.wiki/wiki/Lance",
+    "source_url": "https://arcraiders.wiki/w/index.php?title=Lance&action=edit",
+    "image_urls": {
+      "thumb": "https://arcraiders.wiki/w/images/thumb/4/49/Trader_Lance.png/100px-Trader_Lance.png.webp",
+      "original": "https://arcraiders.wiki/w/images/thumb/4/49/Trader_Lance.png/150px-Trader_Lance.png.webp"
+    },
+    "edges": [
+      {
+        "name": "Combat Mk. 1",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Combat Mk. 1",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Augment"
+          }
+        ]
+      },
+      {
+        "name": "Looting Mk. 1",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Looting Mk. 1",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Augment"
+          }
+        ]
+      },
+      {
+        "name": "Tactical Mk. 1",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Tactical Mk. 1",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1,
+            "currency": "Augment"
+          }
+        ]
+      },
+      {
+        "name": "Light Shield",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Shield Recharger",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1560,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Adrenaline Shot",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 900,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Bandage",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 750,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Defibrillator",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3000,
+            "currency": "Coins"
+          }
+        ]
+      },
+      {
+        "name": "Combat Mk. 2",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Tactical Mk. 2",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Looting Mk. 2",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Heavy Shield",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 16500,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "1/1",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Medium Shield",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Sterilized Bandage",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 6000,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Surge Shield Recharger",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 3600,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
+      },
+      {
+        "name": "Herbal Bandage",
+        "direction": "out",
+        "relation": "trader",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 2700,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   }
