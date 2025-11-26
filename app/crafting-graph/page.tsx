@@ -2,11 +2,14 @@
 
 import { useEffect, useRef, useState, useMemo, Suspense } from 'react';
 import cytoscape from 'cytoscape';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
 import itemsRelationData from '../../data/items_relation.json';
 import Header from '../components/Header';
 import LoadingState from '../components/graph/LoadingState';
 import ErrorState from '../components/graph/ErrorState';
+import GraphSettingsPanel from '../components/graph/GraphSettingsPanel';
 import { ItemData, NodeInfo } from '../types/graph';
 import { cytoscapeStyles } from '../config/cytoscapeStyles';
 import { buildGraphElements, buildLayoutPositions } from '../utils/graphHelpers';
@@ -14,11 +17,45 @@ import { buildGraphElements, buildLayoutPositions } from '../utils/graphHelpers'
 function CraftingTreeContent() {
   const cyRef = useRef<cytoscape.Core | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const hasAnimated = useRef<string | null>(null); // Track which item has been animated
   const [selectedNode, setSelectedNode] = useState<NodeInfo | null>(null);
   const [isReady, setIsReady] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const searchParams = useSearchParams();
+  const router = useRouter();
   
   const itemName = searchParams.get('item') || 'Power Rod';
+  
+  // Initialize edge types from URL or default to all types
+  const [selectedEdgeTypes, setSelectedEdgeTypes] = useState<Set<string>>(() => {
+    const filterParam = searchParams.get('filters');
+    if (filterParam !== null) {
+      // If filters param exists (even if empty), use it
+      return filterParam === '' ? new Set() : new Set(filterParam.split(',').filter(f => f));
+    }
+    // Default to all types if no filters param
+    return new Set(['craft', 'repair', 'recycle', 'salvage', 'upgrade', 'sold_by']);
+  });
+
+  // Sync edge types with URL when searchParams change
+  useEffect(() => {
+    const filterParam = searchParams.get('filters');
+    if (filterParam !== null) {
+      // If filters param exists (even if empty), use it
+      setSelectedEdgeTypes(filterParam === '' ? new Set() : new Set(filterParam.split(',').filter(f => f)));
+    } else {
+      // If no filters param in URL, reset to all
+      setSelectedEdgeTypes(new Set(['craft', 'repair', 'recycle', 'salvage', 'upgrade', 'sold_by']));
+    }
+  }, [searchParams]);
+
+  // Custom setter that also updates the URL
+  const updateSelectedEdgeTypes = (newTypes: Set<string>) => {
+    setSelectedEdgeTypes(newTypes);
+    // Update URL with new filters
+    const filterParam = Array.from(newTypes).join(',');
+    router.push(`/crafting-graph?item=${encodeURIComponent(itemName)}&filters=${filterParam}`, { scroll: false });
+  };
 
   // Find the selected item and build item lookup
   const { selectedItem, itemsLookup } = useMemo(() => {
@@ -46,8 +83,8 @@ function CraftingTreeContent() {
       return;
     }
 
-    // Build graph elements from actual data
-    const { elements, leftGrouped, rightGrouped } = buildGraphElements(currentItem, itemsLookup);
+    // Build graph elements from actual data with edge type filtering
+    const { elements, leftGrouped, rightGrouped } = buildGraphElements(currentItem, itemsLookup, selectedEdgeTypes);
 
     let cy;
     try {
@@ -80,41 +117,48 @@ function CraftingTreeContent() {
         cyRef.current.resize();
         cyRef.current.fit(undefined, 150);
         
-        const centerNode = cyRef.current.$('[type="center"]');
-        const currentZoom = cyRef.current.zoom();
+        // Only animate if this item hasn't been animated yet
+        const shouldAnimate = hasAnimated.current !== itemName;
         
-        // Calculate zoom needed to make center node properly visible
-        const containerHeight = cyRef.current.height();
-        const centerNodeHeight = 250;
-        const targetNodeScreenHeight = containerHeight * 0.22;
-        const targetZoom = targetNodeScreenHeight / centerNodeHeight;
-        
-        // Zoom in if current zoom is significantly smaller than target (many nodes)
-        if (currentZoom < targetZoom * 0.8) {
-          const finalZoom = Math.max(currentZoom * 1.5, targetZoom);
+        if (shouldAnimate) {
+          hasAnimated.current = itemName;
           
-          cyRef.current.animate({
-            zoom: finalZoom,
-            center: {
-              eles: centerNode,
-            },
-          }, {
-            duration: 1300,
-            easing: 'ease-out-cubic',
-          });
-        } else {
-          // Graph is already big (few nodes), do a slight zoom out for dynamic feel
-          const finalZoom = currentZoom * 0.85;
+          const centerNode = cyRef.current.$('[type="center"]');
+          const currentZoom = cyRef.current.zoom();
           
-          cyRef.current.animate({
-            zoom: finalZoom,
-            center: {
-              eles: centerNode,
-            },
-          }, {
-            duration: 1300,
-            easing: 'ease-out-cubic',
-          });
+          // Calculate zoom needed to make center node properly visible
+          const containerHeight = cyRef.current.height();
+          const centerNodeHeight = 250;
+          const targetNodeScreenHeight = containerHeight * 0.22;
+          const targetZoom = targetNodeScreenHeight / centerNodeHeight;
+          
+          // Zoom in if current zoom is significantly smaller than target (many nodes)
+          if (currentZoom < targetZoom * 0.8) {
+            const finalZoom = Math.max(currentZoom * 1.5, targetZoom);
+            
+            cyRef.current.animate({
+              zoom: finalZoom,
+              center: {
+                eles: centerNode,
+              },
+            }, {
+              duration: 1300,
+              easing: 'ease-out-cubic',
+            });
+          } else {
+            // Graph is already big (few nodes), do a slight zoom out for dynamic feel
+            const finalZoom = currentZoom * 0.85;
+            
+            cyRef.current.animate({
+              zoom: finalZoom,
+              center: {
+                eles: centerNode,
+              },
+            }, {
+              duration: 1300,
+              easing: 'ease-out-cubic',
+            });
+          }
         }
       }
     }, 100);
@@ -125,8 +169,9 @@ function CraftingTreeContent() {
       const nodeData = node.data();
       
       if (nodeData.type !== 'center' && nodeData.itemName) {
-        // Navigate to the clicked item
-        window.location.href = `/crafting-graph?item=${encodeURIComponent(nodeData.itemName)}`;
+        // Navigate to the clicked item with current filters
+        const filterParam = Array.from(selectedEdgeTypes).join(',');
+        router.push(`/crafting-graph?item=${encodeURIComponent(nodeData.itemName)}&filters=${filterParam}`, { scroll: false });
       } else {
         setSelectedNode({
           id: nodeData.id,
@@ -149,7 +194,7 @@ function CraftingTreeContent() {
         cyRef.current.destroy();
       }
     };
-  }, [isReady, itemName, itemsLookup]);
+  }, [isReady, itemName, itemsLookup, selectedEdgeTypes, router]);
 
   // Show loading or error state
   if (!isReady) {
@@ -165,6 +210,16 @@ function CraftingTreeContent() {
       {/* Header */}
       <Header activePage="graph" />
 
+      {/* Settings Button */}
+      <button
+        onClick={() => setIsSettingsOpen(true)}
+        className="fixed bottom-8 right-8 z-30 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-purple-500/30 to-pink-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-purple-500/40 hover:to-pink-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:shadow-purple-500/50 hover:scale-105"
+        aria-label="Open edge filters"
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-full pointer-events-none"></div>
+        <FontAwesomeIcon icon={faCog} className="text-white text-xl relative z-10 drop-shadow-lg" />
+      </button>
+
       {/* Graph Canvas */}
       <div className="flex-1 relative bg-[#07020b] overflow-hidden">
         <div 
@@ -175,6 +230,14 @@ function CraftingTreeContent() {
           }}
         />
       </div>
+
+      {/* Settings Panel */}
+      <GraphSettingsPanel
+        isOpen={isSettingsOpen}
+        onClose={() => setIsSettingsOpen(false)}
+        selectedEdgeTypes={selectedEdgeTypes}
+        setSelectedEdgeTypes={updateSelectedEdgeTypes}
+      />
     </div>
   );
 }

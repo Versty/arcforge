@@ -131,7 +131,7 @@ export const cytoscapeStyles = [
   {
     selector: 'edge[relation*="upgrade"]',
     style: {
-      'line-color': '#f59e0b',
+      'line-color': '#ec4899',
     }
   },
   {

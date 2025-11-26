@@ -34,10 +34,33 @@ export const formatEdgeLabel = (edge: Edge): string => {
 // Build graph elements from item data
 export const buildGraphElements = (
   currentItem: ItemData,
-  itemsLookup: Map<string, ItemData>
+  itemsLookup: Map<string, ItemData>,
+  selectedEdgeTypes?: Set<string>
 ) => {
   const elements: any[] = [];
   const CURVATURE = 90;
+  
+  // Helper to check if an edge should be included
+  const shouldIncludeEdge = (relation: string): boolean => {
+    if (!selectedEdgeTypes) {
+      return true; // If no filter set provided, show all
+    }
+    
+    if (selectedEdgeTypes.size === 0) {
+      return false; // If explicitly no filters selected, show no edges (only center node)
+    }
+    
+    // Check if the relation matches any selected type
+    // Relations can be: craft_from, craft_to, recycle_from, etc.
+    const cleanedRelation = cleanRelationName(relation);
+    
+    // Map both 'trader' and 'sold_by' to the 'sold_by' filter
+    if (cleanedRelation === 'trader' || cleanedRelation === 'sold_by') {
+      return selectedEdgeTypes.has('sold_by');
+    }
+    
+    return selectedEdgeTypes.has(cleanedRelation);
+  };
   
   // Center node - Selected item
   const centerId = `center-${currentItem.name}`;
@@ -55,11 +78,16 @@ export const buildGraphElements = (
     }
   });
 
-  // Group edges by item name and direction
+  // Group edges by item name and direction, filtering by selected edge types
   const leftGrouped = new Map<string, Edge[]>();
   const rightGrouped = new Map<string, Edge[]>();
   
   currentItem.edges.forEach(edge => {
+    // Skip edges that don't match the filter
+    if (!shouldIncludeEdge(edge.relation)) {
+      return;
+    }
+    
     if (edge.direction === 'in') {
       if (!leftGrouped.has(edge.name)) {
         leftGrouped.set(edge.name, []);
