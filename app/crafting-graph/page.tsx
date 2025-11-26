@@ -4,12 +4,13 @@ import { useEffect, useRef, useState, useMemo, Suspense } from 'react';
 import cytoscape from 'cytoscape';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import itemsRelationData from '../../data/items_relation.json';
 import Header from '../components/Header';
 import LoadingState from '../components/graph/LoadingState';
 import ErrorState from '../components/graph/ErrorState';
 import GraphSettingsPanel from '../components/graph/GraphSettingsPanel';
+import HelpPanel from '../components/graph/HelpPanel';
 import { ItemData, NodeInfo } from '../types/graph';
 import { cytoscapeStyles } from '../config/cytoscapeStyles';
 import { buildGraphElements, buildLayoutPositions } from '../utils/graphHelpers';
@@ -22,6 +23,7 @@ function CraftingTreeContent() {
   const [selectedNode, setSelectedNode] = useState<NodeInfo | null>(null);
   const [isReady, setIsReady] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isHelpOpen, setIsHelpOpen] = useState(false);
   const searchParams = useSearchParams();
   const router = useRouter();
   
@@ -233,6 +235,16 @@ function CraftingTreeContent() {
       {/* Header */}
       <Header activePage="graph" />
 
+      {/* Help Button */}
+      <button
+        onClick={() => setIsHelpOpen(true)}
+        className="fixed bottom-28 right-8 z-30 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-blue-500/30 to-cyan-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-blue-500/40 hover:to-cyan-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:shadow-blue-500/50 hover:scale-105"
+        aria-label="Open help"
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-full pointer-events-none"></div>
+        <FontAwesomeIcon icon={faQuestionCircle} className="text-white text-xl relative z-10 drop-shadow-lg" />
+      </button>
+
       {/* Settings Button */}
       <button
         onClick={() => setIsSettingsOpen(true)}
@@ -253,6 +265,12 @@ function CraftingTreeContent() {
           }}
         />
       </div>
+
+      {/* Help Panel */}
+      <HelpPanel
+        isOpen={isHelpOpen}
+        onClose={() => setIsHelpOpen(false)}
+      />
 
       {/* Settings Panel */}
       <GraphSettingsPanel
