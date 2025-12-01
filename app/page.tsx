@@ -207,8 +207,11 @@ export default function Home() {
   // Initialize with no types selected
   const [selectedTypes, setSelectedTypes] = useState<Set<string>>(() => new Set());
 
-  // Get current item translations for search
-  const currentItemTranslations = itemTranslations[language] || {};
+  // Get current item translations for search, memoized by language
+  const currentItemTranslations = useMemo(
+    () => itemTranslations[language] || {},
+    [language],
+  );
 
   const filteredAndSortedItems = useMemo(() => {
     let items = itemsData as Item[];

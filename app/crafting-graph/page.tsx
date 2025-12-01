@@ -86,7 +86,7 @@ function CraftingTreeContent() {
       cy = cytoscape({
         container: containerRef.current,
         elements: elements,
-        style: cytoscapeStyles as any,
+        style: cytoscapeStyles,
         layout: {
           name: 'preset',
           positions: buildLayoutPositions(elements, leftGrouped, rightGrouped),
