@@ -11,7 +11,10 @@ interface ItemsGridProps {
   itemSize: 'tiny' | 'small' | 'medium' | 'large';
   displayPrice: boolean;
   displayWeight: boolean;
+  showTrackIcons: boolean;
   onItemClick: (item: Item) => void;
+  onItemTracked: (name: string) => void;
+  isTrackedFunc: (name: string) => boolean;
 }
 
 export default function ItemsGrid({
@@ -19,7 +22,10 @@ export default function ItemsGrid({
   itemSize,
   displayPrice,
   displayWeight,
-  onItemClick
+  showTrackIcons,
+  onItemClick,
+  onItemTracked,
+  isTrackedFunc
 }: ItemsGridProps) {
   const { t } = useTranslation();
 
@@ -41,7 +47,10 @@ export default function ItemsGrid({
               item={item}
               displayPrice={displayPrice}
               displayWeight={displayWeight}
+              showTrackIcon={showTrackIcons}
               onClick={() => onItemClick(item)}
+              onTracked={ () => onItemTracked(item.name)}
+              isTrackedFunc={ isTrackedFunc }
             />
           ))}
         </div>
