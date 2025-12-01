@@ -1,6 +1,6 @@
 'use client';
-
-import React, { createContext, useContext, useState, useEffect, ReactNode, useCallback, useRef } from 'react';
+ 
+import React, { createContext, useContext, useState, ReactNode, useCallback, useRef } from 'react';
 
 // Define supported languages (ordered for dropdown)
 export const SUPPORTED_LANGUAGES = [
@@ -75,29 +75,30 @@ interface LanguageProviderProps {
 }
 
 export function LanguageProvider({ children, translations, itemTranslations }: LanguageProviderProps) {
-  const [language, setLanguageState] = useState<Language>(DEFAULT_LANGUAGE);
-  const [isHydrated, setIsHydrated] = useState(false);
-  const [showTranslationWarning, setShowTranslationWarning] = useState(false);
-  const isUserAction = useRef(false);
+  const [language, setLanguageState] = useState<Language>(() => {
+    if (typeof window === 'undefined') {
+      return DEFAULT_LANGUAGE;
+    }
 
-  // Load saved language preference on mount
-  useEffect(() => {
     try {
-      const savedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY) as Language | null;
+      const savedLanguage = window.localStorage.getItem(LANGUAGE_STORAGE_KEY) as Language | null;
       if (savedLanguage && SUPPORTED_LANGUAGES.includes(savedLanguage)) {
-        setLanguageState(savedLanguage);
-      } else {
-        // Try to detect browser language
-        const browserLang = navigator.language.split('-')[0] as Language;
-        if (SUPPORTED_LANGUAGES.includes(browserLang)) {
-          setLanguageState(browserLang);
-        }
+        return savedLanguage;
+      }
+
+      const browserLang = window.navigator.language.split('-')[0] as Language;
+      if (SUPPORTED_LANGUAGES.includes(browserLang)) {
+        return browserLang;
       }
     } catch {
-      // localStorage not available (SSR or privacy mode)
+      // localStorage or navigator not available
     }
-    setIsHydrated(true);
-  }, []);
+
+    return DEFAULT_LANGUAGE;
+  });
+  const [isHydrated] = useState<boolean>(() => typeof window !== 'undefined');
+  const [showTranslationWarning, setShowTranslationWarning] = useState(false);
+  const isUserAction = useRef(false);
 
   // Save language preference when it changes (user action only)
   const setLanguage = useCallback((lang: Language) => {

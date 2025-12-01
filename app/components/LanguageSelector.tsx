@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { useLanguage, SUPPORTED_LANGUAGES, LANGUAGE_LABELS, LANGUAGE_CODES, Language } from '../i18n';
 
 export default function LanguageSelector() {

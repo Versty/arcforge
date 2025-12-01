@@ -118,6 +118,8 @@ export default function ItemCard({
         )}
         
         {item.image_urls?.thumb ? (
+          // External item images intentionally use <img> for flexible loading/error handling
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={item.image_urls.thumb}
             alt={translatedName}

@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
-import itemsData from '../data/items_database.json';
 import itemsRelationData from '../data/items_relation.json';
+import type { ItemData } from './types/graph';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
@@ -16,17 +16,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Add crafting tree routes for items with relationships
-  const craftingTreeRoutes = (itemsRelationData as any[])
+  // Add crafting graph routes for items with relationships
+  const craftingGraphRoutes = (itemsRelationData as ItemData[])
     .filter((item) => item.edges && item.edges.length > 0)
     .map((item) => ({
-      url: `${baseUrl}/crafting-tree?item=${encodeURIComponent(item.name)}`,
+      url: `${baseUrl}/crafting-graph?item=${encodeURIComponent(item.name)}`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     }));
 
-  routes.push(...craftingTreeRoutes);
+  routes.push(...craftingGraphRoutes);
 
   return routes;
 }

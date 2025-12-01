@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
@@ -20,7 +21,7 @@ export default function Header({ activePage }: HeaderProps) {
     <header className="bg-black/20 backdrop-blur-xl border-b border-purple-500/30 sticky top-0 z-40 shadow-lg shadow-purple-500/5">
       <div className="flex items-center justify-between px-2 sm:px-4 md:pr-8 relative">
         {/* Logo */}
-        <a href="/" className="flex-shrink-0 h-16 sm:h-20 md:h-24 flex items-center cursor-pointer">
+        <Link href="/" className="flex-shrink-0 h-16 sm:h-20 md:h-24 flex items-center cursor-pointer">
           <Image
             src="/logo.webp"
             alt="ARC Forge"
@@ -29,11 +30,11 @@ export default function Header({ activePage }: HeaderProps) {
             className="h-full w-auto drop-shadow-2xl"
             priority
           />
-        </a>
+        </Link>
         
         {/* Navigation */}
         <nav className="flex gap-1 sm:gap-2 md:gap-3 items-center">
-          <a
+          <Link
             href="/"
             className={`group relative px-2 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 ${
               isDatabaseActive
@@ -48,8 +49,8 @@ export default function Header({ activePage }: HeaderProps) {
             {isDatabaseActive && (
               <div className="absolute inset-0 bg-gradient-to-br from-purple-400/0 to-purple-600/20 rounded-lg md:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
             )}
-          </a>
-          <a
+          </Link>
+          <Link
             href="/crafting-graph?item=Power%20Rod"
             className={`group relative px-2 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 ${
               isGraphActive
@@ -64,7 +65,7 @@ export default function Header({ activePage }: HeaderProps) {
             {isGraphActive && (
               <div className="absolute inset-0 bg-gradient-to-br from-purple-400/0 to-purple-600/20 rounded-lg md:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
             )}
-          </a>
+          </Link>
           <LanguageSelector />
           <a
             href="https://buymeacoffee.com/wangyz1999"

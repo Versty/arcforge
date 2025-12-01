@@ -12,7 +12,7 @@ export interface Item {
     sellprice?: number | number[];
     stacksize?: number;
     damage?: number;
-    [key: string]: any;
+    [key: string]: unknown;
   };
   image_urls: {
     thumb?: string;
@@ -20,6 +20,6 @@ export interface Item {
     file_page?: string;
   };
   sources?: string[];
-  [key: string]: any;
+  [key: string]: unknown;
 }
 

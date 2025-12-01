@@ -11,7 +11,7 @@ import LoadingState from '../components/graph/LoadingState';
 import ErrorState from '../components/graph/ErrorState';
 import GraphSettingsPanel from '../components/graph/GraphSettingsPanel';
 import HelpPanel from '../components/graph/HelpPanel';
-import { ItemData, NodeInfo } from '../types/graph';
+import { ItemData } from '../types/graph';
 import { cytoscapeStyles } from '../config/cytoscapeStyles';
 import { buildGraphElements, buildLayoutPositions } from '../utils/graphHelpers';
 import { useTranslation } from '../i18n';
@@ -22,8 +22,6 @@ function CraftingTreeContent() {
   const containerRef = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef<string | null>(null); // Track which item has been animated
   const resizeTimeoutRef = useRef<NodeJS.Timeout | null>(null); // Track resize timeout
-  const [selectedNode, setSelectedNode] = useState<NodeInfo | null>(null);
-  const [isReady, setIsReady] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
   const searchParams = useSearchParams();
@@ -31,32 +29,19 @@ function CraftingTreeContent() {
   
   const itemName = searchParams.get('item') || 'Power Rod';
   
-  // Initialize edge types from URL or default to all types
-  const [selectedEdgeTypes, setSelectedEdgeTypes] = useState<Set<string>>(() => {
+  // Compute edge types from URL or default to all types
+  const selectedEdgeTypes = useMemo(() => {
     const filterParam = searchParams.get('filters');
     if (filterParam !== null) {
       // If filters param exists (even if empty), use it
-      return filterParam === '' ? new Set() : new Set(filterParam.split(',').filter(f => f));
+      return filterParam === '' ? new Set<string>() : new Set(filterParam.split(',').filter(f => f));
     }
     // Default to all types if no filters param
-    return new Set(['craft', 'repair', 'recycle', 'salvage', 'upgrade', 'trade']);
-  });
-
-  // Sync edge types with URL when searchParams change
-  useEffect(() => {
-    const filterParam = searchParams.get('filters');
-    if (filterParam !== null) {
-      // If filters param exists (even if empty), use it
-      setSelectedEdgeTypes(filterParam === '' ? new Set() : new Set(filterParam.split(',').filter(f => f)));
-    } else {
-      // If no filters param in URL, reset to all
-      setSelectedEdgeTypes(new Set(['craft', 'repair', 'recycle', 'salvage', 'upgrade', 'trade']));
-    }
+    return new Set<string>(['craft', 'repair', 'recycle', 'salvage', 'upgrade', 'trade']);
   }, [searchParams]);
 
   // Custom setter that also updates the URL
   const updateSelectedEdgeTypes = (newTypes: Set<string>) => {
-    setSelectedEdgeTypes(newTypes);
     // Update URL with new filters
     const filterParam = Array.from(newTypes).join(',');
     router.push(`/crafting-graph?item=${encodeURIComponent(itemName)}&filters=${filterParam}`, { scroll: false });
@@ -76,13 +61,8 @@ function CraftingTreeContent() {
   const translateItem = useCallback((name: string) => tItem(name), [tItem]);
   const translateRelation = useCallback((key: string) => t(key), [t]);
 
-  // Ensure DOM is ready
   useEffect(() => {
-    setIsReady(true);
-  }, []);
-
-  useEffect(() => {
-    if (!isReady || !containerRef.current) {
+    if (!containerRef.current) {
       return;
     }
 
@@ -203,20 +183,6 @@ function CraftingTreeContent() {
         // Navigate to the clicked item with current filters (use original itemName for navigation)
         const filterParam = Array.from(selectedEdgeTypes).join(',');
         router.push(`/crafting-graph?item=${encodeURIComponent(nodeData.itemName)}&filters=${filterParam}`, { scroll: false });
-      } else {
-        setSelectedNode({
-          id: nodeData.id,
-          label: nodeData.label,
-          type: nodeData.type,
-          rarity: nodeData.rarity,
-        });
-      }
-    });
-
-    // Handle background clicks
-    cy.on('tap', (event) => {
-      if (event.target === cy) {
-        setSelectedNode(null);
       }
     });
 
@@ -231,12 +197,7 @@ function CraftingTreeContent() {
         cyRef.current.destroy();
       }
     };
-  }, [isReady, itemName, itemsLookup, selectedEdgeTypes, router, translateItem, translateRelation]);
-
-  // Show loading or error state
-  if (!isReady) {
-    return <LoadingState />;
-  }
+  }, [itemName, itemsLookup, selectedEdgeTypes, router, translateItem, translateRelation]);
 
   if (!selectedItem) {
     return <ErrorState itemName={itemName} />;

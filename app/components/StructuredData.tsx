@@ -1,42 +1,73 @@
 import Script from 'next/script';
 
+type StructuredDataType = 'WebSite' | 'ItemList' | 'WebPage';
+
+interface BaseStructuredData {
+  name?: string;
+  description?: string;
+  url: string;
+}
+
+interface WebSiteData extends BaseStructuredData {
+  name?: string;
+}
+
+interface ItemListItem {
+  name: string;
+  description?: string;
+  image?: string;
+  url: string;
+}
+
+interface ItemListData {
+  name: string;
+  description?: string;
+  numberOfItems: number;
+  items?: ItemListItem[];
+}
+
+type StructuredDataInput = WebSiteData | ItemListData | BaseStructuredData;
+
 interface StructuredDataProps {
-  type: 'WebSite' | 'ItemList' | 'WebPage';
-  data: any;
+  type: StructuredDataType;
+  data: StructuredDataInput;
 }
 
 export default function StructuredData({ type, data }: StructuredDataProps) {
-  let structuredData: any = {
+  let structuredData: Record<string, unknown> = {
     '@context': 'https://schema.org',
   };
 
   switch (type) {
-    case 'WebSite':
+    case 'WebSite': {
+      const siteData = data as WebSiteData;
       structuredData = {
         ...structuredData,
         '@type': 'WebSite',
-        name: data.name || 'ARC Forge',
-        description: data.description,
-        url: data.url,
+        name: siteData.name || 'ARC Forge',
+        description: siteData.description,
+        url: siteData.url,
         potentialAction: {
           '@type': 'SearchAction',
           target: {
             '@type': 'EntryPoint',
-            urlTemplate: `${data.url}?search={search_term_string}`,
+            urlTemplate: `${siteData.url}?search={search_term_string}`,
           },
           'query-input': 'required name=search_term_string',
         },
       };
       break;
+    }
 
-    case 'ItemList':
+    case 'ItemList': {
+      const listData = data as ItemListData;
       structuredData = {
         ...structuredData,
         '@type': 'ItemList',
-        name: data.name,
-        description: data.description,
-        numberOfItems: data.numberOfItems,
-        itemListElement: data.items?.map((item: any, index: number) => ({
+        name: listData.name,
+        description: listData.description,
+        numberOfItems: listData.numberOfItems,
+        itemListElement: listData.items?.map((item, index: number) => ({
           '@type': 'ListItem',
           position: index + 1,
           item: {
@@ -49,16 +80,19 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         })),
       };
       break;
+    }
 
-    case 'WebPage':
+    case 'WebPage': {
+      const pageData = data as BaseStructuredData;
       structuredData = {
         ...structuredData,
         '@type': 'WebPage',
-        name: data.name,
-        description: data.description,
-        url: data.url,
+        name: pageData.name,
+        description: pageData.description,
+        url: pageData.url,
       };
       break;
+    }
   }
 
   return (

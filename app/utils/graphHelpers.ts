@@ -69,6 +69,25 @@ export const formatEdgeLabel = (
   return parts.join(' ');
 };
 
+// Shape of elements we build for Cytoscape
+interface GraphElementData {
+  id?: string;
+  label?: string;
+  type?: 'center' | 'input' | 'output';
+  nodeType?: string;
+  rarity?: string;
+  imageUrl?: string;
+  itemName?: string;
+  source?: string;
+  target?: string;
+  relation?: string;
+  curvature?: number;
+}
+
+interface GraphElement {
+  data?: GraphElementData;
+}
+
 // Build graph elements from item data
 // Now accepts optional translation function for item names
 export const buildGraphElements = (
@@ -78,7 +97,7 @@ export const buildGraphElements = (
   translateItem?: (name: string) => string,
   translateRelation?: (key: string) => string
 ) => {
-  const elements: any[] = [];
+  const elements: GraphElement[] = [];
   const CURVATURE = 90;
   
   // Helper to translate item name
@@ -256,11 +275,11 @@ export const buildGraphElements = (
 
 // Build layout positions function
 export const buildLayoutPositions = (
-  elements: any[],
+  elements: GraphElement[],
   leftGrouped: Map<string, Edge[]>,
   rightGrouped: Map<string, Edge[]>
 ) => {
-  return (node: any) => {
+  return (node: { id: () => string; data: (key: string) => string }) => {
     const nodeId = node.id();
     const nodeType = node.data('type');
     
@@ -277,7 +296,9 @@ export const buildLayoutPositions = (
     
     // Left nodes (inputs)
     if (nodeType === 'input') {
-      const leftNodeIndex = elements.filter(el => el.data?.type === 'input').findIndex(el => el.data.id === nodeId);
+      const leftNodeIndex = elements
+        .filter(el => el.data?.type === 'input')
+        .findIndex(el => el.data?.id === nodeId);
       const totalLeftNodes = leftGrouped.size;
       const startY = centerY - ((totalLeftNodes - 1) * spacing) / 2;
       return { x: leftX, y: startY + leftNodeIndex * spacing };
@@ -285,7 +306,9 @@ export const buildLayoutPositions = (
     
     // Right nodes (outputs)
     if (nodeType === 'output') {
-      const rightNodeIndex = elements.filter(el => el.data?.type === 'output').findIndex(el => el.data.id === nodeId);
+      const rightNodeIndex = elements
+        .filter(el => el.data?.type === 'output')
+        .findIndex(el => el.data?.id === nodeId);
       const totalRightNodes = rightGrouped.size;
       const startY = centerY - ((totalRightNodes - 1) * spacing) / 2;
       return { x: rightX, y: startY + rightNodeIndex * spacing };

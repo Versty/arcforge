@@ -1,14 +1,19 @@
+import type { Stylesheet } from 'cytoscape';
 import { rarityColors } from './rarityConfig';
 
-export const cytoscapeStyles = [
+interface DataElement {
+  data: (key: string) => string | number | undefined;
+}
+
+export const cytoscapeStyles: Stylesheet[] = [
   {
     selector: 'node',
     style: {
       'shape': 'roundrectangle',
       'background-fill': 'linear-gradient',
       'background-gradient-direction': 'to-right',
-      'background-gradient-stop-colors': ((ele: any) => {
-        const rarity = ele.data('rarity');
+      'background-gradient-stop-colors': (ele: DataElement) => {
+        const rarity = ele.data('rarity') as string | undefined;
         const gradientColors: { [key: string]: string[] } = {
           Common: ['rgba(153,159,165,0.25)', 'rgba(5,13,36,1)'],
           Uncommon: ['rgba(86,203,134,0.25)', 'rgba(5,13,36,1)'],
@@ -17,9 +22,9 @@ export const cytoscapeStyles = [
           Legendary: ['rgba(251,199,0,0.25)', 'rgba(5,13,36,1)'],
         };
         return gradientColors[rarity] || gradientColors.Common;
-      }) as any,
-      'background-gradient-stop-positions': [0, 100] as any,
-      'background-image': (ele: any) => ele.data('imageUrl') || '',
+      },
+      'background-gradient-stop-positions': [0, 100],
+      'background-image': (ele: DataElement) => (ele.data('imageUrl') as string | undefined) || '',
       'background-fit': 'contain',
       'background-clip': 'none',
       'background-position-x': '50%',
@@ -35,15 +40,15 @@ export const cytoscapeStyles = [
       'width': 100,
       'height': 100,
       'border-width': 3,
-      'border-color': (ele: any) => {
-        const rarity = ele.data('rarity');
+      'border-color': (ele: DataElement) => {
+        const rarity = ele.data('rarity') as string | undefined;
         return rarityColors[rarity] || '#717471';
       },
       'text-wrap': 'wrap',
-      'text-max-width': 90 as any,
+      'text-max-width': 90,
       'text-background-color': '#07020b',
       'text-background-opacity': 0.85,
-      'text-background-padding': 3 as any,
+      'text-background-padding': 3,
     }
   },
   {
@@ -76,7 +81,7 @@ export const cytoscapeStyles = [
       'border-color': '#fbbf24',
       'width': 120,
       'height': 120,
-      'background-gradient-stop-colors': ['rgba(251,191,36,0.2)', 'rgba(5,13,36,1)'] as any,
+      'background-gradient-stop-colors': ['rgba(251,191,36,0.2)', 'rgba(5,13,36,1)'],
     }
   },
   {
@@ -93,8 +98,9 @@ export const cytoscapeStyles = [
       'line-color': '#6366f1',
       'target-arrow-shape': 'none',
       'curve-style': 'unbundled-bezier',
-      'control-point-distances': (ele: any) => {
-        const curvature = ele.data('curvature') || 0;
+      'control-point-distances': (ele: DataElement) => {
+        const curvatureRaw = ele.data('curvature');
+        const curvature = typeof curvatureRaw === 'number' ? curvatureRaw : 0;
         const dist = Math.abs(curvature) * 0.35;
         return curvature >= 0 ? `${dist} -${dist}` : `-${dist} ${dist}`;
       },
@@ -111,14 +117,14 @@ export const cytoscapeStyles = [
       'text-outline-opacity': 1,
       'text-background-color': '#07020b',
       'text-background-opacity': 1,
-      'text-background-padding': 6 as any,
-      'text-background-shape': 'roundrectangle' as any,
-      'text-border-width': 1 as any,
+      'text-background-padding': 6,
+      'text-background-shape': 'roundrectangle',
+      'text-border-width': 1,
       'text-border-color': '#6366f1',
       'text-border-opacity': 0.4,
       'text-margin-y': -12,
       'text-wrap': 'wrap',
-      'text-max-width': 140 as any,
+      'text-max-width': 140,
     }
   },
   // Edge coloring by relation type

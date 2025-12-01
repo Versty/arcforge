@@ -3,7 +3,7 @@ export interface Edge {
   direction: 'in' | 'out';
   relation: string;
   quantity?: number;
-  dependency?: Array<{ type: string; [key: string]: any }>;
+  dependency?: Array<{ type: string; [key: string]: unknown }>;
   input_level?: string;
   output_level?: string;
 }
@@ -16,7 +16,7 @@ export interface ItemData {
     image: string;
     rarity?: string;
     type?: string;
-    [key: string]: any;
+    [key: string]: unknown;
   };
   image_urls?: {
     thumb?: string;

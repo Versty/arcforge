@@ -134,6 +134,8 @@ export default function ItemDetailPanel({ item, onClose, onItemTracked, isTracke
               {/* Animated shine effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               
+              {/* External item images intentionally use <img> for flexible loading/error handling */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={item.image_urls.thumb}
                 alt={translatedName}

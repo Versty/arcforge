@@ -10,15 +10,16 @@ export default function TranslationWarningToast() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    if (showTranslationWarning) {
-      // Small delay for animation
-      const timer = setTimeout(() => {
-        setIsAnimating(true);
-      }, 50);
-      return () => clearTimeout(timer);
-    } else {
-      setIsAnimating(false);
+    if (!showTranslationWarning) {
+      return;
     }
+
+    // Small delay for animation
+    const timer = setTimeout(() => {
+      setIsAnimating(true);
+    }, 50);
+
+    return () => clearTimeout(timer);
   }, [showTranslationWarning]);
 
   const handleDismiss = () => {

@@ -46,7 +46,11 @@ export default function Home() {
       const raw = localStorage.getItem('tracked_items');
       if (raw) {
         const arr = JSON.parse(raw);
-        setTrackedItems(new Set(Array.isArray(arr) ? arr : []));
+        const next = new Set<string>(Array.isArray(arr) ? arr : []);
+        // Avoid calling setState directly in the effect body
+        setTimeout(() => {
+          setTrackedItems(next);
+        }, 0);
       }
     } catch (error) {
       console.error('Failed to load tracked items from localStorage:', error);
@@ -72,45 +76,48 @@ export default function Home() {
         parsed = JSON.parse(raw);
       }
 
-      if (parsed) {
-        if (
-          parsed.itemSize === 'tiny' ||
-          parsed.itemSize === 'small' ||
-          parsed.itemSize === 'medium' ||
-          parsed.itemSize === 'large'
-        ) {
-          setItemSize(parsed.itemSize);
+      // Avoid calling setState directly in the effect body
+      setTimeout(() => {
+        if (parsed) {
+          if (
+            parsed.itemSize === 'tiny' ||
+            parsed.itemSize === 'small' ||
+            parsed.itemSize === 'medium' ||
+            parsed.itemSize === 'large'
+          ) {
+            setItemSize(parsed.itemSize);
+          }
+
+          if (typeof parsed.displayPrice === 'boolean') {
+            setDisplayPrice(parsed.displayPrice);
+          }
+
+          if (typeof parsed.displayWeight === 'boolean') {
+            setDisplayWeight(parsed.displayWeight);
+          }
+
+          if (typeof parsed.showTrackIcons === 'boolean') {
+            setShowTrackIcons(parsed.showTrackIcons);
+          }
+
+          if (typeof parsed.openCraftingGraphOnClick === 'boolean') {
+            setOpenCraftingGraphOnClick(parsed.openCraftingGraphOnClick);
+          }
+
+          if (typeof parsed.lightweightMode === 'boolean') {
+            setLightweightMode(parsed.lightweightMode);
+            return;
+          }
         }
 
-        if (typeof parsed.displayPrice === 'boolean') {
-          setDisplayPrice(parsed.displayPrice);
+        // No stored lightweightMode preference – enable by default on mobile-sized screens.
+        if (typeof window !== 'undefined') {
+          const isMobile = window.innerWidth < 768;
+          if (isMobile) {
+            setLightweightMode(true);
+          }
         }
-
-        if (typeof parsed.displayWeight === 'boolean') {
-          setDisplayWeight(parsed.displayWeight);
-        }
-
-        if (typeof parsed.showTrackIcons === 'boolean') {
-          setShowTrackIcons(parsed.showTrackIcons);
-        }
-
-        if (typeof parsed.openCraftingGraphOnClick === 'boolean') {
-          setOpenCraftingGraphOnClick(parsed.openCraftingGraphOnClick);
-        }
-
-        if (typeof parsed.lightweightMode === 'boolean') {
-          setLightweightMode(parsed.lightweightMode);
-          return;
-        }
-      }
-
-      // No stored lightweightMode preference – enable by default on mobile-sized screens.
-      if (typeof window !== 'undefined') {
-        const isMobile = window.innerWidth < 768;
-        if (isMobile) {
-          setLightweightMode(true);
-        }
-      }
+      }, 0);
     } catch (error) {
       console.error('Failed to load item view settings from localStorage:', error);
     }
