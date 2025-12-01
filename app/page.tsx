@@ -280,7 +280,7 @@ export default function Home() {
         <button
           onClick={() => setIsTrackedOpen(true)}
           className="fixed bottom-25 left-25 lg:bottom-25 lg:right-8 lg:left-auto z-30 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-blue-500/30 to-purple-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-blue-500/40 hover:to-purple-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:shadow-blue-500/50 hover:scale-105"
-          aria-label="Open tracked items"
+          aria-label={t('track.openTrackedItems')}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-full pointer-events-none"></div>
           <FontAwesomeIcon icon={faEye} className="text-white text-xl relative z-10 drop-shadow-lg"/>

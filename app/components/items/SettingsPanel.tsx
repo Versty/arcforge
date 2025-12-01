@@ -181,7 +181,7 @@ export default function SettingsPanel({
                     <FontAwesomeIcon icon={faEye} className="text-blue-300 text-lg" />
                   </div>
                   <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
-                    Show Track Icons
+                    {t('track.showTrackIcons')}
                   </span>
                 </div>
                 <div

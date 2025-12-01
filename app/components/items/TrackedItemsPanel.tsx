@@ -1,7 +1,10 @@
+'use client';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Item } from "../../types/item";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import { useTranslation } from "../../i18n";
 
 interface TrackedItemsPanelProps {
   items: Item[];
@@ -43,6 +46,8 @@ export default function TrackedItemsPanel({
   onItemTracked,
   isTrackedFunc,
 }: TrackedItemsPanelProps) {
+  const { t, tItem } = useTranslation();
+
   if (!isOpen) return null;
 
   return (
@@ -61,10 +66,10 @@ export default function TrackedItemsPanel({
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300 flex items-center gap-3">
-              Tracked Items
+              {t('track.trackedItems')}
             </h2>
             <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300 flex items-center gap-3">
-              Click an item to navigate to details
+              {t('track.clickToNavigate')}
             </h3>
             <div className="flex">
               <button
@@ -78,12 +83,13 @@ export default function TrackedItemsPanel({
                   } catch {}
                 }}
                 className="flex items-center justify-center px-4 py-2 rounded-lg bg-red-500/30 text-red-200 font-semibold hover:bg-red-500/50 hover:text-white transition-all mr-4"
-                title="Clear all tracked items">
-                Clear All
+                title={t('track.clearAllTitle')}>
+                {t('track.clearAll')}
               </button>
               <button
                 onClick={onClose}
-                className="w-10 h-10 flex items-center justify-center bg-black/60 hover:bg-red-500/30 backdrop-blur-sm rounded-xl transition-all duration-300 text-gray-400 hover:text-red-300 border border-blue-500/20 hover:border-red-500/50">
+                className="w-10 h-10 flex items-center justify-center bg-black/60 hover:bg-red-500/30 backdrop-blur-sm rounded-xl transition-all duration-300 text-gray-400 hover:text-red-300 border border-blue-500/20 hover:border-red-500/50"
+                aria-label={t('buttons.close')}>
                 <span className="text-lg">✕</span>
               </button>
             </div>
@@ -130,7 +136,7 @@ export default function TrackedItemsPanel({
                         e.stopPropagation();
                         onItemTracked(item.name);
                       }}
-                      title={isTrackedFunc(item.name) ? "Untrack" : "Track"}
+                      title={isTrackedFunc(item.name) ? t('track.untrack') : t('track.track')}
                       className={`absolute top-2 left-2 z-20 w-8 h-8 rounded-md flex items-center justify-center text-sm ${
                         isTrackedFunc(item.name)
                           ? "bg-yellow-400 text-black"
@@ -157,7 +163,7 @@ export default function TrackedItemsPanel({
                       {item.image_urls?.thumb ? (
                         <Image
                           src={item.image_urls.thumb}
-                          alt={item.name}
+                          alt={tItem(item.name)}
                           fill
                           sizes="(max-width: 768px) 100vw, 33vw"
                           className="w-full h-full object-contain relative z-10 group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl"
@@ -182,7 +188,7 @@ export default function TrackedItemsPanel({
                           color: borderColor,
                           textShadow: `0 2px 8px ${borderColor}40`,
                         }}>
-                        {item.name}
+                        {tItem(item.name)}
                       </h3>
                     </div>
                     <div
@@ -196,7 +202,7 @@ export default function TrackedItemsPanel({
               })}
             {Array.from(trackedItems).length === 0 && (
               <div className="text-center text-gray-400 py-16 text-lg">
-                No tracked items yet.
+                {t('track.noItemsYet')}
               </div>
             )}
           </div>

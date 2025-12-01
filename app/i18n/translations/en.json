@@ -101,5 +101,15 @@
 
   "language.select": "Select language",
 
-  "toast.translationWarning": "⚠️ Warning: translations have been automated. Some item names may not match 100% with the names displayed in the game."
+  "toast.translationWarning": "⚠️ Warning: translations have been automated. Some item names may not match 100% with the names displayed in the game.",
+
+  "track.track": "Track",
+  "track.untrack": "Untrack",
+  "track.showTrackIcons": "Show Track Icons",
+  "track.trackedItems": "Tracked Items",
+  "track.clickToNavigate": "Click an item to navigate to details",
+  "track.clearAll": "Clear All",
+  "track.clearAllTitle": "Clear all tracked items",
+  "track.noItemsYet": "No tracked items yet.",
+  "track.openTrackedItems": "Open tracked items"
 }

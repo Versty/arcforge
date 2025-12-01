@@ -55,7 +55,7 @@ export default function ItemDetailPanel({ item, onClose, onItemTracked, isTracke
                 e.stopPropagation();
                 onItemTracked(item.name);
               }}
-              title={isTrackedFunc(item.name) ? 'Untrack' : 'Track'}
+              title={isTrackedFunc(item.name) ? t('track.untrack') : t('track.track')}
               className={`w-10 h-10 flex items-center justify-center rounded-md text-sm ${
                 isTrackedFunc(item.name) ? 'bg-yellow-400 text-black' : 'bg-black/40 text-purple-200'
               }`}

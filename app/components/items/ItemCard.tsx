@@ -18,7 +18,7 @@ interface ItemCardProps {
 }
 
 export default function ItemCard({ item, displayPrice, displayWeight, showTrackIcon, onClick, onTracked, isTrackedFunc }: ItemCardProps) {
-  const { tItem } = useTranslation();
+  const { t, tItem } = useTranslation();
   const rarity = item.infobox?.rarity || 'Common';
   const borderColor = rarityColors[rarity] || '#717471';
   const gradient = rarityGradients[rarity] || rarityGradients.Common;
@@ -45,7 +45,7 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
             e.stopPropagation();
             onTracked();
           }}
-          title={isTrackedFunc(item.name) ? 'Untrack' : 'Track'}
+          title={isTrackedFunc(item.name) ? t('track.untrack') : t('track.track')}
           className={`absolute top-2 left-2 z-20 w-8 h-8 rounded-md flex items-center justify-center text-sm ${
             isTrackedFunc(item.name) ? 'bg-yellow-400 text-black' : 'bg-black/40 text-gray-300'
           }`}
