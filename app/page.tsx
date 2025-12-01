@@ -411,6 +411,9 @@ export default function Home() {
           trackedItems={trackedItems}
           isOpen={isTrackedOpen}
           itemSize={itemSize}
+          displayPrice={displayPrice}
+          displayWeight={displayWeight}
+          openCraftingGraphOnClick={openCraftingGraphOnClick}
           onClose={() => setIsTrackedOpen(false)}
           onItemClick={setSelectedItem}
           onItemTracked={toggleItemTracked}

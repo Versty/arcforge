@@ -11,6 +11,9 @@ interface TrackedItemsPanelProps {
   trackedItems: Set<string>;
   isOpen: boolean;
   itemSize: "tiny" | "small" | "medium" | "large";
+  displayPrice: boolean;
+  displayWeight: boolean;
+  openCraftingGraphOnClick: boolean;
   onClose: () => void;
   onItemClick: (item: Item) => void;
   onItemTracked: (name: string) => void;
@@ -41,6 +44,9 @@ export default function TrackedItemsPanel({
   trackedItems,
   isOpen,
   itemSize,
+  displayPrice,
+  displayWeight,
+  openCraftingGraphOnClick,
   onClose,
   onItemClick,
   onItemTracked,
@@ -98,7 +104,9 @@ export default function TrackedItemsPanel({
           {/* Tracked Items */}
           <div
             className={`grid gap-3 sm:gap-4 lg:gap-6 ${
-              itemSize === "small"
+              itemSize === "tiny"
+                ? "grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-10 2xl:grid-cols-10"
+                : itemSize === "small"
                 ? "grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 2xl:grid-cols-10"
                 : itemSize === "medium"
                 ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
@@ -120,7 +128,11 @@ export default function TrackedItemsPanel({
                   <div
                     key={`${item.name}-${index}`}
                     onClick={() => {
-                      onItemClick(item);
+                      if (openCraftingGraphOnClick) {
+                        window.location.href = `/crafting-graph?item=${encodeURIComponent(item.name)}`;
+                      } else {
+                        onItemClick(item);
+                      }
                       onClose();
                     }}
                     className="group relative bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer"
@@ -130,6 +142,27 @@ export default function TrackedItemsPanel({
                       borderColor: borderColor,
                       boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`,
                     }}>
+                    {/* Price / Weight display */}
+                    <div className="absolute top-2 right-2 z-20 flex flex-col gap-1">
+                      {displayPrice && item.infobox?.sellprice != null && (
+                        <div className="flex items-center gap-1 bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg border border-yellow-500/30">
+                          <Image src="/coin.webp" alt="Coin" width={16} height={16} className="w-4 h-4" />
+                          <span className="text-yellow-400 text-xs font-bold">
+                            {Array.isArray(item.infobox.sellprice)
+                              ? item.infobox.sellprice[0]
+                              : item.infobox.sellprice}
+                          </span>
+                        </div>
+                      )}
+                      {displayWeight && item.infobox?.weight != null && (
+                        <div className="flex items-center gap-1 bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg border border-gray-500/30">
+                          <Image src="/weight.webp" alt="Weight" width={16} height={16} className="w-4 h-4" />
+                          <span className="text-gray-300 text-xs font-bold">
+                            {item.infobox.weight}
+                          </span>
+                        </div>
+                      )}
+                    </div>
                     {/* Item Tracking toggle */}
                     <button
                       onClick={(e) => {
