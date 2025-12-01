@@ -76,9 +76,6 @@ export default function TrackedItemsPanel({
             <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300 flex items-center gap-3">
               {t('track.trackedItems')}
             </h2>
-            <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300 flex items-center gap-3">
-              {t('track.clickToNavigate')}
-            </h3>
             <div className="flex">
               <button
                 onClick={() => {
@@ -105,157 +102,160 @@ export default function TrackedItemsPanel({
 
           {/* Tracked Items */}
           <div
-            className={`grid gap-3 sm:gap-4 lg:gap-6 ${
-              itemSize === "tiny"
-                ? "grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-10 2xl:grid-cols-10"
-                : itemSize === "small"
-                ? "grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 2xl:grid-cols-10"
-                : itemSize === "medium"
-                ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
-                : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4"
-            }`}
-            style={{
-              maxHeight: "55vh",
-              overflowY: "auto",
-              paddingRight: "0.5rem",
-            }}>
-            {items
-              .filter((item) => isTrackedFunc(item.name))
-              .map((item, index) => {
-                const rarity = item.infobox?.rarity || "Common";
-                const borderColor = rarityColors[rarity] || "#717471";
-                const gradient =
-                  rarityGradients[rarity] || rarityGradients.Common;
-                return (
-                  <div
-                    key={`${item.name}-${index}`}
-                    onClick={() => {
-                      if (openCraftingGraphOnClick) {
-                        window.location.href = `/crafting-graph?item=${encodeURIComponent(item.name)}`;
-                      } else {
-                        onItemClick(item);
-                      }
-                      onClose();
-                    }}
-                    className={`group relative rounded-2xl overflow-hidden cursor-pointer ${
-                      lightweightMode
-                        ? 'bg-black/40 border border-gray-700'
-                        : 'bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-sm transition-all duration-300'
-                    }`}
-                    style={
-                      lightweightMode
-                        ? undefined
-                        : {
-                            borderWidth: "2px",
-                            borderStyle: "solid",
-                            borderColor: borderColor,
-                            boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`,
+            className="max-h-[55vh] overflow-y-auto pr-2"
+          >
+            {items.filter((item) => isTrackedFunc(item.name)).length > 0 ? (
+              <div
+                className={`grid gap-3 sm:gap-4 lg:gap-6 ${
+                  itemSize === "tiny"
+                    ? "grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-10 2xl:grid-cols-10"
+                    : itemSize === "small"
+                    ? "grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 2xl:grid-cols-10"
+                    : itemSize === "medium"
+                    ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+                    : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4"
+                }`}
+              >
+                {items
+                  .filter((item) => isTrackedFunc(item.name))
+                  .map((item, index) => {
+                    const rarity = item.infobox?.rarity || "Common";
+                    const borderColor = rarityColors[rarity] || "#717471";
+                    const gradient =
+                      rarityGradients[rarity] || rarityGradients.Common;
+                    return (
+                      <div
+                        key={`${item.name}-${index}`}
+                        onClick={() => {
+                          if (openCraftingGraphOnClick) {
+                            window.location.href = `/crafting-graph?item=${encodeURIComponent(item.name)}`;
+                          } else {
+                            onItemClick(item);
                           }
-                    }>
-                    {/* Price / Weight display */}
-                    <div className="absolute top-2 right-2 z-20 flex flex-col gap-1">
-                      {displayPrice && item.infobox?.sellprice != null && (
-                        <div className="flex items-center gap-1 bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg border border-yellow-500/30">
-                          <Image src="/coin.webp" alt="Coin" width={16} height={16} className="w-4 h-4" />
-                          <span className="text-yellow-400 text-xs font-bold">
-                            {Array.isArray(item.infobox.sellprice)
-                              ? item.infobox.sellprice[0]
-                              : item.infobox.sellprice}
-                          </span>
-                        </div>
-                      )}
-                      {displayWeight && item.infobox?.weight != null && (
-                        <div className="flex items-center gap-1 bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg border border-gray-500/30">
-                          <Image src="/weight.webp" alt="Weight" width={16} height={16} className="w-4 h-4" />
-                          <span className="text-gray-300 text-xs font-bold">
-                            {item.infobox.weight}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                    {/* Item Tracking toggle */}
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onItemTracked(item.name);
-                      }}
-                      title={isTrackedFunc(item.name) ? t('track.untrack') : t('track.track')}
-                      className={`absolute top-2 left-2 z-20 w-8 h-8 rounded-md flex items-center justify-center text-sm ${
-                        isTrackedFunc(item.name)
-                          ? "bg-yellow-400 text-black"
-                          : "bg-black/40 text-gray-300"
-                      }`}
-                      style={{cursor: "pointer"}}
-                    >
-                      <FontAwesomeIcon
-                        icon={faEye}
-                        className="text-white text-xl relative z-10 drop-shadow-lg"
-                      />
-                    </button>
-                    {/* Animated border glow on hover */}
-                    {!lightweightMode && (
-                      <div
-                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"
-                        style={{
-                          boxShadow: `0 0 30px ${borderColor}60, inset 0 0 20px ${borderColor}20`,
+                          onClose();
                         }}
-                      />
-                    )}
-                    {/* Image Section */}
-                    <div
-                      className={`aspect-square flex items-center justify-center p-4 relative overflow-hidden ${
-                        lightweightMode ? 'bg-black/60' : ''
-                      }`}
-                      style={lightweightMode ? undefined : { background: gradient }}>
-                      {item.image_urls?.thumb ? (
-                        <Image
-                          src={item.image_urls.thumb}
-                          alt={tItem(item.name)}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 33vw"
-                          className={`w-full h-full object-contain relative z-10 ${
-                            lightweightMode ? '' : 'group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl'
-                          }`}
-                          onError={(e) => {
-                            if (e && e.currentTarget) {
-                              e.currentTarget.style.display = "none";
-                            }
+                        className={`group relative rounded-2xl overflow-hidden cursor-pointer ${
+                          lightweightMode
+                            ? 'bg-black/40 border border-gray-700'
+                            : 'bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-sm transition-all duration-300'
+                        }`}
+                        style={
+                          lightweightMode
+                            ? undefined
+                            : {
+                                borderWidth: "2px",
+                                borderStyle: "solid",
+                                borderColor: borderColor,
+                                boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`,
+                              }
+                        }>
+                        {/* Price / Weight display */}
+                        <div className="absolute top-2 right-2 z-20 flex flex-col gap-1">
+                          {displayPrice && item.infobox?.sellprice != null && (
+                            <div className="flex items-center gap-1 bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg border border-yellow-500/30">
+                              <Image src="/coin.webp" alt="Coin" width={16} height={16} className="w-4 h-4" />
+                              <span className="text-yellow-400 text-xs font-bold">
+                                {Array.isArray(item.infobox.sellprice)
+                                  ? item.infobox.sellprice[0]
+                                  : item.infobox.sellprice}
+                              </span>
+                            </div>
+                          )}
+                          {displayWeight && item.infobox?.weight != null && (
+                            <div className="flex items-center gap-1 bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg border border-gray-500/30">
+                              <Image src="/weight.webp" alt="Weight" width={16} height={16} className="w-4 h-4" />
+                              <span className="text-gray-300 text-xs font-bold">
+                                {item.infobox.weight}
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                        {/* Item Tracking toggle */}
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onItemTracked(item.name);
                           }}
-                          style={{ objectFit: "contain" }}
-                        />
-                      ) : (
-                        <div className="text-2xl text-gray-700/50">?</div>
-                      )}
-                    </div>
-                    {/* Name Section */}
-                    <div
-                      className={`p-2.5 border-t ${
-                        lightweightMode ? 'bg-black/80' : 'bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-sm'
-                      }`}
-                      style={{ borderColor: `${borderColor}20` }}>
-                      <h3
-                        className="font-semibold text-xs group-hover:brightness-125 transition-all line-clamp-2 text-center leading-tight drop-shadow-lg"
-                        style={{
-                          color: borderColor,
-                          textShadow: `0 2px 8px ${borderColor}40`,
-                        }}>
-                        {tItem(item.name)}
-                      </h3>
-                    </div>
-                    {!lightweightMode && (
-                      <div
-                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-2xl"
-                        style={{
-                          background: `radial-gradient(circle at center, ${borderColor}20 0%, transparent 70%)`,
-                        }}
-                      />
-                    )}
-                  </div>
-                );
-              })}
-            {Array.from(trackedItems).length === 0 && (
-              <div className="text-center text-gray-400 py-16 text-lg">
-                {t('track.noItemsYet')}
+                          title={isTrackedFunc(item.name) ? t('track.untrack') : t('track.track')}
+                          className={`absolute top-2 left-2 z-20 w-8 h-8 rounded-md flex items-center justify-center text-sm ${
+                            isTrackedFunc(item.name)
+                              ? "bg-yellow-400 text-black"
+                              : "bg-black/40 text-gray-300"
+                          }`}
+                          style={{cursor: "pointer"}}
+                        >
+                          <FontAwesomeIcon
+                            icon={faEye}
+                            className="text-white text-xl relative z-10 drop-shadow-lg"
+                          />
+                        </button>
+                        {/* Animated border glow on hover */}
+                        {!lightweightMode && (
+                          <div
+                            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"
+                            style={{
+                              boxShadow: `0 0 30px ${borderColor}60, inset 0 0 20px ${borderColor}20`,
+                            }}
+                          />
+                        )}
+                        {/* Image Section */}
+                        <div
+                          className={`aspect-square flex items-center justify-center p-4 relative overflow-hidden ${
+                            lightweightMode ? 'bg-black/60' : ''
+                          }`}
+                          style={lightweightMode ? undefined : { background: gradient }}>
+                          {item.image_urls?.thumb ? (
+                            <Image
+                              src={item.image_urls.thumb}
+                              alt={tItem(item.name)}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 33vw"
+                              className={`w-full h-full object-contain relative z-10 ${
+                                lightweightMode ? '' : 'group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl'
+                              }`}
+                              onError={(e) => {
+                                if (e && e.currentTarget) {
+                                  e.currentTarget.style.display = "none";
+                                }
+                              }}
+                              style={{ objectFit: "contain" }}
+                            />
+                          ) : (
+                            <div className="text-2xl text-gray-700/50">?</div>
+                          )}
+                        </div>
+                        {/* Name Section */}
+                        <div
+                          className={`p-2.5 border-t ${
+                            lightweightMode ? 'bg-black/80' : 'bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-sm'
+                          }`}
+                          style={{ borderColor: `${borderColor}20` }}>
+                          <h3
+                            className="font-semibold text-xs group-hover:brightness-125 transition-all line-clamp-2 text-center leading-tight drop-shadow-lg"
+                            style={{
+                              color: borderColor,
+                              textShadow: `0 2px 8px ${borderColor}40`,
+                            }}>
+                            {tItem(item.name)}
+                          </h3>
+                        </div>
+                        {!lightweightMode && (
+                          <div
+                            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-2xl"
+                            style={{
+                              background: `radial-gradient(circle at center, ${borderColor}20 0%, transparent 70%)`,
+                            }}
+                          />
+                        )}
+                      </div>
+                    );
+                  })}
+              </div>
+            ) : (
+              <div className="flex items-center justify-center h-[55vh]">
+                <div className="text-center text-gray-400 text-lg">
+                  {t('track.noItemsYet')}
+                </div>
               </div>
             )}
           </div>
