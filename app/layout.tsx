@@ -15,13 +15,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: {
     default: "ARC Forge - ARC Raiders Item Database & Crafting Guide",
-    template: "%s | ARC Forge"
+    template: "%s | ARC Forge",
   },
-  description: "Complete ARC Raiders item database with crafting trees, recipes, and item information. Browse weapons, modifications, materials, and more for ARC Raiders.",
-  keywords: ["ARC Raiders", "item database", "crafting guide", "game items", "weapons", "materials", "crafting tree", "ARC Forge"],
+  description:
+    "Complete ARC Raiders item database with crafting trees, recipes, and item information. Browse weapons, modifications, materials, and more for ARC Raiders.",
+  keywords: [
+    "ARC Raiders",
+    "item database",
+    "crafting guide",
+    "game items",
+    "weapons",
+    "materials",
+    "crafting tree",
+    "ARC Forge",
+  ],
   authors: [{ name: "ARC Forge" }],
   creator: "ARC Forge",
   publisher: "ARC Forge",
@@ -34,7 +44,8 @@ export const metadata: Metadata = {
     url: "/",
     siteName: "ARC Forge",
     title: "ARC Forge - ARC Raiders Item Database & Crafting Guide",
-    description: "Complete ARC Raiders item database with crafting trees, recipes, and item information. Browse weapons, modifications, materials, and more.",
+    description:
+      "Complete ARC Raiders item database with crafting trees, recipes, and item information. Browse weapons, modifications, materials, and more.",
     images: [
       {
         url: "/logo.webp",
@@ -47,7 +58,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ARC Forge - ARC Raiders Item Database",
-    description: "Complete ARC Raiders item database with crafting trees, recipes, and item information.",
+    description:
+      "Complete ARC Raiders item database with crafting trees, recipes, and item information.",
     images: ["/logo.webp"],
     creator: "@arcforge",
   },
@@ -57,9 +69,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
@@ -81,7 +93,14 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#8b5cf6" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'} />
+        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"} />
+        {/* Favicon links for Google Search and browsers */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         {/* Preconnect to external resources for better performance */}
         <link rel="preconnect" href="https://arcraiders.wiki" />
         <link rel="dns-prefetch" href="https://arcraiders.wiki" />
@@ -92,9 +111,7 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Google Analytics */}
         {GA_TRACKING_ID && (
           <>
@@ -118,9 +135,7 @@ export default function RootLayout({
             />
           </>
         )}
-        <ClientLayout>
-          {children}
-        </ClientLayout>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
