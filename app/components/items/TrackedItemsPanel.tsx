@@ -18,6 +18,7 @@ interface TrackedItemsPanelProps {
   onItemClick: (item: Item) => void;
   onItemTracked: (name: string) => void;
   isTrackedFunc: (name: string) => boolean;
+  lightweightMode?: boolean;
 }
 
 const rarityColors: { [key: string]: string } = {
@@ -51,6 +52,7 @@ export default function TrackedItemsPanel({
   onItemClick,
   onItemTracked,
   isTrackedFunc,
+  lightweightMode = false,
 }: TrackedItemsPanelProps) {
   const { t, tItem } = useTranslation();
 
@@ -135,13 +137,21 @@ export default function TrackedItemsPanel({
                       }
                       onClose();
                     }}
-                    className="group relative bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer"
-                    style={{
-                      borderWidth: "2px",
-                      borderStyle: "solid",
-                      borderColor: borderColor,
-                      boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`,
-                    }}>
+                    className={`group relative rounded-2xl overflow-hidden cursor-pointer ${
+                      lightweightMode
+                        ? 'bg-black/40 border border-gray-700'
+                        : 'bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-sm transition-all duration-300'
+                    }`}
+                    style={
+                      lightweightMode
+                        ? undefined
+                        : {
+                            borderWidth: "2px",
+                            borderStyle: "solid",
+                            borderColor: borderColor,
+                            boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`,
+                          }
+                    }>
                     {/* Price / Weight display */}
                     <div className="absolute top-2 right-2 z-20 flex flex-col gap-1">
                       {displayPrice && item.infobox?.sellprice != null && (
@@ -183,23 +193,29 @@ export default function TrackedItemsPanel({
                       />
                     </button>
                     {/* Animated border glow on hover */}
-                    <div
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"
-                      style={{
-                        boxShadow: `0 0 30px ${borderColor}60, inset 0 0 20px ${borderColor}20`,
-                      }}
-                    />
+                    {!lightweightMode && (
+                      <div
+                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"
+                        style={{
+                          boxShadow: `0 0 30px ${borderColor}60, inset 0 0 20px ${borderColor}20`,
+                        }}
+                      />
+                    )}
                     {/* Image Section */}
                     <div
-                      className="aspect-square flex items-center justify-center p-4 relative overflow-hidden"
-                      style={{ background: gradient }}>
+                      className={`aspect-square flex items-center justify-center p-4 relative overflow-hidden ${
+                        lightweightMode ? 'bg-black/60' : ''
+                      }`}
+                      style={lightweightMode ? undefined : { background: gradient }}>
                       {item.image_urls?.thumb ? (
                         <Image
                           src={item.image_urls.thumb}
                           alt={tItem(item.name)}
                           fill
                           sizes="(max-width: 768px) 100vw, 33vw"
-                          className="w-full h-full object-contain relative z-10 group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl"
+                          className={`w-full h-full object-contain relative z-10 ${
+                            lightweightMode ? '' : 'group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl'
+                          }`}
                           onError={(e) => {
                             if (e && e.currentTarget) {
                               e.currentTarget.style.display = "none";
@@ -213,7 +229,9 @@ export default function TrackedItemsPanel({
                     </div>
                     {/* Name Section */}
                     <div
-                      className="p-2.5 bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-sm border-t"
+                      className={`p-2.5 border-t ${
+                        lightweightMode ? 'bg-black/80' : 'bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-sm'
+                      }`}
                       style={{ borderColor: `${borderColor}20` }}>
                       <h3
                         className="font-semibold text-xs group-hover:brightness-125 transition-all line-clamp-2 text-center leading-tight drop-shadow-lg"
@@ -224,12 +242,14 @@ export default function TrackedItemsPanel({
                         {tItem(item.name)}
                       </h3>
                     </div>
-                    <div
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-2xl"
-                      style={{
-                        background: `radial-gradient(circle at center, ${borderColor}20 0%, transparent 70%)`,
-                      }}
-                    />
+                    {!lightweightMode && (
+                      <div
+                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-2xl"
+                        style={{
+                          background: `radial-gradient(circle at center, ${borderColor}20 0%, transparent 70%)`,
+                        }}
+                      />
+                    )}
                   </div>
                 );
               })}

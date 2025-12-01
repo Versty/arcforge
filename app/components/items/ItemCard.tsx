@@ -15,9 +15,19 @@ interface ItemCardProps {
   onClick: () => void;
   onTracked: () => void;
   isTrackedFunc: (name: string) => boolean;
+  lightweightMode?: boolean;
 }
 
-export default function ItemCard({ item, displayPrice, displayWeight, showTrackIcon, onClick, onTracked, isTrackedFunc }: ItemCardProps) {
+export default function ItemCard({
+  item,
+  displayPrice,
+  displayWeight,
+  showTrackIcon,
+  onClick,
+  onTracked,
+  isTrackedFunc,
+  lightweightMode = false,
+}: ItemCardProps) {
   const { t, tItem } = useTranslation();
   const rarity = item.infobox?.rarity || 'Common';
   const borderColor = rarityColors[rarity] || '#717471';
@@ -29,13 +39,21 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
   return (
     <div
       onClick={onClick}
-      className="group relative bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-sm rounded-2xl overflow-hidden hover:scale-105 hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-      style={{
-        borderWidth: '2px',
-        borderStyle: 'solid',
-        borderColor: borderColor,
-        boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`
-      }}
+      className={`group relative rounded-2xl overflow-hidden cursor-pointer ${
+        lightweightMode
+          ? 'bg-black/40 border border-gray-700'
+          : 'bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-sm hover:scale-105 hover:-translate-y-1 transition-all duration-300'
+      }`}
+      style={
+        lightweightMode
+          ? undefined
+          : {
+              borderWidth: '2px',
+              borderStyle: 'solid',
+              borderColor: borderColor,
+              boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`,
+            }
+      }
     >
 
       {/* Item Tracking Button - Only show if showTrackIcon is enabled */}
@@ -57,13 +75,15 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
           />
         </button>
       )}
-      {/* Animated border glow on hover */}
-      <div 
-        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"
-        style={{
-          boxShadow: `0 0 30px ${borderColor}60, inset 0 0 20px ${borderColor}20`
-        }}
-      />
+      {/* Animated border glow on hover (disabled in lightweight mode) */}
+      {!lightweightMode && (
+        <div
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"
+          style={{
+            boxShadow: `0 0 30px ${borderColor}60, inset 0 0 20px ${borderColor}20`,
+          }}
+        />
+      )}
 
       {/* Price/Weight Display */}
       <div className="absolute top-2 right-2 z-20 flex flex-col gap-1">
@@ -86,18 +106,24 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
       </div>
 
       {/* Image Section */}
-      <div 
-        className="aspect-square flex items-center justify-center p-4 relative overflow-hidden"
-        style={{ background: gradient }}
+      <div
+        className={`aspect-square flex items-center justify-center p-4 relative overflow-hidden ${
+          lightweightMode ? 'bg-black/60' : ''
+        }`}
+        style={lightweightMode ? undefined : { background: gradient }}
       >
-        {/* Subtle shine effect */}
-        <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        {/* Subtle shine effect (disabled in lightweight mode) */}
+        {!lightweightMode && (
+          <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        )}
         
         {item.image_urls?.thumb ? (
           <img
             src={item.image_urls.thumb}
             alt={translatedName}
-            className="w-full h-full object-contain relative z-10 group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl"
+            className={`w-full h-full object-contain relative z-10 ${
+              lightweightMode ? '' : 'group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl'
+            }`}
             onError={(e) => {
               e.currentTarget.style.display = 'none';
             }}
@@ -108,7 +134,12 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
       </div>
 
       {/* Name Section */}
-      <div className="p-2.5 bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-sm border-t" style={{ borderColor: `${borderColor}20` }}>
+      <div
+        className={`p-2.5 border-t ${
+          lightweightMode ? 'bg-black/80' : 'bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-sm'
+        }`}
+        style={{ borderColor: `${borderColor}20` }}
+      >
         <h3 
           className="font-semibold text-xs group-hover:brightness-125 transition-all line-clamp-2 text-center leading-tight drop-shadow-lg"
           style={{ 
@@ -120,13 +151,15 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
         </h3>
       </div>
 
-      {/* Hover Effect Overlay */}
-      <div 
-        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-2xl"
-        style={{ 
-          background: `radial-gradient(circle at center, ${borderColor}20 0%, transparent 70%)`
-        }}
-      />
+      {/* Hover Effect Overlay (disabled in lightweight mode) */}
+      {!lightweightMode && (
+        <div
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-2xl"
+          style={{
+            background: `radial-gradient(circle at center, ${borderColor}20 0%, transparent 70%)`,
+          }}
+        />
+      )}
     </div>
   );
 }

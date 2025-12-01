@@ -16,6 +16,7 @@ interface ItemsGridProps {
   onItemTracked: (name: string) => void;
   isTrackedFunc: (name: string) => boolean;
   openCraftingGraphOnClick: boolean;
+  lightweightMode?: boolean;
 }
 
 export default function ItemsGrid({
@@ -28,6 +29,7 @@ export default function ItemsGrid({
   onItemTracked,
   isTrackedFunc,
   openCraftingGraphOnClick,
+  lightweightMode = false,
 }: ItemsGridProps) {
   const { t } = useTranslation();
 
@@ -59,6 +61,7 @@ export default function ItemsGrid({
                 displayPrice={displayPrice}
                 displayWeight={displayWeight}
                 showTrackIcon={showTrackIcons}
+                lightweightMode={lightweightMode}
                 onClick={handleClick}
                 onTracked={() => onItemTracked(item.name)}
                 isTrackedFunc={isTrackedFunc}
